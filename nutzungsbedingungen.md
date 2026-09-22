@@ -48,7 +48,8 @@ gleichzeitig pausieren.
 Kostenlos enthält Auszeit eine Auszeit mit bis zu zwei Apps und einer Pause von 15 Sekunden.
 
 „Auszeit Plus“ ist ein Abonnement und erlaubt weitere Auszeiten, mehr als zwei Apps je Auszeit
-und die Wahl der Pause (15, 30 oder 90 Sekunden oder eine Sperre). Es gibt Plus als Jahres- und als Monatsabo. Die Preise stehen in der App und im App Store.
+die Wahl der Pause (15, 30 oder 90 Sekunden oder eine Sperre) und „Jetzt bis Ende“ (eine Auszeit sofort
+bis zu ihrem nächsten Ende starten). Es gibt Plus als Jahres- und als Monatsabo. Die Preise stehen in der App und im App Store.
 
 Für den Kauf gilt:
 

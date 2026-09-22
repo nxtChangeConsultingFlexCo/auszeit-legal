@@ -45,7 +45,7 @@ without a pause for 15 minutes, and iOS can pause only a limited number of apps 
 
 Free of charge, Off Hours includes one Off Hours schedule with up to two apps and a 15-second pause.
 
-“Off Hours Plus” is a subscription. It allows more Off Hours schedules, more than two apps per schedule and the choice of pause (15, 30 or 90 seconds, or a lock).
+“Off Hours Plus” is a subscription. It allows more Off Hours schedules, more than two apps per schedule, the choice of pause (15, 30 or 90 seconds, or a lock) and “Start now” (a schedule takes effect immediately until its next end).
 Plus is available as a yearly and as a monthly subscription. Prices are shown in the app and in
 the App Store.
 
