@@ -3,13 +3,13 @@ title: Terms of Use
 permalink: /terms/
 ---
 
-# Terms of Use for Auszeit
+# Terms of Use for Off Hours
 
 Last updated: 22 September 2026
 
 ## 1. Who we are
 
-Auszeit is an iPhone app by
+Off Hours (German: “Auszeit”) is an iPhone app by
 
 nxtChange Consulting FlexCo
 Neugasse 9/1
@@ -23,7 +23,7 @@ karl.maier@nxtchange-consulting.com
 
 ## 2. What the app does
 
-Auszeit keeps the apps you choose from opening right away during the times you set. When you open
+Off Hours keeps the apps you choose from opening right away during the times you set. When you open
 such an app inside that window, your iPhone first shows a 90-second pause. Then you decide: leave
 it, or open anyway. Every other app stays untouched.
 
@@ -32,8 +32,8 @@ access to Screen Time.
 
 ## 3. What the app does not promise
 
-Auszeit is an aid, not a lock. You can skip any pause, revoke Screen Time access in the iOS
-Settings, or delete the app. Each of these ends every time-out. We do not promise any particular
+Off Hours is an aid, not a lock. You can skip any pause, revoke Screen Time access in the iOS
+Settings, or delete the app. Each of these ends every Off Hours schedule. We do not promise any particular
 result, such as less screen time.
 
 iOS sets technical limits we cannot change. For example, after “Open anyway” an app stays usable
@@ -41,9 +41,9 @@ without a pause for 15 minutes, and iOS can pause only a limited number of apps 
 
 ## 4. Free and Plus
 
-Free of charge, Auszeit includes one time-out with up to two apps.
+Free of charge, Off Hours includes one Off Hours schedule with up to two apps.
 
-“Auszeit Plus” is a subscription. It allows more time-outs and more than two apps per time-out.
+“Off Hours Plus” is a subscription. It allows more Off Hours schedules and more than two apps per schedule.
 Plus is available as a yearly and as a monthly subscription. Prices are shown in the app and in
 the App Store.
 
@@ -53,11 +53,11 @@ For the purchase:
 - The subscription renews automatically unless you cancel it at least 24 hours before the end of
   the current period. The charge is made to your Apple Account within the last 24 hours before
   the period ends.
-- You can cancel at any time: in the app via “Auszeit Plus”, or under iPhone Settings › Apple
+- You can cancel at any time: in the app via “Off Hours Plus”, or under iPhone Settings › Apple
   Account › Subscriptions. Plus stays active until the end of the paid period.
 - Refunds are decided by Apple under Apple’s rules. Requests go to Apple at
   reportaproblem.apple.com.
-- When Plus ends, the free limits apply again: one time-out, two apps. Your first time-out stays;
+- When Plus ends, the free limits apply again: one Off Hours schedule, two apps. Your first schedule stays;
   further entries remain saved but no longer take effect.
 
 In addition, Apple’s standard end user license agreement for App Store apps (“Licensed

@@ -3,15 +3,15 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-# Privacy Policy for Auszeit
+# Privacy Policy for Off Hours
 
 Last updated: 22 September 2026
 
 ## In short
 
-Auszeit has no account, no server and no analytics. Everything you set up in the app stays on
+Off Hours has no account, no server and no analytics. Everything you set up in the app stays on
 your iPhone. We receive no data from you. The only outside connection is the App Store, for buying
-Auszeit Plus, and that runs through Apple.
+Off Hours Plus, and that runs through Apple.
 
 ## Controller
 
@@ -27,10 +27,10 @@ karl.maier@nxtchange-consulting.com
 
 The app stores on your iPhone:
 
-- your time-outs: name, start, end, weekdays, on or off,
+- your Off Hours schedules: name, start, end, weekdays, on or off,
 - the selection of apps that should pause,
 - the start of a running pause and the time after “Open anyway”,
-- whether Auszeit Plus is active.
+- whether Off Hours Plus is active.
 
 This data lives only in the app’s protected storage on your device. It is not sent to us or to
 anyone else. If you delete the app, it is gone.
@@ -40,20 +40,20 @@ of your device. Apple’s privacy policy applies to that.
 
 ## Screen Time (Family Controls)
 
-Auszeit uses the Screen Time interface of iOS to pause apps. You only need to allow this access
+Off Hours uses the Screen Time interface of iOS to pause apps. You only need to allow this access
 once in the app.
 
-Importantly, Auszeit does not learn which apps you choose in plain text. iOS gives the app only
+Importantly, Off Hours does not learn which apps you choose in plain text. iOS gives the app only
 encrypted identifiers that are useless outside your device. The app does not see how long or how
 often you use apps, and it does not analyse any of that. It uses Screen Time solely to hold the
 apps you chose at the times you chose, as Apple’s rules for this interface require.
 
 You can revoke the access at any time: iPhone Settings › Screen Time › Apps with Screen Time
-Access. After that, no time-out takes effect.
+Access. After that, no Off Hours schedule takes effect.
 
-## Purchases (Auszeit Plus)
+## Purchases (Off Hours Plus)
 
-You buy Auszeit Plus through the App Store. Apple handles the payment. We receive no payment
+You buy Off Hours Plus through the App Store. Apple handles the payment. We receive no payment
 details, no address and no name. The app only asks Apple whether a valid subscription belongs to
 your Apple Account and remembers the answer on your device. Apple’s privacy policy applies to
 Apple’s processing: https://www.apple.com/legal/privacy/
@@ -64,7 +64,7 @@ The legal basis is the performance of the contract with you (Art. 6 (1) (b) GDPR
 
 If you have allowed sharing analytics with app developers in the iOS Settings, Apple may pass
 anonymised crash reports of the app on to us. They contain technical details about the crash and
-the device, but nothing about your time-outs. You control this under iPhone Settings › Privacy &
+the device, but nothing about your schedules. You control this under iPhone Settings › Privacy &
 Security › Analytics & Improvements.
 
 ## What the app does not do
