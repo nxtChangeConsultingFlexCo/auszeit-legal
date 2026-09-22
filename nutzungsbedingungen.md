@@ -24,15 +24,18 @@ karl.maier@nxtchange-consulting.com
 ## 2. Was die App tut
 
 Auszeit hält ausgewählte Apps zu Zeiten, die du festlegst, nicht sofort auf. Öffnest du eine
-solche App in diesem Zeitfenster, zeigt dein iPhone zuerst eine Pause von 90 Sekunden. Danach
-entscheidest du: die App liegen lassen oder trotzdem öffnen. Alle anderen Apps bleiben unberührt.
+solche App in diesem Zeitfenster, zeigt dein iPhone zuerst eine Pause von 15 Sekunden. Danach
+entscheidest du: die App liegen lassen oder trotzdem öffnen. Mit Auszeit Plus kannst du je Auszeit
+30 oder 90 Sekunden wählen oder die Apps bis zum Ende der Auszeit ganz sperren. Alle anderen Apps
+bleiben unberührt.
 
 Die App nutzt dafür die Bildschirmzeit-Funktionen von iOS („Family Controls“). Sie kann nur
 wirken, wenn du ihr den Zugriff auf die Bildschirmzeit erlaubst.
 
 ## 3. Was die App nicht verspricht
 
-Auszeit ist ein Hilfsmittel, keine Sperre. Du kannst jede Pause übergehen, den Bildschirmzeit-Zugriff
+Auszeit ist ein Hilfsmittel, kein Schutz vor dir selbst. Du kannst jede Pause übergehen (eine Sperre
+hebst du auf, indem du die Auszeit ausschaltest), den Bildschirmzeit-Zugriff
 in den iOS-Einstellungen entziehen oder die App löschen. Damit endet jede Auszeit. Wir versprechen
 keinen bestimmten Erfolg, etwa weniger Bildschirmzeit.
 
@@ -42,10 +45,10 @@ gleichzeitig pausieren.
 
 ## 4. Gratis und Plus
 
-Kostenlos enthält Auszeit eine Auszeit mit bis zu zwei Apps.
+Kostenlos enthält Auszeit eine Auszeit mit bis zu zwei Apps und einer Pause von 15 Sekunden.
 
-„Auszeit Plus“ ist ein Abonnement und erlaubt weitere Auszeiten sowie mehr als zwei Apps je
-Auszeit. Es gibt Plus als Jahres- und als Monatsabo. Die Preise stehen in der App und im App Store.
+„Auszeit Plus“ ist ein Abonnement und erlaubt weitere Auszeiten, mehr als zwei Apps je Auszeit
+und die Wahl der Pause (15, 30 oder 90 Sekunden oder eine Sperre). Es gibt Plus als Jahres- und als Monatsabo. Die Preise stehen in der App und im App Store.
 
 Für den Kauf gilt:
 

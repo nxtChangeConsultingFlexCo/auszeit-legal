@@ -24,15 +24,17 @@ karl.maier@nxtchange-consulting.com
 ## 2. What the app does
 
 Off Hours keeps the apps you choose from opening right away during the times you set. When you open
-such an app inside that window, your iPhone first shows a 90-second pause. Then you decide: leave
-it, or open anyway. Every other app stays untouched.
+such an app inside that window, your iPhone first shows a 15-second pause. Then you decide: leave
+it, or open anyway. With Off Hours Plus you can choose 30 or 90 seconds per schedule, or lock the
+apps entirely until the schedule ends. Every other app stays untouched.
 
 The app uses the Screen Time features of iOS (“Family Controls”). It can only work if you allow it
 access to Screen Time.
 
 ## 3. What the app does not promise
 
-Off Hours is an aid, not a lock. You can skip any pause, revoke Screen Time access in the iOS
+Off Hours is an aid, not a safeguard against yourself. You can skip any pause (a lock ends when you
+switch the schedule off), revoke Screen Time access in the iOS
 Settings, or delete the app. Each of these ends every Off Hours schedule. We do not promise any particular
 result, such as less screen time.
 
@@ -41,9 +43,9 @@ without a pause for 15 minutes, and iOS can pause only a limited number of apps 
 
 ## 4. Free and Plus
 
-Free of charge, Off Hours includes one Off Hours schedule with up to two apps.
+Free of charge, Off Hours includes one Off Hours schedule with up to two apps and a 15-second pause.
 
-“Off Hours Plus” is a subscription. It allows more Off Hours schedules and more than two apps per schedule.
+“Off Hours Plus” is a subscription. It allows more Off Hours schedules, more than two apps per schedule and the choice of pause (15, 30 or 90 seconds, or a lock).
 Plus is available as a yearly and as a monthly subscription. Prices are shown in the app and in
 the App Store.
 
