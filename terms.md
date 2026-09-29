@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use for Off Hours
 
-Last updated: 22 September 2026
+Last updated: 29 September 2026
 
 ## 1. Who we are
 
@@ -24,28 +24,34 @@ karl.maier@nxtchange-consulting.com
 ## 2. What the app does
 
 Off Hours keeps the apps you choose from opening right away during the times you set. When you open
-such an app inside that window, your iPhone first shows a 15-second pause. Then you decide: leave
-it, or open anyway. With Off Hours Plus you can choose 30 or 90 seconds per schedule, or lock the
-apps entirely until the schedule ends. Every other app stays untouched.
+such an app inside that window, your iPhone first shows a 15-second cooling-off. Then you decide:
+“Take a break” and leave the app, or “Make an exception” and open it for a while. With Off Hours
+Plus you can choose a 30- or 90-second cooling-off per schedule, or lock the apps entirely until
+the schedule ends. Off Hours pauses apps only, not websites. Every other app stays untouched.
 
 The app uses the Screen Time features of iOS (“Family Controls”). It can only work if you allow it
 access to Screen Time.
 
 ## 3. What the app does not promise
 
-Off Hours is an aid, not a safeguard against yourself. You can skip any pause (a lock ends when you
+Off Hours is an aid, not a safeguard against yourself. You can skip any cooling-off (a lock ends when you
 switch the schedule off), revoke Screen Time access in the iOS
 Settings, or delete the app. Each of these ends every Off Hours schedule. We do not promise any particular
 result, such as less screen time.
 
-iOS sets technical limits we cannot change. For example, after “Open anyway” an app stays usable
-without a pause for 15 minutes, and iOS can pause only a limited number of apps at once.
+iOS sets technical limits we cannot change. For example, after “Make an exception” an app stays
+usable without a cooling-off for a fixed time, because iOS does not report when you close it. iOS
+can pause only a limited number of apps at once. Whether notifications from a paused app appear
+is up to iOS; Off Hours can neither silence nor allow them.
 
 ## 4. Free and Plus
 
-Free of charge, Off Hours includes one Off Hours schedule with up to two apps and a 15-second pause.
+Free of charge, Off Hours includes one Off Hours schedule with up to two apps, a 15-second
+cooling-off and 5 minutes after “Make an exception”.
 
-“Off Hours Plus” is a subscription. It allows more Off Hours schedules, more than two apps per schedule, the choice of pause (15, 30 or 90 seconds, or a lock) and “Start now” (a schedule takes effect immediately until its next end).
+“Off Hours Plus” is a subscription. It allows more Off Hours schedules, more than two apps per
+schedule, the choice of cooling-off (15, 30 or 90 seconds, or a lock), the choice of exception
+(1, 5 or 15 minutes) and “Start now” (a schedule takes effect immediately until its next end).
 Plus is available as a yearly and as a monthly subscription. Prices are shown in the app and in
 the App Store.
 
@@ -55,8 +61,8 @@ For the purchase:
 - The subscription renews automatically unless you cancel it at least 24 hours before the end of
   the current period. The charge is made to your Apple Account within the last 24 hours before
   the period ends.
-- You can cancel at any time: in the app via “Off Hours Plus”, or under iPhone Settings › Apple
-  Account › Subscriptions. Plus stays active until the end of the paid period.
+- You can cancel at any time under iPhone Settings › Apple Account › Subscriptions. Plus stays
+  active until the end of the paid period.
 - Refunds are decided by Apple under Apple’s rules. Requests go to Apple at
   reportaproblem.apple.com.
 - When Plus ends, the free limits apply again: one Off Hours schedule, two apps. Your first schedule stays;

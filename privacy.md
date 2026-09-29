@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy for Off Hours
 
-Last updated: 22 September 2026
+Last updated: 29 September 2026
 
 ## In short
 
@@ -29,7 +29,7 @@ The app stores on your iPhone:
 
 - your Off Hours schedules: name, start, end, weekdays, on or off,
 - the selection of apps that should pause,
-- the start of a running pause and the time after “Open anyway”,
+- when a running cooling-off started and until when an app stays open after “Make an exception”,
 - whether Off Hours Plus is active.
 
 This data lives only in the app’s protected storage on your device. It is not sent to us or to

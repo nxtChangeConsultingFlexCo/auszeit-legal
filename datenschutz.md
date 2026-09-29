@@ -5,7 +5,7 @@ permalink: /datenschutz/
 
 # Datenschutzerklärung für Auszeit
 
-Stand: 22. September 2026
+Stand: 29. September 2026
 
 ## Kurz gesagt
 
@@ -29,7 +29,7 @@ Die App speichert auf deinem iPhone:
 
 - deine Auszeiten: Name, Beginn, Ende, Wochentage, an oder aus,
 - die Auswahl der Apps, die pausieren sollen,
-- den Zeitpunkt einer laufenden Pause und die Zeit nach „Trotzdem öffnen“,
+- den Beginn einer laufenden Bedenkzeit und bis wann eine App nach „Ausnahme machen“ offen ist,
 - ob Auszeit Plus aktiv ist.
 
 Diese Daten liegen ausschließlich im geschützten Speicherbereich der App auf deinem Gerät. Sie
