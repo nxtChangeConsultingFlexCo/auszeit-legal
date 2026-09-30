@@ -11,8 +11,10 @@ Legal texts for the iPhone app Off Hours (Auszeit) by nxtChange Consulting FlexC
 
 - [Nutzungsbedingungen](nutzungsbedingungen/)
 - [Datenschutzerklärung](datenschutz/)
+- [Support](support/)
 
 **English**
 
 - [Terms of Use](terms/)
 - [Privacy Policy](privacy/)
+- [Support](support/#support-for-off-hours)
