@@ -5,7 +5,7 @@ permalink: /nutzungsbedingungen/
 
 # Nutzungsbedingungen für Auszeit
 
-Stand: 29. September 2026
+Stand: 1. Oktober 2026
 
 ## 1. Wer wir sind
 
@@ -38,7 +38,7 @@ wirken, wenn du ihr den Zugriff auf die Bildschirmzeit erlaubst.
 Auszeit ist ein Hilfsmittel, kein Schutz vor dir selbst. Du kannst jede Bedenkzeit übergehen (eine Sperre
 hebst du auf, indem du die Auszeit ausschaltest), den Bildschirmzeit-Zugriff
 in den iOS-Einstellungen entziehen oder die App löschen. Damit endet jede Auszeit. Wir versprechen
-keinen bestimmten Erfolg, etwa weniger Bildschirmzeit.
+keinen bestimmten Erfolg, etwa ein bestimmtes Maß an Bildschirmzeit.
 
 iOS setzt technische Grenzen, die wir nicht beeinflussen können. Zum Beispiel bleibt eine App nach
 „Ausnahme machen“ eine feste Zeit lang ohne Bedenkzeit nutzbar, weil iOS nicht meldet, wann du sie
@@ -74,7 +74,7 @@ https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
 ## 5. Nutzungsrecht
 
 Du erhältst ein einfaches, nicht übertragbares Recht, die App auf Apple-Geräten zu nutzen, die
-mit deinem Apple-Account verbunden sind. Du darfst die App nicht verändern, nachbauen oder
+mit deinem Apple-Account verbunden sind. Du darfst die App nicht verändern, zurückentwickeln oder
 weiterverkaufen.
 
 ## 6. Haftung
@@ -92,9 +92,8 @@ oder im App Store an.
 
 ## 8. Recht und Gerichtsstand
 
-Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts. Für Verbraucher aus dem
-EU-Ausland gelten daneben die zwingenden Verbraucherschutzvorschriften ihres Wohnsitzstaates.
+Es gilt österreichisches Recht unter Ausschluss des UN-Kaufrechts. Für Verbraucher in anderen
+Ländern gelten daneben die zwingenden Verbraucherschutzvorschriften ihres Wohnsitzstaates.
 
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:
-https://ec.europa.eu/consumers/odr. Wir sind nicht verpflichtet und nicht bereit, an
-Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+Verbraucherschlichtungsstelle teilzunehmen.

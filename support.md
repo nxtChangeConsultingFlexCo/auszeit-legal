@@ -17,8 +17,9 @@ passiert ist.
 
 **Die Auszeit greift nicht.**
 Prüfe, ob der Bildschirmzeit-Zugriff erlaubt ist: iPhone-Einstellungen › Bildschirmzeit › Apps mit
-Zugriff auf Bildschirmzeit. Ist die Auszeit in der Liste eingeschaltet? Liegen Beginn und Ende
-mindestens 15 Minuten auseinander? iOS schaltet auf die Minute genau, nicht auf die Sekunde.
+Zugriff auf Bildschirmzeit. Ist die Auszeit in der Liste eingeschaltet, und sind Apps gewählt? Liegen
+Beginn und Ende mindestens 15 Minuten auseinander? iOS schaltet auf die Minute genau, nicht auf die
+Sekunde.
 
 **Nach „Ausnahme machen“ bleibt der Schirm stehen.**
 Das ist ein bekanntes Verhalten von iOS. Tippe noch einmal auf „Ausnahme machen“, dann prüft iOS
@@ -33,9 +34,10 @@ Gratis gilt die erste Auszeit mit bis zu zwei Apps. Weitere Einträge bleiben ge
 aber erst mit Auszeit Plus.
 
 **Abo kündigen oder wiederherstellen.**
-Kündigen: iPhone-Einstellungen › Apple-Account › Abos. Wiederherstellen, etwa auf einem neuen
-iPhone: in der App auf „Auszeit Plus“ tippen und dann auf „Kauf wiederherstellen“. Erstattungen
-regelt Apple: https://reportaproblem.apple.com
+Kündigen: iPhone-Einstellungen › Apple-Account › Abos. Auf einem neuen iPhone erkennt Auszeit dein
+Abo beim Start von selbst. Falls nicht: eine Auszeit öffnen (oder mit „+“ anlegen) und neben
+„Beginn“ auf „Jetzt“ tippen. Es erscheint „Auszeit Plus“, dort steht „Kauf wiederherstellen“. Erstattungen regelt Apple:
+https://reportaproblem.apple.com
 
 **Webseiten und Mitteilungen.**
 Auszeit pausiert Apps, keine Webseiten. Ob Mitteilungen einer pausierten App erscheinen, entscheidet
@@ -66,8 +68,8 @@ It helps to include your iPhone model, the iOS version, what you did and what ha
 
 **The schedule does not take effect.**
 Check that Screen Time access is allowed: iPhone Settings › Screen Time › Apps with Screen Time
-Access. Is the schedule switched on in the list? Are start and end at least 15 minutes apart? iOS
-switches to the minute, not to the second.
+Access. Is the schedule switched on in the list, and have you chosen apps? Are start and end at
+least 15 minutes apart? iOS switches to the minute, not to the second.
 
 **The shield stays after "Make an exception".**
 This is known iOS behaviour. Tap "Make an exception" once more; iOS then re-checks and the app opens.
@@ -81,8 +83,9 @@ The free tier covers the first schedule with up to two apps. Further entries sta
 effect only with Off Hours Plus.
 
 **Cancel or restore the subscription.**
-Cancel: iPhone Settings › Apple Account › Subscriptions. Restore, for example on a new iPhone: tap
-"Off Hours Plus" in the app, then "Restore purchase". Refunds are handled by Apple:
+Cancel: iPhone Settings › Apple Account › Subscriptions. On a new iPhone, Off Hours recognises your
+subscription by itself at launch. If it does not: open a schedule (or add one with "+") and tap
+"Now" next to "Start". "Off Hours Plus" appears, with "Restore purchase" on it. Refunds are handled by Apple:
 https://reportaproblem.apple.com
 
 **Websites and notifications.**

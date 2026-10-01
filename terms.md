@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use for Off Hours
 
-Last updated: 29 September 2026
+Last updated: 1 October 2026
 
 ## 1. Who we are
 
@@ -37,7 +37,7 @@ access to Screen Time.
 Off Hours is an aid, not a safeguard against yourself. You can skip any cooling-off (a lock ends when you
 switch the schedule off), revoke Screen Time access in the iOS
 Settings, or delete the app. Each of these ends every Off Hours schedule. We do not promise any particular
-result, such as less screen time.
+result, such as a particular amount of screen time.
 
 iOS sets technical limits we cannot change. For example, after “Make an exception” an app stays
 usable without a cooling-off for a fixed time, because iOS does not report when you close it. iOS
@@ -95,6 +95,5 @@ Austrian law applies, excluding the UN Convention on Contracts for the Internati
 Goods. For consumers in other countries, the mandatory consumer protection rules of their country
 of residence apply in addition.
 
-The European Commission provides a platform for online dispute resolution:
-https://ec.europa.eu/consumers/odr. We are neither obliged nor willing to take part in dispute
-resolution proceedings before a consumer arbitration board.
+We are neither obliged nor willing to take part in dispute resolution proceedings before a
+consumer arbitration board.

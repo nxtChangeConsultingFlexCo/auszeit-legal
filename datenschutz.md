@@ -5,7 +5,7 @@ permalink: /datenschutz/
 
 # Datenschutzerklärung für Auszeit
 
-Stand: 29. September 2026
+Stand: 1. Oktober 2026
 
 ## Kurz gesagt
 
@@ -43,8 +43,10 @@ deinem übrigen Gerät. Dafür gilt die Datenschutzerklärung von Apple.
 Auszeit nutzt die Bildschirmzeit-Schnittstelle von iOS, um Apps zu pausieren. Dafür brauchst du
 den Zugriff nur einmal in der App zu erlauben.
 
-Wichtig dabei: Welche Apps du auswählst, erfährt Auszeit nicht im Klartext. iOS gibt der App nur
-verschlüsselte Kennungen, die außerhalb deines Geräts wertlos sind. Die App sieht nicht, wie lange
+Wichtig dabei: Welche Apps du auswählst, speichert Auszeit nicht im Klartext. iOS gibt der App nur
+verschlüsselte Kennungen, die außerhalb deines Geräts wertlos sind. Nur der Schirm, den iOS statt
+einer pausierten App zeigt, erhält deren Namen, um ihn anzuzeigen; der Name wird weder gespeichert
+noch weitergegeben. Die App sieht nicht, wie lange
 oder wie oft du Apps nutzt, und wertet nichts davon aus. Sie verwendet die Bildschirmzeit
 ausschließlich, um die von dir gewählten Apps zu den von dir gewählten Zeiten anzuhalten, so wie
 es Apples Regeln für diese Schnittstelle verlangen.
@@ -75,6 +77,17 @@ unter iPhone-Einstellungen › Datenschutz & Sicherheit › Analyse & Verbesseru
 - keine Analyse-, Werbe- oder Tracking-Dienste,
 - keine Weitergabe von Daten an Dritte,
 - kein Zugriff auf Kontakte, Fotos, Standort, Mikrofon oder Kamera.
+
+## Diese Website
+
+Diese Erklärung und die übrigen Texte zu Auszeit liegen bei GitHub Pages, einem Dienst der GitHub,
+Inc. (USA). Beim Aufruf verarbeitet GitHub technisch nötige Daten wie deine IP-Adresse, um die Seite
+auszuliefern. Wir selbst setzen hier keine Cookies, keine Analyse und keine Skripte von Dritten ein.
+Für die Verarbeitung durch GitHub gilt dessen Datenschutzerklärung:
+https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement
+
+Rechtsgrundlage ist unser berechtigtes Interesse, diese Texte abrufbar zu halten (Art. 6 Abs. 1
+lit. f DSGVO).
 
 ## Kontakt und deine Rechte
 

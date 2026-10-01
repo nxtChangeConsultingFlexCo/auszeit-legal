@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy for Off Hours
 
-Last updated: 29 September 2026
+Last updated: 1 October 2026
 
 ## In short
 
@@ -43,8 +43,10 @@ of your device. Apple’s privacy policy applies to that.
 Off Hours uses the Screen Time interface of iOS to pause apps. You only need to allow this access
 once in the app.
 
-Importantly, Off Hours does not learn which apps you choose in plain text. iOS gives the app only
-encrypted identifiers that are useless outside your device. The app does not see how long or how
+Importantly, Off Hours does not store which apps you choose in plain text. iOS gives the app only
+encrypted identifiers that are useless outside your device. Only the shield that iOS shows in place
+of a paused app receives that app’s name, to display it; the name is neither stored nor passed on.
+The app does not see how long or how
 often you use apps, and it does not analyse any of that. It uses Screen Time solely to hold the
 apps you chose at the times you chose, as Apple’s rules for this interface require.
 
@@ -74,6 +76,16 @@ Security › Analytics & Improvements.
 - no analytics, advertising or tracking services,
 - no sharing of data with third parties,
 - no access to contacts, photos, location, microphone or camera.
+
+## This website
+
+This policy and the other texts about Off Hours are hosted on GitHub Pages, a service of GitHub,
+Inc. (USA). When you open a page, GitHub processes technically necessary data such as your IP
+address in order to deliver it. We ourselves use no cookies, no analytics and no third-party scripts
+here. GitHub’s privacy statement applies to GitHub’s processing:
+https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement
+
+The legal basis is our legitimate interest in keeping these texts available (Art. 6 (1) (f) GDPR).
 
 ## Contact and your rights
 
