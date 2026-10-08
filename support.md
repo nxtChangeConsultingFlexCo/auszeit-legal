@@ -8,7 +8,7 @@ permalink: /support/
 [English below](#support-for-off-hours)
 
 Fragen, Fehler oder Wünsche zur iPhone-App Auszeit: schreib an
-**karl.maier@nxtchange-consulting.com**. Wir antworten in der Regel innerhalb weniger Werktage.
+**apps@nxtchange-consulting.com**. Wir antworten in der Regel innerhalb weniger Werktage.
 
 Hilfreich sind dabei: dein iPhone-Modell, die iOS-Version, was du getan hast und was stattdessen
 passiert ist.
@@ -50,7 +50,7 @@ Mit der App verschwinden alle Auszeiten. Es gibt kein Konto, das gelöscht werde
 
 nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz · Österreich
 Firmenbuchnummer FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038
-Ansprechpartner: Karl Maier · karl.maier@nxtchange-consulting.com
+Ansprechpartner: Karl Maier · apps@nxtchange-consulting.com
 
 Nutzungsbedingungen: https://nxtchangeconsultingflexco.github.io/auszeit-legal/nutzungsbedingungen/
 Datenschutz: https://nxtchangeconsultingflexco.github.io/auszeit-legal/datenschutz/
@@ -60,7 +60,7 @@ Datenschutz: https://nxtchangeconsultingflexco.github.io/auszeit-legal/datenschu
 # Support for Off Hours
 
 Questions, bugs or ideas about the iPhone app Off Hours (German: Auszeit): write to
-**karl.maier@nxtchange-consulting.com**. We usually reply within a few working days.
+**apps@nxtchange-consulting.com**. We usually reply within a few working days.
 
 It helps to include your iPhone model, the iOS version, what you did and what happened instead.
 
@@ -98,7 +98,7 @@ All schedules go with the app. There is no account to delete.
 
 nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz · Austria
 Company register FN 648962g, Regional Court for Civil Matters Graz · VAT ID ATU81922038
-Contact: Karl Maier · karl.maier@nxtchange-consulting.com
+Contact: Karl Maier · apps@nxtchange-consulting.com
 
 Terms of Use: https://nxtchangeconsultingflexco.github.io/auszeit-legal/terms/
 Privacy Policy: https://nxtchangeconsultingflexco.github.io/auszeit-legal/privacy/

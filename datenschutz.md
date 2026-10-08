@@ -5,7 +5,7 @@ permalink: /datenschutz/
 
 # Datenschutzerklärung für Auszeit
 
-Stand: 1. Oktober 2026
+Stand: 8. Oktober 2026
 
 ## Kurz gesagt
 
@@ -21,7 +21,7 @@ Neugasse 9/1
 Firmenbuchnummer: FN 648962g, Landesgericht für ZRS Graz
 UID: ATU81922038
 Ansprechpartner: Karl Maier
-karl.maier@nxtchange-consulting.com
+apps@nxtchange-consulting.com
 
 ## Welche Daten die App speichert
 

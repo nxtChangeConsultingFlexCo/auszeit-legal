@@ -5,7 +5,7 @@ permalink: /terms/
 
 # Terms of Use for Off Hours
 
-Last updated: 1 October 2026
+Last updated: 8 October 2026
 
 ## 1. Who we are
 
@@ -17,7 +17,7 @@ Neugasse 9/1
 Company register: FN 648962g, Regional Court for Civil Matters Graz
 VAT ID: ATU81922038
 Contact: Karl Maier
-karl.maier@nxtchange-consulting.com
+apps@nxtchange-consulting.com
 
 (“we”). Questions about the app go to the e-mail address above.
 

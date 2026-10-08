@@ -5,7 +5,7 @@ permalink: /nutzungsbedingungen/
 
 # Nutzungsbedingungen für Auszeit
 
-Stand: 1. Oktober 2026
+Stand: 8. Oktober 2026
 
 ## 1. Wer wir sind
 
@@ -17,7 +17,7 @@ Neugasse 9/1
 Firmenbuchnummer: FN 648962g, Landesgericht für ZRS Graz
 UID: ATU81922038
 Ansprechpartner: Karl Maier
-karl.maier@nxtchange-consulting.com
+apps@nxtchange-consulting.com
 
 (im Folgenden „wir“). Fragen zur App beantworten wir unter der genannten E-Mail-Adresse.
 
