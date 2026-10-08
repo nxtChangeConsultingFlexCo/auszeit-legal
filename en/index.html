@@ -16,7 +16,7 @@
   <link rel="alternate" hreflang="de" href="../">
   <link rel="alternate" hreflang="en" href="../en/">
   <style>
-:root{--bg:#121214;--bg2:#1b1b1e;--fg:#f1efe9;--muted:#a9a7a0;--gold:#c8b48a;--line:#2b2b2f;--maxw:1040px}
+:root{--bg:#121214;--bg2:#1b1b1e;--fg:#f1efe9;--muted:#a9a7a0;--gold:#c8b48a;--line:#2b2b2f;--maxw:1040px;color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
@@ -57,7 +57,8 @@ footer address{font-style:normal;margin:16px 0 0;line-height:1.5}
 footer .note{margin-top:16px}
 @media (max-width:720px){.shots{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}header.top nav a{margin-left:12px}}
 @media (max-width:480px){.shots{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
-@media (prefers-color-scheme:light){:root{--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6}}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6;color-scheme:light}}
+:root[data-theme="light"]{--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6;color-scheme:light}
 </style>
 </head>
 <body>
