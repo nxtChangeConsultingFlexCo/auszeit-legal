@@ -52,8 +52,8 @@ nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz · Österreich
 Firmenbuchnummer FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038
 Ansprechpartner: Karl Maier · apps@nxtchange-consulting.com
 
-Nutzungsbedingungen: https://nxtchangeconsultingflexco.github.io/auszeit-legal/nutzungsbedingungen/
-Datenschutz: https://nxtchangeconsultingflexco.github.io/auszeit-legal/datenschutz/
+Nutzungsbedingungen: https://auszeit.nxtchange.app/nutzungsbedingungen/
+Datenschutz: https://auszeit.nxtchange.app/datenschutz/
 
 ---
 
@@ -100,5 +100,5 @@ nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz · Austria
 Company register FN 648962g, Regional Court for Civil Matters Graz · VAT ID ATU81922038
 Contact: Karl Maier · apps@nxtchange-consulting.com
 
-Terms of Use: https://nxtchangeconsultingflexco.github.io/auszeit-legal/terms/
-Privacy Policy: https://nxtchangeconsultingflexco.github.io/auszeit-legal/privacy/
+Terms of Use: https://auszeit.nxtchange.app/terms/
+Privacy Policy: https://auszeit.nxtchange.app/privacy/
