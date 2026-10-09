@@ -7,41 +7,52 @@ permalink: /support/
 
 [English below](#support-for-off-hours)
 
-Fragen, Fehler oder Wünsche zur iPhone-App Auszeit: schreib an
+Fragen, Fehler oder Wünsche zur App Auszeit für iPhone und Android: schreib an
 **apps@nxtchange-consulting.com**. Wir antworten in der Regel innerhalb weniger Werktage.
 
-Hilfreich sind dabei: dein iPhone-Modell, die iOS-Version, was du getan hast und was stattdessen
-passiert ist.
+Hilfreich sind dabei: dein Gerät und die Version von iOS oder Android, was du getan hast und was
+stattdessen passiert ist.
 
 ## Häufige Fragen
 
-**Die Auszeit greift nicht.**
+**Die Auszeit greift nicht (iPhone).**
 Prüfe, ob der Bildschirmzeit-Zugriff erlaubt ist: iPhone-Einstellungen › Bildschirmzeit › Apps mit
 Zugriff auf Bildschirmzeit. Ist die Auszeit in der Liste eingeschaltet, und sind Apps gewählt? Liegen
 Beginn und Ende mindestens 15 Minuten auseinander? iOS schaltet auf die Minute genau, nicht auf die
 Sekunde.
 
-**Nach „Ausnahme machen“ bleibt der Schirm stehen.**
+**Die Auszeit greift nicht (Android).**
+Prüfe, ob die Bedienungshilfe eingeschaltet ist: Android-Einstellungen › Bedienungshilfen › Auszeit.
+Die Liste in der App zeigt eine Karte, solange sie fehlt. Greift die Auszeit nach Stunden nicht mehr,
+hat das Gerät den Dienst zum Akkusparen beendet: App-Info von Auszeit › Akku › „Nicht eingeschränkt“;
+bei Samsung zusätzlich Einstellungen › Akku › Hintergrundnutzungslimits › „Apps, die nie in den
+Ruhezustand versetzt werden“; bei Xiaomi Autostart erlauben und Akkusparen auf „Keine Einschränkungen“.
+Hast du die App nicht aus Google Play installiert, sperrt Android die Bedienungshilfe-Einstellung,
+bis du in der App-Info „Eingeschränkte Einstellungen zulassen“ wählst.
+
+**Nach „Ausnahme machen“ bleibt der Schirm stehen (iPhone).**
 Das ist ein bekanntes Verhalten von iOS. Tippe noch einmal auf „Ausnahme machen“, dann prüft iOS
 neu und die App öffnet sich.
 
-**Der Countdown läuft nicht von selbst.**
+**Der Countdown läuft nicht von selbst (iPhone).**
 iOS erlaubt auf dem Schirm keinen laufenden Zähler. Tippe auf „Restzeit nachsehen“, dann zeigt der
-Schirm die verbleibenden Sekunden.
+Schirm die verbleibenden Sekunden. Auf Android läuft der Zähler von selbst.
 
 **Ohne Plus greift nur eine Auszeit.**
 Gratis gilt die erste Auszeit mit bis zu zwei Apps. Weitere Einträge bleiben gespeichert, greifen
 aber erst mit Auszeit Plus.
 
 **Abo kündigen oder wiederherstellen.**
-Kündigen: iPhone-Einstellungen › Apple-Account › Abos. Auf einem neuen iPhone erkennt Auszeit dein
-Abo beim Start von selbst. Falls nicht: eine Auszeit öffnen (oder mit „+“ anlegen) und neben
-„Beginn“ auf „Jetzt“ tippen. Es erscheint „Auszeit Plus“, dort steht „Kauf wiederherstellen“. Erstattungen regelt Apple:
-https://reportaproblem.apple.com
+Kündigen: iPhone-Einstellungen › Apple-Account › Abos, auf Android in der Play-Store-App unter Profil ›
+Zahlungen und Abos › Abos. Auf einem neuen Gerät erkennt Auszeit dein Abo beim Start von selbst. Falls
+nicht: eine Auszeit öffnen (oder mit „+“ anlegen) und neben „Beginn“ auf „Jetzt“ tippen. Es erscheint
+„Auszeit Plus“, dort steht „Kauf wiederherstellen“. Ein Abo gilt nur für die Plattform, auf der du es
+gekauft hast. Erstattungen regelt Apple (https://reportaproblem.apple.com) beziehungsweise Google
+(https://support.google.com/googleplay).
 
 **Webseiten und Mitteilungen.**
 Auszeit pausiert Apps, keine Webseiten. Ob Mitteilungen einer pausierten App erscheinen, entscheidet
-iOS.
+das System.
 
 **App löschen.**
 Mit der App verschwinden alle Auszeiten. Es gibt kein Konto, das gelöscht werden müsste.
@@ -59,37 +70,47 @@ Datenschutz: https://auszeit.nxtchange.app/datenschutz/
 
 # Support for Off Hours
 
-Questions, bugs or ideas about the iPhone app Off Hours (German: Auszeit): write to
+Questions, bugs or ideas about the app Off Hours (German: Auszeit) for iPhone and Android: write to
 **apps@nxtchange-consulting.com**. We usually reply within a few working days.
 
-It helps to include your iPhone model, the iOS version, what you did and what happened instead.
+It helps to include your device and the version of iOS or Android, what you did and what happened instead.
 
 ## Frequently asked questions
 
-**The schedule does not take effect.**
+**The schedule does not take effect (iPhone).**
 Check that Screen Time access is allowed: iPhone Settings › Screen Time › Apps with Screen Time
 Access. Is the schedule switched on in the list, and have you chosen apps? Are start and end at
 least 15 minutes apart? iOS switches to the minute, not to the second.
 
-**The shield stays after "Make an exception".**
+**The schedule does not take effect (Android).**
+Check that the accessibility service is on: Android Settings › Accessibility › Off Hours. The list in
+the app shows a card as long as it is missing. If schedules stop working after a few hours, the phone
+has stopped the service to save battery: Off Hours app info › Battery › "Unrestricted"; on Samsung
+also Settings › Battery › Background usage limits › "Never sleeping apps"; on Xiaomi allow autostart
+and set battery saver to "No restrictions". If you did not install the app from Google Play, Android
+blocks the accessibility setting until you choose "Allow restricted settings" in the app info.
+
+**The shield stays after "Make an exception" (iPhone).**
 This is known iOS behaviour. Tap "Make an exception" once more; iOS then re-checks and the app opens.
 
-**The countdown does not run by itself.**
+**The countdown does not run by itself (iPhone).**
 iOS does not allow a running timer on the shield. Tap "Check time left" and the shield shows the
-remaining seconds.
+remaining seconds. On Android the countdown runs by itself.
 
 **Without Plus only one schedule applies.**
 The free tier covers the first schedule with up to two apps. Further entries stay saved but take
 effect only with Off Hours Plus.
 
 **Cancel or restore the subscription.**
-Cancel: iPhone Settings › Apple Account › Subscriptions. On a new iPhone, Off Hours recognises your
-subscription by itself at launch. If it does not: open a schedule (or add one with "+") and tap
-"Now" next to "Start". "Off Hours Plus" appears, with "Restore purchase" on it. Refunds are handled by Apple:
-https://reportaproblem.apple.com
+Cancel: iPhone Settings › Apple Account › Subscriptions; on Android in the Play Store app under Profile
+› Payments & subscriptions › Subscriptions. On a new device, Off Hours recognises your subscription by
+itself at launch. If it does not: open a schedule (or add one with "+") and tap "Now" next to "Start".
+"Off Hours Plus" appears, with "Restore purchase" on it. A subscription applies only to the platform
+you bought it on. Refunds are handled by Apple (https://reportaproblem.apple.com) or Google
+(https://support.google.com/googleplay).
 
 **Websites and notifications.**
-Off Hours pauses apps, not websites. Whether notifications from a paused app appear is up to iOS.
+Off Hours pauses apps, not websites. Whether notifications from a paused app appear is up to the system.
 
 **Deleting the app.**
 All schedules go with the app. There is no account to delete.

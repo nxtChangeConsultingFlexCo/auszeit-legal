@@ -5,13 +5,15 @@ permalink: /privacy/
 
 # Privacy Policy for Off Hours
 
-Last updated: 8 October 2026
+Last updated: 9 October 2026
 
 ## In short
 
 Off Hours has no account, no server and no analytics. Everything you set up in the app stays on
-your iPhone. We receive no data from you. The only outside connection is the App Store, for buying
-Off Hours Plus, and that runs through Apple.
+your device. We receive no data from you. The only outside connection is the store, for buying
+Off Hours Plus: the App Store through Apple on iPhone, Google Play through Google on Android.
+
+This policy covers the iPhone app and the Android app. Where they differ, it says so.
 
 ## Controller
 
@@ -25,20 +27,25 @@ apps@nxtchange-consulting.com
 
 ## What the app stores
 
-The app stores on your iPhone:
+The app stores on your device:
 
 - your Off Hours schedules: name, start, end, weekdays, on or off,
-- the selection of apps that should pause,
+- the selection of apps that should pause (as package names on Android, as encrypted identifiers
+  on iPhone, see below),
 - when a running cooling-off started and until when an app stays open after “Make an exception”,
-- whether Off Hours Plus is active.
+- whether Off Hours Plus is active,
+- how often you chose “Take a break” on the shield and when the app last asked for a rating. From
+  this it decides whether to ask you for a rating in the App Store or on Google Play through the
+  system dialog.
 
 This data lives only in the app’s protected storage on your device. It is not sent to us or to
 anyone else. If you delete the app, it is gone.
 
-If iCloud Backup is turned on on your iPhone, Apple backs up the app’s data together with the rest
-of your device. Apple’s privacy policy applies to that.
+If iCloud Backup is turned on on your iPhone, or Google backup on your Android device, Apple or
+Google backs up the app’s data together with the rest of your device. Apple’s or Google’s privacy
+policy applies to that.
 
-## Screen Time (Family Controls)
+## Screen Time (Family Controls, iPhone only)
 
 Off Hours uses the Screen Time interface of iOS to pause apps. You only need to allow this access
 once in the app.
@@ -53,12 +60,32 @@ apps you chose at the times you chose, as Apple’s rules for this interface req
 You can revoke the access at any time: iPhone Settings › Screen Time › Apps with Screen Time
 Access. After that, no Off Hours schedule takes effect.
 
+## Accessibility service (Android only)
+
+Android has no Screen Time interface for other apps. Off Hours therefore uses Android’s
+accessibility service, which you turn on once in the settings. Through it the app learns when another
+app comes to the front, and only that app’s technical name (package name). If that app is on your
+list and a schedule is active, Off Hours shows the cooling-off over it.
+
+The service is configured so that it cannot read screen content. Off Hours does not see what you do
+in other apps, reads no text, no input and no notifications, and does not store when or for how long
+you use which app. It processes only the package name of the window currently in front, only on your
+device, and only at the moment it is in front. The accessibility service is used solely to hold the
+apps you chose at the times you chose; we use it for nothing else and pass nothing on. This follows
+Google Play’s rules for this interface.
+
+Before the app sends you to the settings to turn it on, it explains exactly this in a dialog. You can
+turn the service off at any time: Android Settings › Accessibility › Off Hours. After that, no Off
+Hours schedule takes effect.
+
 ## Purchases (Off Hours Plus)
 
-You buy Off Hours Plus through the App Store. Apple handles the payment. We receive no payment
-details, no address and no name. The app only asks Apple whether a valid subscription belongs to
-your Apple Account and remembers the answer on your device. Apple’s privacy policy applies to
-Apple’s processing: https://www.apple.com/legal/privacy/
+You buy Off Hours Plus through the App Store (iPhone) or Google Play (Android). Apple or Google
+handles the payment. We receive no payment details, no address and no name. The app only asks the
+respective store whether a valid subscription belongs to your Apple Account or Google account and
+remembers the answer on your device. Apple’s privacy policy applies to Apple’s processing:
+https://www.apple.com/legal/privacy/ Google’s privacy policy applies to Google’s processing:
+https://policies.google.com/privacy
 
 The legal basis is the performance of the contract with you (Art. 6 (1) (b) GDPR).
 
@@ -69,13 +96,20 @@ anonymised crash reports of the app on to us. They contain technical details abo
 the device, but nothing about your schedules. You control this under iPhone Settings › Privacy &
 Security › Analytics & Improvements.
 
+The same applies to Google on Android: if you have allowed sharing usage and diagnostics data in the
+Google settings, Google Play shows us anonymised crash and error reports of the app. They too contain
+nothing about your schedules. The setting is under Android Settings › Google › All services › Usage
+& diagnostics.
+
 ## What the app does not do
 
 - no user account, no registration,
 - no transfer to our own servers — there are none,
 - no analytics, advertising or tracking services,
 - no sharing of data with third parties,
-- no access to contacts, photos, location, microphone or camera.
+- no access to contacts, photos, location, microphone or camera,
+- on Android: no reading of screen content through the accessibility service, no internet connection
+  other than to Google Play.
 
 ## This website
 
