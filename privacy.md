@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Privacy Policy for Off Hours
 
-Last updated: 9 October 2026
+Last updated: 13 October 2026
 
 ## In short
 
@@ -73,6 +73,11 @@ you use which app. It processes only the package name of the window currently in
 device, and only at the moment it is in front. The accessibility service is used solely to hold the
 apps you chose at the times you chose; we use it for nothing else and pass nothing on. This follows
 Google Play’s rules for this interface.
+
+Android also notifies the accessibility service when you tap an element. Off Hours evaluates only taps on
+app icons on the home screen, so that the cooling-off appears as you tap and not only once the app has
+built its window. Taps in all other apps are discarded immediately without looking at their content;
+nothing is stored or passed on.
 
 Before the app sends you to the settings to turn it on, it explains exactly this in a dialog. You can
 turn the service off at any time: Android Settings › Accessibility › Off Hours. After that, no Off
