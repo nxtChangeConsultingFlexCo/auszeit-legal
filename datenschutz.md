@@ -79,8 +79,8 @@ anzuhalten; wir nutzen sie für nichts anderes und geben nichts weiter. Das ents
 Google Play für diese Schnittstelle.
 
 Zusätzlich meldet Android der Bedienungshilfe, wenn du ein Element antippst. Auszeit wertet davon nur Tipper
-auf App-Symbole des Startbildschirms aus, um die Bedenkzeit schon beim Antippen zu zeigen und nicht erst,
-wenn die App ihr Fenster aufgebaut hat. Tipper in allen anderen Apps verwirft Auszeit sofort, ohne ihren
+auf App-Symbole des Startbildschirms und der App-Suche des Systems aus, um die Bedenkzeit schon beim Antippen
+zu zeigen und nicht erst, wenn die App ihr Fenster aufgebaut hat. Tipper in allen anderen Apps verwirft Auszeit sofort, ohne ihren
 Inhalt anzusehen; nichts davon wird gespeichert oder weitergegeben.
 
 Bevor die App dich zum Einschalten in die Einstellungen führt, erklärt sie dir genau das in einem

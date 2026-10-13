@@ -75,8 +75,8 @@ apps you chose at the times you chose; we use it for nothing else and pass nothi
 Google Play’s rules for this interface.
 
 Android also notifies the accessibility service when you tap an element. Off Hours evaluates only taps on
-app icons on the home screen, so that the cooling-off appears as you tap and not only once the app has
-built its window. Taps in all other apps are discarded immediately without looking at their content;
+app icons on the home screen and in the system app search, so that the cooling-off appears as you tap and
+not only once the app has built its window. Taps in all other apps are discarded immediately without looking at their content;
 nothing is stored or passed on.
 
 Before the app sends you to the settings to turn it on, it explains exactly this in a dialog. You can
