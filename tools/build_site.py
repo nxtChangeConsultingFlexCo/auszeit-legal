@@ -66,7 +66,7 @@ TEXT = {
                         ("Länder", "38 europäische Länder, Deutsch und Englisch"),
                         ("Preis", "Gratis; Auszeit Plus als Jahres- oder Monatsabo, Preise in der App"),
                         ("Anbieter", "nxtChange Consulting FlexCo, Graz")],
-        "footer_links": [("support/", "Support"), ("datenschutz/", "Datenschutz"), ("nutzungsbedingungen/", "Nutzungsbedingungen")],
+        "footer_links": [("support/", "Support"), ("datenschutz/", "Datenschutz"), ("nutzungsbedingungen/", "Nutzungsbedingungen"), ("https://nxtchange.app/", "Alle Apps")],
         "provider_h": "Anbieter",
         "footnote": "Apple, iPhone und App Store sind Marken der Apple Inc.",
     },
@@ -115,7 +115,7 @@ TEXT = {
                         ("Countries", "38 European countries, English and German"),
                         ("Price", "Free; Off Hours Plus as a yearly or monthly subscription, prices shown in the app"),
                         ("Developer", "nxtChange Consulting FlexCo, Graz, Austria")],
-        "footer_links": [("support/#support-for-off-hours", "Support"), ("privacy/", "Privacy Policy"), ("terms/", "Terms of Use")],
+        "footer_links": [("support/#support-for-off-hours", "Support"), ("privacy/", "Privacy Policy"), ("terms/", "Terms of Use"), ("https://nxtchange.app/", "All apps")],
         "provider_h": "Provider",
         "footnote": "Apple, iPhone and App Store are trademarks of Apple Inc.",
     },
@@ -190,7 +190,9 @@ def page(t: dict) -> str:
     facts = "\n".join(f"        <dt>{e(k)}</dt><dd>{e(v)}</dd>" for k, v in t["press_facts"])
     files = "\n".join(f'        <li><a href="{root}assets/{e(href)}" download>{e(label)}</a></li>'
                       for href, label in t["press_files"])
-    links = "\n".join(f'        <a href="{root}{e(href)}">{e(label)}</a>' for href, label in t["footer_links"])
+    def url(href: str) -> str:
+        return e(href) if href.startswith("https://") else root + e(href)
+    links = "\n".join(f'        <a href="{url(href)}">{e(label)}</a>' for href, label in t["footer_links"])
     claim = e(t["claim"])
     return f"""<!DOCTYPE html>
 <html lang="{t['lang']}">
