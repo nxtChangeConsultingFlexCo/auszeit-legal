@@ -1,11 +1,17 @@
 ---
 title: Privacy Policy
 permalink: /privacy/
+lang: en
+locale: en_GB
+description: "Privacy policy for Off Hours on iPhone and Android: no account, no server, no analytics. What the app stores, Screen Time, the accessibility service, purchases and this website."
+image: /assets/img/og-en.png
+alternate_de: /datenschutz/
+alternate_en: /privacy/
 ---
 
 # Privacy Policy for Off Hours
 
-Last updated: 13 October 2026
+Last updated: 28 October 2026
 
 ## In short
 
@@ -125,6 +131,21 @@ here. GitHub’s privacy statement applies to GitHub’s processing:
 https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement
 
 The legal basis is our legitimate interest in keeping these texts available (Art. 6 (1) (f) GDPR).
+
+### Videos
+
+The app preview on the home page is hosted on GitHub Pages as well and loads only when you start it.
+No other service is involved.
+
+YouTube videos are first shown only as a preview image served by this website. Only when you click
+such a video does your browser load the YouTube player, a service of Google Ireland Limited, Gordon
+House, Barrow Street, Dublin 4, Ireland. YouTube then processes data such as your IP address and
+details about your browser and device; data may also be transferred to Google LLC in the USA. We
+embed YouTube in privacy-enhanced mode (youtube-nocookie.com). Google’s privacy policy applies to
+YouTube’s processing: https://policies.google.com/privacy
+
+The legal basis is your consent, which you give by clicking the video (Art. 6 (1) (a) GDPR). Without
+a click, no data goes to YouTube.
 
 ## Contact and your rights
 

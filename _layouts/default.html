@@ -1,24 +1,106 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{%- comment -%}
+  Layout der Markdown-Seiten (Rechtstexte, Support). Kopf- und Fußzeile wie die Startseite aus tools/build_site.py,
+  Gestaltung aus /assets/css/site.css. Front Matter je Seite: title, permalink, lang (de/en), locale (de_AT/en_GB),
+  description, image (Teaserbild), alternate_de/alternate_en (Gegenstück in der anderen Sprache, ergibt hreflang),
+  lang_switch (Ziel des Sprachwechsels, wenn es kein Gegenstück gibt, etwa ein Anker).
+{%- endcomment -%}
+{%- assign lang = page.lang | default: site.lang | default: "de" -%}
+{%- if lang == "en" -%}
+  {%- assign other = page.alternate_de | default: page.lang_switch | default: "/" -%}
+{%- else -%}
+  {%- assign other = page.alternate_en | default: page.lang_switch | default: "/en/" -%}
+{%- endif -%}
+{%- assign other_first = other | slice: 0 -%}
+{%- if other_first == "#" -%}
+  {%- assign other_href = other -%}
+{%- else -%}
+  {%- assign other_href = other | relative_url -%}
+{%- endif %}
+<html lang="{{ lang }}">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+{%- if page.alternate_de and page.alternate_en %}
+    <link rel="alternate" hreflang="de" href="{{ page.alternate_de | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ page.alternate_de | absolute_url }}">
+{%- endif %}
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#FAF3E6" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#101424" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="{{ "/assets/img/icon-64.png" | relative_url }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ "/assets/img/icon-180.png" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/site.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      {% if site.title and site.title != page.title %}
-      <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
-      {% endif %}
+{%- if lang == "en" %}
+    <a class="skip" href="#inhalt">Skip to content</a>
+    <header class="band page-band">
+      <div class="wrap top">
+        <a class="brand" href="{{ "/en/" | relative_url }}"><img src="{{ "/assets/img/icon-180.png" | relative_url }}" alt="" width="36" height="36"><span>Off Hours</span></a>
+        <nav aria-label="Main navigation">
+          <a href="{{ "/en/#press" | relative_url }}" class="wide">Press</a>
+          <a href="{{ "/support/#support-for-off-hours" | relative_url }}">Support</a>
+          <a href="{{ "/privacy/" | relative_url }}">Privacy</a>
+          <a href="{{ other_href }}" lang="de" hreflang="de">Deutsch</a>
+        </nav>
+      </div>
+    </header>
+{%- else %}
+    <a class="skip" href="#inhalt">Zum Inhalt</a>
+    <header class="band page-band">
+      <div class="wrap top">
+        <a class="brand" href="{{ "/" | relative_url }}"><img src="{{ "/assets/img/icon-180.png" | relative_url }}" alt="" width="36" height="36"><span>Auszeit</span></a>
+        <nav aria-label="Hauptnavigation">
+          <a href="{{ "/#presse" | relative_url }}" class="wide">Presse</a>
+          <a href="{{ "/support/" | relative_url }}">Support</a>
+          <a href="{{ "/datenschutz/" | relative_url }}">Datenschutz</a>
+          <a href="{{ other_href }}" lang="en" hreflang="en">English</a>
+        </nav>
+      </div>
+    </header>
+{%- endif %}
 
-      {{ content }}
+    <main class="wrap prose" id="inhalt">
+{{ content }}
+    </main>
 
-      <footer class="mt-5 pt-3 border-top f6 text-gray color-fg-muted">
-        <a href="{{ "/" | absolute_url }}">{{ site.title }}</a> · <a href="https://nxtchange.app/">nxtChange Apps</a>
-      </footer>
-    </div>
+    <footer class="site-footer">
+      <div class="wrap">
+{%- if lang == "en" %}
+        <div class="foot-top">
+          <a class="brand" href="{{ "/en/" | relative_url }}"><img src="{{ "/assets/img/icon-180.png" | relative_url }}" alt="" width="36" height="36"><span>Off Hours</span></a>
+          <nav class="foot-links" aria-label="Support, Privacy Policy">
+            <a href="{{ "/support/#support-for-off-hours" | relative_url }}">Support</a>
+            <a href="{{ "/privacy/" | relative_url }}">Privacy Policy</a>
+            <a href="{{ "/terms/" | relative_url }}">Terms of Use</a>
+            <a href="https://nxtchange.app/">All apps</a>
+          </nav>
+        </div>
+        <address>
+          <strong>Provider:</strong> nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz, Austria<br>
+          FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038 · <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a>
+        </address>
+        <p class="note">Apple, iPhone and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+{%- else %}
+        <div class="foot-top">
+          <a class="brand" href="{{ "/" | relative_url }}"><img src="{{ "/assets/img/icon-180.png" | relative_url }}" alt="" width="36" height="36"><span>Auszeit</span></a>
+          <nav class="foot-links" aria-label="Support, Datenschutz">
+            <a href="{{ "/support/" | relative_url }}">Support</a>
+            <a href="{{ "/datenschutz/" | relative_url }}">Datenschutz</a>
+            <a href="{{ "/nutzungsbedingungen/" | relative_url }}">Nutzungsbedingungen</a>
+            <a href="https://nxtchange.app/">Alle Apps</a>
+          </nav>
+        </div>
+        <address>
+          <strong>Anbieter:</strong> nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz, Österreich<br>
+          FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038 · <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a>
+        </address>
+        <p class="note">Apple, iPhone und App Store sind Marken der Apple Inc. Google Play und das Google Play-Logo sind Marken von Google LLC.</p>
+{%- endif %}
+      </div>
+    </footer>
   </body>
 </html>

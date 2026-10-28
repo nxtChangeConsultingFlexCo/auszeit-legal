@@ -3,150 +3,527 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Off Hours: App Blocker &amp; Focus</title>
-  <meta name="description" content="Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. No account, no data. An iPhone app from Graz, Austria.">
+  <title>Off Hours: App Blocker &amp; Focus · for iPhone and Android</title>
+  <meta name="description" content="Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. For iPhone and Android, no account, no data. An app from Graz, Austria.">
+  <link rel="canonical" href="https://auszeit.nxtchange.app/en/">
+  <link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/">
+  <link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/">
   <meta name="apple-itunes-app" content="app-id=6817406940">
-  <meta property="og:title" content="Off Hours: App Blocker &amp; Focus">
-  <meta property="og:description" content="Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. No account, no data. An iPhone app from Graz, Austria.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="../assets/press/auszeit-icon-1024.png">
-  <meta name="color-scheme" content="dark light">
+  <meta property="og:site_name" content="Off Hours">
+  <meta property="og:title" content="Off Hours: App Blocker &amp; Focus · for iPhone and Android">
+  <meta property="og:description" content="Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. For iPhone and Android, no account, no data. An app from Graz, Austria.">
+  <meta property="og:url" content="https://auszeit.nxtchange.app/en/">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="de_AT">
+  <meta property="og:image" content="https://auszeit.nxtchange.app/assets/img/og-en.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Off Hours, app blocker for iPhone and Android: Put the phone down in the evening, without a fight with your willpower.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FAF3E6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101424" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="../assets/img/icon-64.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/img/icon-180.png">
-  <link rel="alternate" hreflang="de" href="../">
-  <link rel="alternate" hreflang="en" href="../en/">
-  <style>
-:root{--bg:#121214;--bg2:#1b1b1e;--fg:#f1efe9;--muted:#a9a7a0;--gold:#c8b48a;--line:#2b2b2f;--maxw:1040px;color-scheme:dark}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-a{color:var(--gold)}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
-header.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
-header.top .brand{display:flex;align-items:center;gap:12px;color:var(--fg);text-decoration:none;font-weight:600}
-header.top .brand img{width:40px;height:40px;border-radius:10px}
-header.top nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:15px}
-header.top nav a:hover{color:var(--fg)}
-.hero{padding:40px 0 24px}
-.kicker{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:600}
-h1{font-family:"New York","Iowan Old Style",Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(34px,6vw,56px);line-height:1.08;margin:10px 0 18px;letter-spacing:-.01em}
-h1 em{font-style:normal;color:var(--gold)}
-.lead{font-size:19px;color:var(--muted);max-width:640px;margin:0 0 26px}
-.store{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.store img{height:54px;width:auto;display:block}
-.store p{margin:0;color:var(--muted);font-size:15px;max-width:420px}
-.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:30px 0}
-.shots img{width:100%;height:auto;display:block;border-radius:22px;border:1px solid var(--line)}
-section{padding:30px 0;border-top:1px solid var(--line)}
-h2{font-family:"New York","Iowan Old Style",Georgia,"Times New Roman",serif;font-weight:600;font-size:30px;margin:0 0 14px;letter-spacing:-.01em}
-h3{font-size:17px;margin:22px 0 8px}
-section p{max-width:680px;margin:0 0 12px}
-ul.how{list-style:none;padding:0;margin:0;max-width:680px}
-ul.how li{padding:10px 0 10px 28px;position:relative;border-bottom:1px solid var(--line)}
-ul.how li::before{content:"";position:absolute;left:0;top:19px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0;max-width:680px}
-dl.facts dt{color:var(--muted)}
-dl.facts dd{margin:0}
-ul.files{padding-left:20px;margin:0}
-ul.files li{margin:4px 0}
-footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
-footer .links a{margin-right:18px;color:var(--fg);text-decoration:none}
-footer .links a:hover{text-decoration:underline}
-footer address{font-style:normal;margin:16px 0 0;line-height:1.5}
-footer .note{margin-top:16px}
-@media (max-width:720px){.shots{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}header.top nav a{margin-left:12px}}
-@media (max-width:480px){.shots{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6;color-scheme:light}}
-:root[data-theme="light"]{--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6;color-scheme:light}
-</style>
+  <link rel="stylesheet" href="../assets/css/site.css?v=9f7584466e">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://auszeit.nxtchange.app/#organisation",
+   "name": "nxtChange Consulting FlexCo",
+   "url": "https://nxtchange.app/",
+   "email": "apps@nxtchange-consulting.com",
+   "vatID": "ATU81922038",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Neugasse 9/1",
+    "postalCode": "8045",
+    "addressLocality": "Graz",
+    "addressCountry": "AT"
+   }
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://auszeit.nxtchange.app/en/#app-ios",
+   "name": "Off Hours: App Blocker & Focus",
+   "operatingSystem": "iOS 17 or later",
+   "installUrl": "https://apps.apple.com/gb/app/id6817406940",
+   "screenshot": [
+    "https://auszeit.nxtchange.app/assets/img/en/1-shield.png",
+    "https://auszeit.nxtchange.app/assets/img/en/2-list.png",
+    "https://auszeit.nxtchange.app/assets/img/en/3-decision.png",
+    "https://auszeit.nxtchange.app/assets/img/en/4-editor.png",
+    "https://auszeit.nxtchange.app/assets/img/en/5-apps.png",
+    "https://auszeit.nxtchange.app/assets/img/en/6-private.png"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Productivity",
+   "description": "Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. For iPhone and Android, no account, no data. An app from Graz, Austria.",
+   "inLanguage": [
+    "de",
+    "en"
+   ],
+   "image": "https://auszeit.nxtchange.app/assets/press/auszeit-icon-1024.png",
+   "url": "https://auszeit.nxtchange.app/en/",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@id": "https://auszeit.nxtchange.app/#organisation"
+   }
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://auszeit.nxtchange.app/en/#app-android",
+   "name": "Off Hours: App Blocker & Focus",
+   "operatingSystem": "Android 8.0 or later",
+   "installUrl": "https://play.google.com/store/apps/details?id=at.nxtchange.auszeit",
+   "screenshot": [
+    "https://auszeit.nxtchange.app/assets/press/en-android-01-shield.png",
+    "https://auszeit.nxtchange.app/assets/press/en-android-02-decision.png",
+    "https://auszeit.nxtchange.app/assets/press/en-android-03-list.png",
+    "https://auszeit.nxtchange.app/assets/press/en-android-04-editor.png",
+    "https://auszeit.nxtchange.app/assets/press/en-android-05-apps.png"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Productivity",
+   "description": "Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. For iPhone and Android, no account, no data. An app from Graz, Austria.",
+   "inLanguage": [
+    "de",
+    "en"
+   ],
+   "image": "https://auszeit.nxtchange.app/assets/press/auszeit-icon-1024.png",
+   "url": "https://auszeit.nxtchange.app/en/",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@id": "https://auszeit.nxtchange.app/#organisation"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://auszeit.nxtchange.app/en/#faq",
+   "inLanguage": "en",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is Off Hours the same as Downtime in Apple's Screen Time?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Apple's Downtime blocks apps during set hours. Off Hours builds on Screen Time and puts a cooling-off with a decision in front of the app instead of a ban: take a break, or make an exception. Off Hours is a separate app by nxtChange Consulting FlexCo, not by Apple."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Off Hours only work in the evening?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You set the time window yourself, for example 21:00 to 07:00, on the days you choose: evenings, work hours or all day. The free tier has one schedule; Off Hours Plus adds more, for example for weekends."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does Off Hours need on Android, and why the accessibility service?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An Android phone with Android 8.0 or later and Android's accessibility service, which you turn on once in Settings. Android has no Screen Time interface for other apps, and without a device-admin or enterprise profile there is no other way to show a cooling-off over another app at a scheduled time. Off Hours uses the accessibility service only to notice which app is in front, and then shows the cooling-off over it. It does not read screen content, does not see what you type and records nothing. Before the app sends you to the accessibility settings, it explains this in a dialog."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Off Hours see which apps I use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. No account, no server, no analytics: everything stays on your phone. On iPhone, Off Hours stores the apps you choose only as encrypted identifiers from iOS; only the shield receives an app's name, to display it. On Android, the accessibility service handles only the package name of the app in front and does not store it. Off Hours does not see how long you use apps, and it records nothing."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I get around the block?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Off Hours is an aid, not a safeguard against yourself. Any schedule can be switched off at any time. If you want it stricter, Off Hours Plus offers a cooling-off of 30 or 90 seconds or locks the apps until the schedule ends."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does Off Hours cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Off Hours is free with one schedule for up to two apps, a 15-second cooling-off and a 5-minute exception. Off Hours Plus costs €9.99 a year or €3.99 a month (Austrian price; Apple and Google convert it for each country, the exact price is shown in the app). The subscription renews automatically until you cancel it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does Off Hours pause websites too?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Off Hours pauses apps, not websites. Whether notifications from a paused app appear is up to the system."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which devices does Off Hours run on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On iPhone with iOS 17 or later and on Android phones with Android 8.0 or later. Off Hours is available on the App Store and Google Play, in English and German."
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body>
-  <div class="wrap">
-    <header class="top">
-      <a class="brand" href="../"><img src="../assets/img/icon-180.png" alt="" width="40" height="40">Off Hours</a>
-      <nav>
-        <a href="#presse">Press</a>
+<a class="skip" href="#inhalt">Skip to content</a>
+<header class="band">
+    <div class="wrap top">
+      <a class="brand" href="./"><img src="../assets/img/icon-180.png" alt="" width="36" height="36"><span>Off Hours</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#how-it-works" class="wide">How it works</a>
+        <a href="#pricing" class="wide">Pricing</a>
+        <a href="#faq" class="wide">FAQ</a>
+        <a href="#press">Press</a>
         <a href="../support/#support-for-off-hours">Support</a>
-        <a href="../" lang="de">Deutsch</a>
+        <a href="../" lang="de" hreflang="de">Deutsch</a>
       </nav>
-    </header>
-
-    <div class="hero">
-      <div class="kicker">iPhone app</div>
-      <h1>Put the phone down in the evening, without a fight with your willpower.</h1>
-      <p class="lead">Off Hours holds the apps that keep you up at night during the hours you set. When you open one of them, your iPhone first shows a short cooling-off. Then you decide on purpose: take a break, or make an exception. No ban, no tricks, just a moment to think.</p>
-      <div class="store">
-        <a href="https://apps.apple.com/gb/app/id6817406940"><img src="../assets/img/badge-en.svg" alt="Download on the App Store" width="162" height="54"></a>
-        <p>Free with one schedule for up to two apps. More with Off Hours Plus, as a yearly or monthly subscription.</p>
+    </div>
+  <div class="wrap hero-grid" id="inhalt">
+    <div class="hero-text">
+      <p class="label">App blocker for iPhone and Android</p>
+      <h1 class="lines"><span>Put the phone down in the evening,</span> <span class="accent">without a fight with your willpower.</span></h1>
+      <p class="lead">Off Hours holds the apps that keep you up at night during the hours you set. When you open one of them, your phone first shows a short cooling-off. Then you decide on purpose: take a break, or make an exception. No ban, no tricks, just a moment to think.</p>
+      <div class="stores">
+        <a href="https://apps.apple.com/gb/app/apple-store/id6817406940?pt=129507889&amp;ct=website&amp;mt=8"><img class="badge-apple" src="../assets/img/badge-en.svg" alt="Download on the App Store" width="162" height="54"></a>
+        <a href="https://play.google.com/store/apps/details?id=at.nxtchange.auszeit&amp;referrer=utm_source%3Dauszeit.nxtchange.app%26utm_medium%3Dwebsite%26utm_campaign%3Dbadge"><img class="badge-play-en" src="../assets/img/google-play-en.png" alt="Get it on Google Play" width="646" height="250"></a>
       </div>
+      <p class="price">Free. Off Hours Plus €9.99 a year or €3.99 a month (Austrian price; Apple and Google convert it for each country, the exact price is shown in the app).</p>
     </div>
+    <figure class="hero-video">
+      <div class="screen">
+        <video id="vorschau" controls preload="none" playsinline poster="../assets/img/en/1-shield.png" width="552" height="1200" aria-label="App preview of Off Hours on iPhone">
+          <source src="../assets/video/store-video-en.mp4" type="video/mp4">
+          <p>Your browser cannot play the video here: <a href="../assets/video/store-video-en.mp4">Download the video (MP4)</a></p>
+        </video>
+        <button class="play" type="button" data-play="vorschau" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 7.8 16.2 12 10 16.2z" fill="currentColor"/></svg>Watch the video</button>
+      </div>
+      <figcaption>iPhone app preview · 22 s, with sound</figcaption>
+    </figure>
+  </div>
+</header>
 
-    <div class="shots">
-      <img src="../assets/img/en/1-shield.png" alt="Off Hours shield: a 15-second cooling-off before the app opens" width="554" height="1200" loading="lazy">
-      <img src="../assets/img/en/2-decision.png" alt="Decision: take a break or make an exception" width="554" height="1200" loading="lazy">
-      <img src="../assets/img/en/6-private.png" alt="No account, no data, no ads" width="554" height="1200" loading="lazy">
+<main>
+  <section class="gallery-band" aria-label="Images from the App Store">
+    <ul class="gallery" tabindex="0" aria-label="Images from the App Store">
+        <li><img src="../assets/img/en/1-shield.png" alt="App blocker with a pause: Instagram? First 15 seconds. A short pause before the app opens." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="../assets/img/en/2-list.png" alt="Automatic schedules: On your schedule. Automatically. Evenings, work hours or all day." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="../assets/img/en/3-decision.png" alt="Your call: Your decision. Every time. Take a break or make a short exception." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="../assets/img/en/4-editor.png" alt="Settings: As strict as you like. You set the cooling-off, the exception and the days." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="../assets/img/en/5-apps.png" alt="Apps: Only the apps you choose. Social media, games, streaming: your pick. Everything else stays open." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="../assets/img/en/6-private.png" alt="Privacy: No account. No data. No ads. Everything stays on your iPhone. Set up in a minute." width="552" height="1200" loading="lazy" decoding="async"></li>
+    </ul>
+  </section>
+
+  <section class="wrap" aria-labelledby="glance">
+    <h2 class="visually-hidden" id="glance">At a glance</h2>
+    <div class="trio">
+      <article class="tile">
+        <p class="label">App blocker with a pause</p>
+        <h3 class="lines"><span>Instagram?</span> <span class="accent">First 15 seconds.</span></h3>
+        <p class="sub">A short pause before the app opens.</p>
+      </article>
+      <article class="tile">
+        <p class="label">Your call</p>
+        <h3 class="lines"><span>Your decision.</span> <span class="accent">Every time.</span></h3>
+        <p class="sub">Take a break or make a short exception.</p>
+      </article>
+      <article class="tile">
+        <p class="label">Apps</p>
+        <h3 class="lines"><span>Only the apps</span> <span class="accent">you choose.</span></h3>
+        <p class="sub">Social media, games, streaming: your pick. Everything else stays open.</p>
+      </article>
     </div>
+  </section>
 
-    <section>
-      <h2>How it works</h2>
-      <ul class="how">
-        <li>Set a time window, for example 9 PM to 7 AM, on the days you choose.</li>
-        <li>Pick the apps. Off Hours uses your iPhone&#x27;s Screen Time for this.</li>
-        <li>From then on iOS takes over: the cooling-off starts on time, even when Off Hours is closed.</li>
-        <li>After an exception the app stays open for a few minutes, then the cooling-off applies again.</li>
-        <li>Home Screen widget with the current status.</li>
-      </ul>
-    </section>
+  <section class="wrap section" id="how-it-works">
+    <div class="section-head">
+      <p class="label">Automatic schedules</p>
+      <h2 class="lines"><span>On your schedule.</span> <span class="accent">Automatically.</span></h2>
+      <p class="sub">Evenings, work hours or all day.</p>
+    </div>
+    <p class="intro">How it works: on iPhone, Off Hours uses Screen Time in iOS. On Android, Off Hours uses the accessibility service, which you turn on once. From then on the cooling-off starts on time, even when Off Hours is closed.</p>
+    <div class="cards">
+      <article class="card" id="iphone">
+        <h3>iPhone</h3>
+        <p class="req">iOS 17 or later · uses Screen Time</p>
+        <ol class="steps">
+            <li>Set a time window, for example 21:00 to 07:00, on the days you choose.</li>
+            <li>Pick the apps. Off Hours uses your iPhone&#x27;s Screen Time for this.</li>
+            <li>From then on iOS takes over: the cooling-off starts on time, even when Off Hours is closed.</li>
+            <li>After an exception the app stays open for a few minutes, then the cooling-off applies again.</li>
+            <li>Home Screen widget with the current status.</li>
+        </ol>
+        <div class="stores"><a href="https://apps.apple.com/gb/app/apple-store/id6817406940?pt=129507889&amp;ct=website&amp;mt=8"><img class="badge-apple" src="../assets/img/badge-en.svg" alt="Download on the App Store" width="162" height="54" loading="lazy"></a></div>
+      </article>
+      <article class="card" id="android">
+        <h3>Android</h3>
+        <p class="req">Android 8.0 or later · uses the accessibility service</p>
+        <ol class="steps">
+            <li>Set a time window, for example 21:00 to 07:00, on the days you choose.</li>
+            <li>Pick the apps, one by one or as a whole category, from the list of apps on your phone.</li>
+            <li>Turn on the accessibility service once. From then on the cooling-off starts on time, even when Off Hours is closed.</li>
+            <li>After an exception the app stays open for a few minutes, then the cooling-off applies again.</li>
+            <li>Home screen widget with the current status.</li>
+        </ol>
+        <div class="stores"><a href="https://play.google.com/store/apps/details?id=at.nxtchange.auszeit&amp;referrer=utm_source%3Dauszeit.nxtchange.app%26utm_medium%3Dwebsite%26utm_campaign%3Dbadge"><img class="badge-play-en" src="../assets/img/google-play-en.png" alt="Get it on Google Play" width="646" height="250" loading="lazy"></a></div>
+      </article>
+    </div>
+    <figure class="film film-row">
+        <div class="yt-box">
+          <a class="yt" href="https://www.youtube.com/watch?v=JQcw7RqWnOs" data-yt="JQcw7RqWnOs" data-title="Off Hours: Scroll less. No ban. The Android app in 30 seconds">
+            <img src="../assets/img/video/JQcw7RqWnOs.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="yt-play"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="#FAF0DE"/></svg><span class="visually-hidden">Play the video on YouTube: Off Hours: Scroll less. No ban. The Android app in 30 seconds</span></span>
+            <span class="yt-note"><span>Playing loads YouTube</span></span>
+          </a>
+        </div>
+        <figcaption><strong>Off Hours on Android in 30 seconds.</strong><span lang="en">Off Hours: Scroll less. No ban. The Android app in 30 seconds</span></figcaption>
+      </figure>
+  </section>
 
-    <section>
-      <div class="two">
+  <section class="wrap section" id="pricing">
+    <div class="section-head">
+      <p class="label">Settings</p>
+      <h2 class="lines"><span>As strict</span> <span class="accent">as you like.</span></h2>
+      <p class="sub">You set the cooling-off, the exception and the days.</p>
+    </div>
+    <div class="plans">
+      <div>
+        <article class="plan">
+          <h3>Free</h3>
+          <p class="amount">€0</p>
+          <p>One schedule with up to two apps, a 15-second cooling-off and a 5-minute exception.</p>
+        </article>
+        <aside class="honest">
+          <h3>Honestly</h3>
+          <p>Off Hours is an aid, not a safeguard against yourself. Any schedule can be switched off at any time. Off Hours pauses apps, not websites. Some Android phones stop background services to save battery; the app tells you where to switch that off for Off Hours.</p>
+        </aside>
+      </div>
+      <article class="plan plus">
+        <h3>Off Hours Plus</h3>
+        <p class="amount">€9.99 a year<small>or €3.99 a month</small></p>
+        <ul>
+            <li>More schedules, for example for weekends</li>
+            <li>More than two apps per schedule, including whole categories (up to 50 apps per schedule on iPhone, no upper limit on Android)</li>
+            <li>Cooling-off of 30 or 90 seconds, or lock the apps until the schedule ends</li>
+            <li>Exception of 1, 5 or 15 minutes</li>
+            <li>“Start now”: begin a schedule immediately, also from the widget</li>
+        </ul>
+      </article>
+    </div>
+    <p class="fine">Austrian prices; Apple and Google convert them for each country, the exact price is shown in the app. Plus is available as a yearly or monthly subscription. The subscription renews automatically until you cancel it: on iPhone in Settings under Apple Account › Subscriptions, on Android in Google Play under Payments and subscriptions. A subscription applies only to the platform you bought it on.</p>
+  </section>
+
+  <section class="quiet" id="privacy">
+    <div class="wrap">
+      <svg class="hourglass" viewBox="0 0 44 60" aria-hidden="true" focusable="false"><path d="M5 3h34M5 57h34" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><path d="M10 5c0 13 8 18 12 25-4 7-12 12-12 25h24c0-13-8-18-12-25 4-7 12-12 12-25" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M13.5 53c1.5-7 5.5-10 8.5-13 3 3 7 6 8.5 13z" fill="currentColor"/><path d="M16 15h12c-1.2 4-3.6 6.4-6 9-2.4-2.6-4.8-5-6-9z" fill="currentColor" opacity=".55"/></svg>
+      <p class="label">Privacy</p>
+      <h2 class="lines"><span>No account.</span> <span>No data.</span> <span class="accent">No ads.</span></h2>
+      <hr class="rule">
+      <p class="sub">No account, no server, no analytics. Everything stays on your phone.</p>
+      <div class="columns">
         <div>
-          <h2>No account. No data. No ads.</h2>
-          <p>No account, no server, no analytics. Everything stays on your iPhone. Off Hours stores the apps you choose only as encrypted identifiers from iOS. Off Hours does not see how long you use apps, and it records nothing.</p>
+          <h3>On iPhone</h3>
+          <p>Off Hours stores the apps you choose only as encrypted identifiers from iOS. Only the shield receives an app&#x27;s name, to display it. Off Hours does not see how long you use apps, and it records nothing.</p>
         </div>
         <div>
-          <h2>Honestly</h2>
-          <p>Off Hours is an aid, not a safeguard against yourself. Any schedule can be switched off at any time. Off Hours pauses apps, not websites.</p>
+          <h3>On Android</h3>
+          <p>Off Hours uses Android&#x27;s accessibility service only to notice which app is in front, and then shows the cooling-off over it. It does not read screen content, does not see what you type and records nothing. Off Hours does not see how long you use apps.</p>
         </div>
       </div>
-    </section>
+      <p class="more"><a href="../privacy/">Everything else is in the privacy policy</a></p>
+    </div>
+  </section>
 
-    <section id="presse">
-      <h2>Press</h2>
-      <p>Material for coverage, free to use without asking. Questions and review access: apps@nxtchange-consulting.com.</p>
-      <h3>Short description</h3>
-      <p>Off Hours is an iPhone app from Graz, Austria, that holds the apps you choose during the hours you set and adds a short cooling-off first. Users then decide on purpose: take a break or make an exception. The app needs no account, no server and no analytics; all data stays on the device. Off Hours is free with one schedule for up to two apps; Off Hours Plus extends it. The developer is nxtChange Consulting FlexCo.</p>
-      <h3>Facts</h3>
-      <dl class="facts">
-        <dt>Platform</dt><dd>iPhone, iOS 17 or later</dd>
-        <dt>Released</dt><dd>8 October 2026, version 1.0</dd>
-        <dt>Countries</dt><dd>38 European countries, English and German</dd>
-        <dt>Price</dt><dd>Free; Off Hours Plus as a yearly or monthly subscription, prices shown in the app</dd>
-        <dt>Developer</dt><dd>nxtChange Consulting FlexCo, Graz, Austria</dd>
-      </dl>
-      <h3>Files</h3>
-      <ul class="files">
-        <li><a href="../assets/press/auszeit-icon-1024.png" download>App icon, 1024 × 1024 px</a></li>
-        <li><a href="../assets/press/en-1-shield.png" download>Image cooling-off, 1284 × 2778 px</a></li>
-        <li><a href="../assets/press/en-2-decision.png" download>Image decision, 1284 × 2778 px</a></li>
-        <li><a href="../assets/press/en-6-private.png" download>Image privacy, 1284 × 2778 px</a></li>
-      </ul>
-    </section>
+  <section class="wrap section" id="faq">
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Is Off Hours the same as Downtime in Apple&#x27;s Screen Time?</summary>
+        <div class="answer">
+          <p>No. Apple&#x27;s Downtime blocks apps during set hours. Off Hours builds on Screen Time and puts a cooling-off with a decision in front of the app instead of a ban: take a break, or make an exception. Off Hours is a separate app by nxtChange Consulting FlexCo, not by Apple.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Does Off Hours only work in the evening?</summary>
+        <div class="answer">
+          <p>No. You set the time window yourself, for example 21:00 to 07:00, on the days you choose: evenings, work hours or all day. The free tier has one schedule; Off Hours Plus adds more, for example for weekends.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What does Off Hours need on Android, and why the accessibility service?</summary>
+        <div class="answer">
+          <p>An Android phone with Android 8.0 or later and Android&#x27;s accessibility service, which you turn on once in Settings. Android has no Screen Time interface for other apps, and without a device-admin or enterprise profile there is no other way to show a cooling-off over another app at a scheduled time.</p>
+          <p>Off Hours uses the accessibility service only to notice which app is in front, and then shows the cooling-off over it. It does not read screen content, does not see what you type and records nothing. Before the app sends you to the accessibility settings, it explains this in a dialog.</p>
+          <figure class="film">
+        <div class="yt-box">
+          <a class="yt" href="https://www.youtube.com/watch?v=oJJUE4cR4yY" data-yt="oJJUE4cR4yY" data-title="Off Hours: accessibility service demo">
+            <img src="../assets/img/video/oJJUE4cR4yY.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="yt-play"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="#FAF0DE"/></svg><span class="visually-hidden">Play the video on YouTube: Off Hours: accessibility service demo</span></span>
+            <span class="yt-note"><span>Playing loads YouTube</span></span>
+          </a>
+        </div>
+        <figcaption>Demo of the accessibility service, from the dialog to the cooling-off over an app. With subtitles.</figcaption>
+      </figure>
+        </div>
+      </details>
+      <details>
+        <summary>Does Off Hours see which apps I use?</summary>
+        <div class="answer">
+          <p>No. No account, no server, no analytics: everything stays on your phone. On iPhone, Off Hours stores the apps you choose only as encrypted identifiers from iOS; only the shield receives an app&#x27;s name, to display it. On Android, the accessibility service handles only the package name of the app in front and does not store it. Off Hours does not see how long you use apps, and it records nothing.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Can I get around the block?</summary>
+        <div class="answer">
+          <p>Yes. Off Hours is an aid, not a safeguard against yourself. Any schedule can be switched off at any time. If you want it stricter, Off Hours Plus offers a cooling-off of 30 or 90 seconds or locks the apps until the schedule ends.</p>
+        </div>
+      </details>
+      <details>
+        <summary>What does Off Hours cost?</summary>
+        <div class="answer">
+          <p>Off Hours is free with one schedule for up to two apps, a 15-second cooling-off and a 5-minute exception. Off Hours Plus costs €9.99 a year or €3.99 a month (Austrian price; Apple and Google convert it for each country, the exact price is shown in the app). The subscription renews automatically until you cancel it.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Does Off Hours pause websites too?</summary>
+        <div class="answer">
+          <p>No. Off Hours pauses apps, not websites. Whether notifications from a paused app appear is up to the system.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Which devices does Off Hours run on?</summary>
+        <div class="answer">
+          <p>On iPhone with iOS 17 or later and on Android phones with Android 8.0 or later. Off Hours is available on the App Store and Google Play, in English and German.</p>
+        </div>
+      </details>
+    </div>
+  </section>
 
-    <footer>
-      <div class="links">
+  <section class="wrap section press" id="press">
+    <h2>Press</h2>
+    <p class="sub">Material for coverage, free to use without asking. Questions and review access: <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a></p>
+    <div class="press-grid" style="margin-top:28px">
+      <div>
+        <h3>Short description</h3>
+        <p>Off Hours is an app for iPhone and Android from Graz, Austria, that holds the apps you choose during the hours you set and adds a short cooling-off first. Users then decide on purpose: take a break or make an exception. On iPhone, Off Hours uses Screen Time; on Android, the accessibility service. The app needs no account, no server and no analytics; all data stays on the device. Off Hours is free with one schedule for up to two apps; Off Hours Plus extends it. The developer is nxtChange Consulting FlexCo.</p>
+        <a class="kit" href="../assets/press/off-hours-press-kit-en.zip" download><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Download the press kit</span></a>
+        <p class="price">ZIP with all 13 files, 17.9 MB</p>
+      </div>
+      <div>
+        <h3>Facts</h3>
+        <dl class="facts">
+          <dt>Name</dt><dd>Off Hours (German: Auszeit), in the stores “Off Hours: App Blocker &amp; Focus”</dd>
+          <dt>Platforms</dt><dd>iPhone (iOS 17 or later) and Android (8.0 or later)</dd>
+          <dt>Released</dt><dd>October 2026</dd>
+          <dt>Countries</dt><dd>37 on the App Store, 36 on Google Play, all in Europe</dd>
+          <dt>Languages</dt><dd>English and German</dd>
+          <dt>Price</dt><dd>Free; Off Hours Plus €9.99 a year or €3.99 a month (Austrian price)</dd>
+          <dt>Developer</dt><dd>nxtChange Consulting FlexCo, Graz, Austria</dd>
+        </dl>
+      </div>
+    </div>
+    <h3 class="visually-hidden">Files</h3>
+    <div class="files">
+      <div>
+        <h4>App icon</h4>
+        <ul>
+            <li><a href="../assets/press/auszeit-icon-1024.png" download>App icon</a><small>PNG, 1024 × 1024 px, 660 KB</small></li>
+        </ul>
+      </div>
+      <div>
+        <h4>iPhone, App Store</h4>
+        <ul>
+            <li><a href="../assets/press/en-1-shield.png" download>1. Instagram? First 15 seconds.</a><small>PNG, 1320 × 2868 px, 2.9 MB</small></li>
+            <li><a href="../assets/press/en-2-list.png" download>2. On your schedule. Automatically.</a><small>PNG, 1320 × 2868 px, 1.7 MB</small></li>
+            <li><a href="../assets/press/en-3-decision.png" download>3. Your decision. Every time.</a><small>PNG, 1320 × 2868 px, 2.4 MB</small></li>
+            <li><a href="../assets/press/en-4-editor.png" download>4. As strict as you like.</a><small>PNG, 1320 × 2868 px, 1.8 MB</small></li>
+            <li><a href="../assets/press/en-5-apps.png" download>5. Only the apps you choose.</a><small>PNG, 1320 × 2868 px, 1.8 MB</small></li>
+            <li><a href="../assets/press/en-6-private.png" download>6. No account. No data. No ads.</a><small>PNG, 1320 × 2868 px, 3.3 MB</small></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Android, Google Play</h4>
+        <ul>
+            <li><a href="../assets/press/en-android-01-shield.png" download>1. Scroll less. No ban.</a><small>PNG, 1080 × 1920 px, 581 KB</small></li>
+            <li><a href="../assets/press/en-android-02-decision.png" download>2. Your decision. Every time.</a><small>PNG, 1080 × 1920 px, 587 KB</small></li>
+            <li><a href="../assets/press/en-android-03-list.png" download>3. On your schedule. Every day.</a><small>PNG, 1080 × 1920 px, 721 KB</small></li>
+            <li><a href="../assets/press/en-android-04-editor.png" download>4. As strict as you like.</a><small>PNG, 1080 × 1920 px, 674 KB</small></li>
+            <li><a href="../assets/press/en-android-05-apps.png" download>5. Only the apps you choose.</a><small>PNG, 1080 × 1920 px, 691 KB</small></li>
+            <li><a href="../assets/press/en-android-feature-graphic-1024x500.png" download>Feature graphic</a><small>PNG, 1024 × 500 px, 272 KB</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="./"><img src="../assets/img/icon-180.png" alt="" width="36" height="36"><span>Off Hours</span></a>
+      <nav class="foot-links" aria-label="Support, Privacy Policy">
         <a href="../support/#support-for-off-hours">Support</a>
         <a href="../privacy/">Privacy Policy</a>
         <a href="../terms/">Terms of Use</a>
         <a href="https://nxtchange.app/">All apps</a>
-      </div>
-      <address>
-        <strong>Provider:</strong> nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz, Österreich<br>
-        FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038 · <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a>
-      </address>
-      <p class="note">Apple, iPhone and App Store are trademarks of Apple Inc.</p>
-    </footer>
+      </nav>
+    </div>
+    <address>
+      <strong>Provider:</strong> nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz, Austria<br>
+      FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038 · <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a>
+    </address>
+    <p class="note">Apple, iPhone and App Store are trademarks of Apple Inc. Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </div>
+</footer>
+<script>
+/* Videos erst auf Klick: App-Vorschau (selbst gehostet) und YouTube (youtube-nocookie.com). Sonst kein JavaScript. */
+(function () {
+  var d = document;
+  Array.prototype.forEach.call(d.querySelectorAll("button[data-play]"), function (button) {
+    var video = d.getElementById(button.getAttribute("data-play"));
+    if (!video) return;
+    video.removeAttribute("controls");
+    button.hidden = false;
+    button.addEventListener("click", function () {
+      video.setAttribute("controls", "");
+      button.hidden = true;
+      video.play();
+      video.focus();
+    });
+  });
+  d.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[data-yt]");
+    if (!link) return;
+    event.preventDefault();
+    var frame = d.createElement("iframe");
+    frame.src = "https://www.youtube-nocookie.com/embed/" + link.getAttribute("data-yt") + "?autoplay=1&rel=0";
+    frame.title = link.getAttribute("data-title");
+    frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    frame.allowFullscreen = true;
+    link.parentNode.replaceChild(frame, link);
+    frame.focus();
+  });
+})();
+</script>
 </body>
 </html>

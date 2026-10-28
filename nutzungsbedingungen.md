@@ -1,6 +1,12 @@
 ---
 title: Nutzungsbedingungen
 permalink: /nutzungsbedingungen/
+lang: de
+locale: de_AT
+description: "Nutzungsbedingungen für Auszeit auf iPhone und Android: wer wir sind, was die App tut und nicht verspricht, Gratis und Auszeit Plus, Nutzungsrecht, Haftung und Gerichtsstand."
+image: /assets/img/og-de.png
+alternate_de: /nutzungsbedingungen/
+alternate_en: /terms/
 ---
 
 # Nutzungsbedingungen für Auszeit

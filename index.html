@@ -3,150 +3,527 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Auszeit: App Blocker &amp; Fokus</title>
-  <meta name="description" content="Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. Ohne Account, ohne Daten. iPhone-App aus Graz.">
+  <title>Auszeit: App Blocker &amp; Fokus · für iPhone und Android</title>
+  <meta name="description" content="Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. Für iPhone und Android, ohne Konto, ohne Daten. App aus Graz.">
+  <link rel="canonical" href="https://auszeit.nxtchange.app/">
+  <link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/">
+  <link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/">
   <meta name="apple-itunes-app" content="app-id=6817406940">
-  <meta property="og:title" content="Auszeit: App Blocker &amp; Fokus">
-  <meta property="og:description" content="Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. Ohne Account, ohne Daten. iPhone-App aus Graz.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="./assets/press/auszeit-icon-1024.png">
-  <meta name="color-scheme" content="dark light">
+  <meta property="og:site_name" content="Auszeit">
+  <meta property="og:title" content="Auszeit: App Blocker &amp; Fokus · für iPhone und Android">
+  <meta property="og:description" content="Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. Für iPhone und Android, ohne Konto, ohne Daten. App aus Graz.">
+  <meta property="og:url" content="https://auszeit.nxtchange.app/">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:image" content="https://auszeit.nxtchange.app/assets/img/og-de.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Auszeit, App-Blocker für iPhone und Android: Abends das Handy weglegen, ohne Kampf mit der Willenskraft.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FAF3E6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101424" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="./assets/img/icon-64.png" type="image/png">
   <link rel="apple-touch-icon" href="./assets/img/icon-180.png">
-  <link rel="alternate" hreflang="de" href="./">
-  <link rel="alternate" hreflang="en" href="./en/">
-  <style>
-:root{--bg:#121214;--bg2:#1b1b1e;--fg:#f1efe9;--muted:#a9a7a0;--gold:#c8b48a;--line:#2b2b2f;--maxw:1040px;color-scheme:dark}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
-a{color:var(--gold)}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
-header.top{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
-header.top .brand{display:flex;align-items:center;gap:12px;color:var(--fg);text-decoration:none;font-weight:600}
-header.top .brand img{width:40px;height:40px;border-radius:10px}
-header.top nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:15px}
-header.top nav a:hover{color:var(--fg)}
-.hero{padding:40px 0 24px}
-.kicker{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:600}
-h1{font-family:"New York","Iowan Old Style",Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(34px,6vw,56px);line-height:1.08;margin:10px 0 18px;letter-spacing:-.01em}
-h1 em{font-style:normal;color:var(--gold)}
-.lead{font-size:19px;color:var(--muted);max-width:640px;margin:0 0 26px}
-.store{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-.store img{height:54px;width:auto;display:block}
-.store p{margin:0;color:var(--muted);font-size:15px;max-width:420px}
-.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:30px 0}
-.shots img{width:100%;height:auto;display:block;border-radius:22px;border:1px solid var(--line)}
-section{padding:30px 0;border-top:1px solid var(--line)}
-h2{font-family:"New York","Iowan Old Style",Georgia,"Times New Roman",serif;font-weight:600;font-size:30px;margin:0 0 14px;letter-spacing:-.01em}
-h3{font-size:17px;margin:22px 0 8px}
-section p{max-width:680px;margin:0 0 12px}
-ul.how{list-style:none;padding:0;margin:0;max-width:680px}
-ul.how li{padding:10px 0 10px 28px;position:relative;border-bottom:1px solid var(--line)}
-ul.how li::before{content:"";position:absolute;left:0;top:19px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0;max-width:680px}
-dl.facts dt{color:var(--muted)}
-dl.facts dd{margin:0}
-ul.files{padding-left:20px;margin:0}
-ul.files li{margin:4px 0}
-footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
-footer .links a{margin-right:18px;color:var(--fg);text-decoration:none}
-footer .links a:hover{text-decoration:underline}
-footer address{font-style:normal;margin:16px 0 0;line-height:1.5}
-footer .note{margin-top:16px}
-@media (max-width:720px){.shots{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}header.top nav a{margin-left:12px}}
-@media (max-width:480px){.shots{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6;color-scheme:light}}
-:root[data-theme="light"]{--bg:#f6f4ee;--bg2:#fff;--fg:#1a1a1c;--muted:#5d5b55;--gold:#8a7445;--line:#e2dfd6;color-scheme:light}
-</style>
+  <link rel="stylesheet" href="./assets/css/site.css?v=9f7584466e">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://auszeit.nxtchange.app/#organisation",
+   "name": "nxtChange Consulting FlexCo",
+   "url": "https://nxtchange.app/",
+   "email": "apps@nxtchange-consulting.com",
+   "vatID": "ATU81922038",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Neugasse 9/1",
+    "postalCode": "8045",
+    "addressLocality": "Graz",
+    "addressCountry": "AT"
+   }
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://auszeit.nxtchange.app/#app-ios",
+   "name": "Auszeit: App Blocker & Fokus",
+   "operatingSystem": "iOS 17 oder neuer",
+   "installUrl": "https://apps.apple.com/de/app/id6817406940",
+   "screenshot": [
+    "https://auszeit.nxtchange.app/assets/img/de/1-schirm.png",
+    "https://auszeit.nxtchange.app/assets/img/de/2-liste.png",
+    "https://auszeit.nxtchange.app/assets/img/de/3-entscheidung.png",
+    "https://auszeit.nxtchange.app/assets/img/de/4-editor.png",
+    "https://auszeit.nxtchange.app/assets/img/de/5-apps.png",
+    "https://auszeit.nxtchange.app/assets/img/de/6-privat.png"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Produktivität",
+   "description": "Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. Für iPhone und Android, ohne Konto, ohne Daten. App aus Graz.",
+   "inLanguage": [
+    "de",
+    "en"
+   ],
+   "image": "https://auszeit.nxtchange.app/assets/press/auszeit-icon-1024.png",
+   "url": "https://auszeit.nxtchange.app/",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@id": "https://auszeit.nxtchange.app/#organisation"
+   }
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://auszeit.nxtchange.app/#app-android",
+   "name": "Auszeit: App Blocker & Fokus",
+   "operatingSystem": "Android 8.0 oder neuer",
+   "installUrl": "https://play.google.com/store/apps/details?id=at.nxtchange.auszeit",
+   "screenshot": [
+    "https://auszeit.nxtchange.app/assets/press/de-android-01-schirm.png",
+    "https://auszeit.nxtchange.app/assets/press/de-android-02-entscheidung.png",
+    "https://auszeit.nxtchange.app/assets/press/de-android-03-liste.png",
+    "https://auszeit.nxtchange.app/assets/press/de-android-04-editor.png",
+    "https://auszeit.nxtchange.app/assets/press/de-android-05-apps.png"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "Produktivität",
+   "description": "Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. Für iPhone und Android, ohne Konto, ohne Daten. App aus Graz.",
+   "inLanguage": [
+    "de",
+    "en"
+   ],
+   "image": "https://auszeit.nxtchange.app/assets/press/auszeit-icon-1024.png",
+   "url": "https://auszeit.nxtchange.app/",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@id": "https://auszeit.nxtchange.app/#organisation"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://auszeit.nxtchange.app/#fragen",
+   "inLanguage": "de",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ist Auszeit dasselbe wie die „Auszeit“ in Apples Bildschirmzeit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Die Auszeit in Apples Bildschirmzeit sperrt Apps zu festen Zeiten. Die App Auszeit nutzt die Bildschirmzeit als Grundlage und setzt eine Bedenkzeit mit Entscheidung davor, statt eines Verbots: Auszeit nehmen oder eine Ausnahme machen. Auszeit ist eine eigene App von nxtChange Consulting FlexCo, nicht von Apple."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Funktioniert Auszeit nur abends?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Du legst das Zeitfenster selbst fest, zum Beispiel 21:00 bis 07:00, an den Tagen, die du willst: abends, in der Arbeit oder ganztags. Gratis gilt eine Auszeit; mit Auszeit Plus kommen weitere dazu, etwa fürs Wochenende."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was braucht Auszeit auf Android, und warum die Bedienungshilfe?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ein Android-Handy ab Android 8.0 und die Bedienungshilfe von Android, die du einmal in den Einstellungen einschaltest. Auf Android gibt es keine Bildschirmzeit-Schnittstelle für andere Apps, und ohne Geräteadministrator oder Unternehmensprofil keinen anderen Weg, zu festen Zeiten eine Bedenkzeit über eine andere App zu legen. Auszeit nutzt die Bedienungshilfe nur, um zu erkennen, welche App gerade vorn ist, und legt dann die Bedenkzeit darüber. Sie liest keine Bildschirminhalte, sieht nicht, was du tippst, und zeichnet nichts auf. Bevor die App dich zum Einschalten in die Einstellungen führt, erklärt sie dir das in einem Dialog."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Sieht Auszeit, welche Apps ich nutze?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Kein Account, kein Server, keine Analyse: Alles bleibt auf deinem Handy. Auf dem iPhone speichert Auszeit die gewählten Apps nur als verschlüsselte Kennungen von iOS; den Namen einer App bekommt allein der Schirm, um ihn anzuzeigen. Auf Android verarbeitet die Bedienungshilfe nur den Paketnamen der App, die gerade vorn ist, und speichert ihn nicht. Auszeit sieht nicht, wie lange du Apps nutzt, und zeichnet nichts auf."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kann ich die Sperre umgehen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Auszeit ist ein Hilfsmittel, kein Schutz vor dir selbst. Jede Auszeit lässt sich jederzeit ausschalten. Wer es strenger will, stellt mit Auszeit Plus eine Bedenkzeit von 30 oder 90 Sekunden ein oder sperrt die Apps ganz bis zum Ende der Auszeit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was kostet Auszeit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Auszeit ist gratis, mit einer Auszeit für bis zu zwei Apps, 15 Sekunden Bedenkzeit und 5 Minuten Ausnahme. Auszeit Plus kostet 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich, Apple und Google rechnen je Land um, der genaue Preis steht in der App). Das Abo verlängert sich automatisch, bis du es kündigst."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Pausiert Auszeit auch Webseiten?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Auszeit pausiert Apps, keine Webseiten. Ob Mitteilungen einer pausierten App erscheinen, entscheidet das System."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Auf welchen Geräten läuft Auszeit?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Auf dem iPhone mit iOS 17 oder neuer und auf Android-Handys ab Android 8.0. Auszeit gibt es im App Store und bei Google Play, auf Deutsch und Englisch."
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
 </head>
 <body>
-  <div class="wrap">
-    <header class="top">
-      <a class="brand" href="./"><img src="./assets/img/icon-180.png" alt="" width="40" height="40">Auszeit</a>
-      <nav>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+<header class="band">
+    <div class="wrap top">
+      <a class="brand" href="./"><img src="./assets/img/icon-180.png" alt="" width="36" height="36"><span>Auszeit</span></a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#so-funktioniert-es" class="wide">So funktioniert es</a>
+        <a href="#preise" class="wide">Preise</a>
+        <a href="#fragen" class="wide">Fragen</a>
         <a href="#presse">Presse</a>
         <a href="./support/">Support</a>
-        <a href="en/" lang="en">English</a>
+        <a href="en/" lang="en" hreflang="en">English</a>
       </nav>
-    </header>
-
-    <div class="hero">
-      <div class="kicker">iPhone-App</div>
-      <h1>Abends das Handy weglegen, ohne Kampf mit der Willenskraft.</h1>
-      <p class="lead">Auszeit hält die Apps, die dich abends festhalten, zu festen Zeiten an. Öffnest du eine davon, zeigt dein iPhone zuerst eine kurze Bedenkzeit. Danach entscheidest du bewusst: Auszeit nehmen oder eine Ausnahme machen. Kein Verbot, keine Tricks, nur ein Moment zum Nachdenken.</p>
-      <div class="store">
-        <a href="https://apps.apple.com/de/app/id6817406940"><img src="./assets/img/badge-de.svg" alt="Laden im App Store" width="162" height="54"></a>
-        <p>Gratis mit einer Auszeit für bis zu zwei Apps. Mehr mit Auszeit Plus, als Jahres- oder Monatsabo.</p>
+    </div>
+  <div class="wrap hero-grid" id="inhalt">
+    <div class="hero-text">
+      <p class="label">App-Blocker für iPhone und Android</p>
+      <h1 class="lines"><span>Abends das Handy weglegen,</span> <span class="accent">ohne Kampf mit der Willenskraft.</span></h1>
+      <p class="lead">Auszeit hält die Apps, die dich abends festhalten, zu festen Zeiten an. Öffnest du eine davon, zeigt dein Handy zuerst eine kurze Bedenkzeit. Danach entscheidest du bewusst: Auszeit nehmen oder eine Ausnahme machen. Kein Verbot, keine Tricks, nur ein Moment zum Nachdenken.</p>
+      <div class="stores">
+        <a href="https://apps.apple.com/de/app/apple-store/id6817406940?pt=129507889&amp;ct=website&amp;mt=8"><img class="badge-apple" src="./assets/img/badge-de.svg" alt="Laden im App Store" width="162" height="54"></a>
+        <a href="https://play.google.com/store/apps/details?id=at.nxtchange.auszeit&amp;referrer=utm_source%3Dauszeit.nxtchange.app%26utm_medium%3Dwebsite%26utm_campaign%3Dbadge"><img class="badge-play-de" src="./assets/img/google-play-de.png" alt="Jetzt bei Google Play" width="646" height="250"></a>
       </div>
+      <p class="price">Gratis. Auszeit Plus 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich, Apple und Google rechnen je Land um, der genaue Preis steht in der App).</p>
     </div>
+    <figure class="hero-video">
+      <div class="screen">
+        <video id="vorschau" controls preload="none" playsinline poster="./assets/img/de/1-schirm.png" width="552" height="1200" aria-label="App-Vorschau von Auszeit auf dem iPhone">
+          <source src="./assets/video/store-video-de.mp4" type="video/mp4">
+          <p>Dein Browser spielt das Video hier nicht ab: <a href="./assets/video/store-video-de.mp4">Video laden (MP4)</a></p>
+        </video>
+        <button class="play" type="button" data-play="vorschau" hidden><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 7.8 16.2 12 10 16.2z" fill="currentColor"/></svg>Video ansehen</button>
+      </div>
+      <figcaption>App-Vorschau iPhone · 22 s, mit Ton</figcaption>
+    </figure>
+  </div>
+</header>
 
-    <div class="shots">
-      <img src="./assets/img/de/1-schirm.png" alt="Schirm von Auszeit: Bedenkzeit von 15 Sekunden, bevor sich die App öffnet" width="554" height="1200" loading="lazy">
-      <img src="./assets/img/de/2-entscheidung.png" alt="Entscheidung: Auszeit nehmen oder Ausnahme machen" width="554" height="1200" loading="lazy">
-      <img src="./assets/img/de/6-privat.png" alt="Kein Konto, keine Daten, keine Werbung" width="554" height="1200" loading="lazy">
+<main>
+  <section class="gallery-band" aria-label="Bilder aus dem App Store">
+    <ul class="gallery" tabindex="0" aria-label="Bilder aus dem App Store">
+        <li><img src="./assets/img/de/1-schirm.png" alt="App-Blocker mit Bedenkzeit: Instagram? Erst 15 Sekunden. Eine kurze Pause, bevor die App aufgeht." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="./assets/img/de/2-liste.png" alt="Automatisch zu festen Zeiten: Zu deinen Zeiten. Ganz von selbst. Abends, in der Arbeit oder ganztags." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="./assets/img/de/3-entscheidung.png" alt="Entscheidung: Deine Entscheidung. Jedes Mal. Auszeit nehmen oder kurz eine Ausnahme machen." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="./assets/img/de/4-editor.png" alt="Einstellung: So streng, wie du willst. Bedenkzeit, Ausnahme und Tage stellst du selbst ein." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="./assets/img/de/5-apps.png" alt="Apps: Nur die Apps, die du wählst. Social Media, Spiele, Streaming: du entscheidest. Alles andere bleibt offen." width="552" height="1200" loading="lazy" decoding="async"></li>
+        <li><img src="./assets/img/de/6-privat.png" alt="Privatsphäre: Kein Konto. Keine Daten. Keine Werbung. Alles bleibt auf deinem iPhone. In einer Minute eingerichtet." width="552" height="1200" loading="lazy" decoding="async"></li>
+    </ul>
+  </section>
+
+  <section class="wrap" aria-labelledby="glance">
+    <h2 class="visually-hidden" id="glance">Auf einen Blick</h2>
+    <div class="trio">
+      <article class="tile">
+        <p class="label">App-Blocker mit Bedenkzeit</p>
+        <h3 class="lines"><span>Instagram?</span> <span class="accent">Erst 15 Sekunden.</span></h3>
+        <p class="sub">Eine kurze Pause, bevor die App aufgeht.</p>
+      </article>
+      <article class="tile">
+        <p class="label">Entscheidung</p>
+        <h3 class="lines"><span>Deine Entscheidung.</span> <span class="accent">Jedes Mal.</span></h3>
+        <p class="sub">Auszeit nehmen oder kurz eine Ausnahme machen.</p>
+      </article>
+      <article class="tile">
+        <p class="label">Apps</p>
+        <h3 class="lines"><span>Nur die Apps,</span> <span class="accent">die du wählst.</span></h3>
+        <p class="sub">Social Media, Spiele, Streaming: du entscheidest. Alles andere bleibt offen.</p>
+      </article>
     </div>
+  </section>
 
-    <section>
-      <h2>So funktioniert es</h2>
-      <ul class="how">
-        <li>Zeitfenster festlegen, zum Beispiel 21:00 bis 07:00, an den Tagen, die du willst.</li>
-        <li>Apps auswählen. Auszeit nutzt dafür die Bildschirmzeit deines iPhones.</li>
-        <li>Ab dann übernimmt iOS: Die Bedenkzeit greift pünktlich, auch wenn Auszeit geschlossen ist.</li>
-        <li>Nach einer Ausnahme bleibt die App ein paar Minuten offen, dann gilt wieder die Bedenkzeit.</li>
-        <li>Widget für den Home-Bildschirm mit dem Stand von jetzt.</li>
-      </ul>
-    </section>
+  <section class="wrap section" id="so-funktioniert-es">
+    <div class="section-head">
+      <p class="label">Automatisch zu festen Zeiten</p>
+      <h2 class="lines"><span>Zu deinen Zeiten.</span> <span class="accent">Ganz von selbst.</span></h2>
+      <p class="sub">Abends, in der Arbeit oder ganztags.</p>
+    </div>
+    <p class="intro">So funktioniert es: Auf dem iPhone nutzt Auszeit die Bildschirmzeit von iOS. Auf Android nutzt Auszeit die Bedienungshilfe, die du einmal einschaltest. Ab dann greift die Bedenkzeit pünktlich, auch wenn Auszeit geschlossen ist.</p>
+    <div class="cards">
+      <article class="card" id="iphone">
+        <h3>iPhone</h3>
+        <p class="req">iOS 17 oder neuer · nutzt die Bildschirmzeit</p>
+        <ol class="steps">
+            <li>Zeitfenster festlegen, zum Beispiel 21:00 bis 07:00, an den Tagen, die du willst.</li>
+            <li>Apps auswählen. Auszeit nutzt dafür die Bildschirmzeit deines iPhones.</li>
+            <li>Ab dann übernimmt iOS: Die Bedenkzeit greift pünktlich, auch wenn Auszeit geschlossen ist.</li>
+            <li>Nach einer Ausnahme bleibt die App ein paar Minuten offen, dann gilt wieder die Bedenkzeit.</li>
+            <li>Widget für den Home-Bildschirm mit dem Stand von jetzt.</li>
+        </ol>
+        <div class="stores"><a href="https://apps.apple.com/de/app/apple-store/id6817406940?pt=129507889&amp;ct=website&amp;mt=8"><img class="badge-apple" src="./assets/img/badge-de.svg" alt="Laden im App Store" width="162" height="54" loading="lazy"></a></div>
+      </article>
+      <article class="card" id="android">
+        <h3>Android</h3>
+        <p class="req">Android 8.0 oder neuer · nutzt die Bedienungshilfe</p>
+        <ol class="steps">
+            <li>Zeitfenster festlegen, zum Beispiel 21:00 bis 07:00, an den Tagen, die du willst.</li>
+            <li>Apps auswählen, einzeln oder als ganze Kategorie, aus der Liste deiner installierten Apps.</li>
+            <li>Bedienungshilfe einmal einschalten. Ab dann greift die Bedenkzeit pünktlich, auch wenn Auszeit geschlossen ist.</li>
+            <li>Nach einer Ausnahme bleibt die App ein paar Minuten offen, dann gilt wieder die Bedenkzeit.</li>
+            <li>Widget für den Startbildschirm mit dem Stand von jetzt.</li>
+        </ol>
+        <div class="stores"><a href="https://play.google.com/store/apps/details?id=at.nxtchange.auszeit&amp;referrer=utm_source%3Dauszeit.nxtchange.app%26utm_medium%3Dwebsite%26utm_campaign%3Dbadge"><img class="badge-play-de" src="./assets/img/google-play-de.png" alt="Jetzt bei Google Play" width="646" height="250" loading="lazy"></a></div>
+      </article>
+    </div>
+    <figure class="film film-row">
+        <div class="yt-box">
+          <a class="yt" href="https://www.youtube.com/watch?v=TQRQjztSKBM" data-yt="TQRQjztSKBM" data-title="Auszeit: Weniger scrollen. Ohne Verbot. Die App für Android (30 s)">
+            <img src="./assets/img/video/TQRQjztSKBM.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="yt-play"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="#FAF0DE"/></svg><span class="visually-hidden">Video auf YouTube abspielen: Auszeit: Weniger scrollen. Ohne Verbot. Die App für Android (30 s)</span></span>
+            <span class="yt-note"><span>Beim Abspielen lädt YouTube</span></span>
+          </a>
+        </div>
+        <figcaption><strong>Auszeit auf Android in 30 Sekunden.</strong><span lang="de">Auszeit: Weniger scrollen. Ohne Verbot. Die App für Android (30 s)</span></figcaption>
+      </figure>
+  </section>
 
-    <section>
-      <div class="two">
+  <section class="wrap section" id="preise">
+    <div class="section-head">
+      <p class="label">Einstellung</p>
+      <h2 class="lines"><span>So streng,</span> <span class="accent">wie du willst.</span></h2>
+      <p class="sub">Bedenkzeit, Ausnahme und Tage stellst du selbst ein.</p>
+    </div>
+    <div class="plans">
+      <div>
+        <article class="plan">
+          <h3>Gratis</h3>
+          <p class="amount">0 €</p>
+          <p>Eine Auszeit mit bis zu zwei Apps, 15 Sekunden Bedenkzeit und 5 Minuten Ausnahme.</p>
+        </article>
+        <aside class="honest">
+          <h3>Ehrlich gesagt</h3>
+          <p>Auszeit ist ein Hilfsmittel, kein Schutz vor dir selbst. Jede Auszeit lässt sich jederzeit ausschalten. Auszeit pausiert Apps, keine Webseiten. Manche Android-Geräte beenden Dienste im Hintergrund, um Akku zu sparen; die App sagt dir, wo du das für Auszeit ausschaltest.</p>
+        </aside>
+      </div>
+      <article class="plan plus">
+        <h3>Auszeit Plus</h3>
+        <p class="amount">9,99 € im Jahr<small>oder 3,99 € im Monat</small></p>
+        <ul>
+            <li>Weitere Auszeiten, etwa fürs Wochenende</li>
+            <li>Mehr als zwei Apps je Auszeit, auch ganze Kategorien (auf dem iPhone bis zu 50 Apps je Auszeit, auf Android ohne Obergrenze)</li>
+            <li>Bedenkzeit 30 oder 90 Sekunden, oder ganz sperren bis zum Ende der Auszeit</li>
+            <li>Ausnahme 1, 5 oder 15 Minuten</li>
+            <li>„Jetzt bis Ende“: eine Auszeit sofort starten, auch vom Widget aus</li>
+        </ul>
+      </article>
+    </div>
+    <p class="fine">Preise in Österreich; Apple und Google rechnen je Land um, der genaue Preis steht in der App. Plus gibt es als Jahres- oder Monatsabo. Das Abo verlängert sich automatisch, bis du es kündigst: auf dem iPhone in den Einstellungen unter Apple-Account › Abos, auf Android in Google Play unter Zahlungen und Abos. Ein Abo gilt nur für die Plattform, auf der du es gekauft hast.</p>
+  </section>
+
+  <section class="quiet" id="privatsphaere">
+    <div class="wrap">
+      <svg class="hourglass" viewBox="0 0 44 60" aria-hidden="true" focusable="false"><path d="M5 3h34M5 57h34" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><path d="M10 5c0 13 8 18 12 25-4 7-12 12-12 25h24c0-13-8-18-12-25 4-7 12-12 12-25" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/><path d="M13.5 53c1.5-7 5.5-10 8.5-13 3 3 7 6 8.5 13z" fill="currentColor"/><path d="M16 15h12c-1.2 4-3.6 6.4-6 9-2.4-2.6-4.8-5-6-9z" fill="currentColor" opacity=".55"/></svg>
+      <p class="label">Privatsphäre</p>
+      <h2 class="lines"><span>Kein Konto.</span> <span>Keine Daten.</span> <span class="accent">Keine Werbung.</span></h2>
+      <hr class="rule">
+      <p class="sub">Kein Account, kein Server, keine Analyse. Alles bleibt auf deinem Handy.</p>
+      <div class="columns">
         <div>
-          <h2>Kein Konto. Keine Daten. Keine Werbung.</h2>
-          <p>Kein Account, kein Server, keine Analyse. Alles bleibt auf deinem iPhone. Welche Apps du wählst, speichert Auszeit nur als verschlüsselte Kennungen von iOS. Auszeit sieht nicht, wie lange du Apps nutzt, und zeichnet nichts auf.</p>
+          <h3>Auf dem iPhone</h3>
+          <p>Welche Apps du wählst, speichert Auszeit nur als verschlüsselte Kennungen von iOS. Den Namen einer App bekommt allein der Schirm, um ihn anzuzeigen. Auszeit sieht nicht, wie lange du Apps nutzt, und zeichnet nichts auf.</p>
         </div>
         <div>
-          <h2>Ehrlich gesagt</h2>
-          <p>Auszeit ist ein Hilfsmittel, kein Schutz vor dir selbst. Jede Auszeit lässt sich jederzeit ausschalten. Auszeit pausiert Apps, keine Webseiten.</p>
+          <h3>Auf Android</h3>
+          <p>Auszeit nutzt die Bedienungshilfe von Android nur, um zu erkennen, welche App gerade vorn ist, und legt dann die Bedenkzeit darüber. Sie liest keine Bildschirminhalte, sieht nicht, was du tippst, und zeichnet nichts auf. Auszeit sieht nicht, wie lange du Apps nutzt.</p>
         </div>
       </div>
-    </section>
+      <p class="more"><a href="./datenschutz/">Alles Weitere in der Datenschutzerklärung</a></p>
+    </div>
+  </section>
 
-    <section id="presse">
-      <h2>Presse</h2>
-      <p>Material für Berichte, ohne Rückfrage verwendbar. Fragen und Testzugänge: apps@nxtchange-consulting.com.</p>
-      <h3>Kurztext</h3>
-      <p>Auszeit ist eine iPhone-App aus Graz, die gewählte Apps zu festen Zeiten anhält und eine kurze Bedenkzeit dazwischenschiebt. Nutzer entscheiden danach bewusst: Auszeit nehmen oder eine Ausnahme machen. Die App braucht kein Konto, keinen Server und keine Analyse; alle Daten bleiben auf dem Gerät. Auszeit ist gratis mit einer Auszeit für bis zu zwei Apps, Auszeit Plus erweitert den Umfang. Anbieter ist nxtChange Consulting FlexCo.</p>
-      <h3>Eckdaten</h3>
-      <dl class="facts">
-        <dt>Plattform</dt><dd>iPhone, iOS 17 oder neuer</dd>
-        <dt>Veröffentlicht</dt><dd>8. Oktober 2026, Version 1.0</dd>
-        <dt>Länder</dt><dd>38 europäische Länder, Deutsch und Englisch</dd>
-        <dt>Preis</dt><dd>Gratis; Auszeit Plus als Jahres- oder Monatsabo, Preise in der App</dd>
-        <dt>Anbieter</dt><dd>nxtChange Consulting FlexCo, Graz</dd>
-      </dl>
-      <h3>Dateien</h3>
-      <ul class="files">
-        <li><a href="./assets/press/auszeit-icon-1024.png" download>App-Icon, 1024 × 1024 px</a></li>
-        <li><a href="./assets/press/de-1-schirm.png" download>Bild Bedenkzeit, 1284 × 2778 px</a></li>
-        <li><a href="./assets/press/de-2-entscheidung.png" download>Bild Entscheidung, 1284 × 2778 px</a></li>
-        <li><a href="./assets/press/de-6-privat.png" download>Bild Privatsphäre, 1284 × 2778 px</a></li>
-      </ul>
-    </section>
+  <section class="wrap section" id="fragen">
+    <h2>Häufige Fragen</h2>
+    <div class="faq">
+      <details>
+        <summary>Ist Auszeit dasselbe wie die „Auszeit“ in Apples Bildschirmzeit?</summary>
+        <div class="answer">
+          <p>Nein. Die Auszeit in Apples Bildschirmzeit sperrt Apps zu festen Zeiten. Die App Auszeit nutzt die Bildschirmzeit als Grundlage und setzt eine Bedenkzeit mit Entscheidung davor, statt eines Verbots: Auszeit nehmen oder eine Ausnahme machen. Auszeit ist eine eigene App von nxtChange Consulting FlexCo, nicht von Apple.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Funktioniert Auszeit nur abends?</summary>
+        <div class="answer">
+          <p>Nein. Du legst das Zeitfenster selbst fest, zum Beispiel 21:00 bis 07:00, an den Tagen, die du willst: abends, in der Arbeit oder ganztags. Gratis gilt eine Auszeit; mit Auszeit Plus kommen weitere dazu, etwa fürs Wochenende.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Was braucht Auszeit auf Android, und warum die Bedienungshilfe?</summary>
+        <div class="answer">
+          <p>Ein Android-Handy ab Android 8.0 und die Bedienungshilfe von Android, die du einmal in den Einstellungen einschaltest. Auf Android gibt es keine Bildschirmzeit-Schnittstelle für andere Apps, und ohne Geräteadministrator oder Unternehmensprofil keinen anderen Weg, zu festen Zeiten eine Bedenkzeit über eine andere App zu legen.</p>
+          <p>Auszeit nutzt die Bedienungshilfe nur, um zu erkennen, welche App gerade vorn ist, und legt dann die Bedenkzeit darüber. Sie liest keine Bildschirminhalte, sieht nicht, was du tippst, und zeichnet nichts auf. Bevor die App dich zum Einschalten in die Einstellungen führt, erklärt sie dir das in einem Dialog.</p>
+          <figure class="film">
+        <div class="yt-box">
+          <a class="yt" href="https://www.youtube.com/watch?v=oJJUE4cR4yY" data-yt="oJJUE4cR4yY" data-title="Off Hours: accessibility service demo">
+            <img src="./assets/img/video/oJJUE4cR4yY.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="yt-play"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="#FAF0DE"/></svg><span class="visually-hidden">Video auf YouTube abspielen: Off Hours: accessibility service demo</span></span>
+            <span class="yt-note"><span>Beim Abspielen lädt YouTube</span></span>
+          </a>
+        </div>
+        <figcaption>Vorführung der Bedienungshilfe, vom Dialog bis zur Bedenkzeit über einer App. Das Video ist auf Englisch, mit Untertiteln. <span lang="en">„Off Hours: accessibility service demo“</span></figcaption>
+      </figure>
+        </div>
+      </details>
+      <details>
+        <summary>Sieht Auszeit, welche Apps ich nutze?</summary>
+        <div class="answer">
+          <p>Nein. Kein Account, kein Server, keine Analyse: Alles bleibt auf deinem Handy. Auf dem iPhone speichert Auszeit die gewählten Apps nur als verschlüsselte Kennungen von iOS; den Namen einer App bekommt allein der Schirm, um ihn anzuzeigen. Auf Android verarbeitet die Bedienungshilfe nur den Paketnamen der App, die gerade vorn ist, und speichert ihn nicht. Auszeit sieht nicht, wie lange du Apps nutzt, und zeichnet nichts auf.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Kann ich die Sperre umgehen?</summary>
+        <div class="answer">
+          <p>Ja. Auszeit ist ein Hilfsmittel, kein Schutz vor dir selbst. Jede Auszeit lässt sich jederzeit ausschalten. Wer es strenger will, stellt mit Auszeit Plus eine Bedenkzeit von 30 oder 90 Sekunden ein oder sperrt die Apps ganz bis zum Ende der Auszeit.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Was kostet Auszeit?</summary>
+        <div class="answer">
+          <p>Auszeit ist gratis, mit einer Auszeit für bis zu zwei Apps, 15 Sekunden Bedenkzeit und 5 Minuten Ausnahme. Auszeit Plus kostet 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich, Apple und Google rechnen je Land um, der genaue Preis steht in der App). Das Abo verlängert sich automatisch, bis du es kündigst.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Pausiert Auszeit auch Webseiten?</summary>
+        <div class="answer">
+          <p>Nein. Auszeit pausiert Apps, keine Webseiten. Ob Mitteilungen einer pausierten App erscheinen, entscheidet das System.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Auf welchen Geräten läuft Auszeit?</summary>
+        <div class="answer">
+          <p>Auf dem iPhone mit iOS 17 oder neuer und auf Android-Handys ab Android 8.0. Auszeit gibt es im App Store und bei Google Play, auf Deutsch und Englisch.</p>
+        </div>
+      </details>
+    </div>
+  </section>
 
-    <footer>
-      <div class="links">
+  <section class="wrap section press" id="presse">
+    <h2>Presse</h2>
+    <p class="sub">Material für Berichte, ohne Rückfrage verwendbar. Fragen und Testzugänge: <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a></p>
+    <div class="press-grid" style="margin-top:28px">
+      <div>
+        <h3>Kurztext</h3>
+        <p>Auszeit ist eine App für iPhone und Android aus Graz, die gewählte Apps zu festen Zeiten anhält und eine kurze Bedenkzeit dazwischenschiebt. Nutzer entscheiden danach bewusst: Auszeit nehmen oder eine Ausnahme machen. Auf dem iPhone nutzt Auszeit die Bildschirmzeit, auf Android die Bedienungshilfe. Die App braucht kein Konto, keinen Server und keine Analyse; alle Daten bleiben auf dem Gerät. Auszeit ist gratis mit einer Auszeit für bis zu zwei Apps, Auszeit Plus erweitert den Umfang. Anbieter ist nxtChange Consulting FlexCo.</p>
+        <a class="kit" href="./assets/press/auszeit-pressemappe-de.zip" download><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pressemappe laden</span></a>
+        <p class="price">ZIP mit allen 13 Dateien, 17,5 MB</p>
+      </div>
+      <div>
+        <h3>Eckdaten</h3>
+        <dl class="facts">
+          <dt>Name</dt><dd>Auszeit (englisch: Off Hours), im Store „Auszeit: App Blocker &amp; Fokus“</dd>
+          <dt>Plattformen</dt><dd>iPhone (iOS 17 oder neuer) und Android (8.0 oder neuer)</dd>
+          <dt>Veröffentlicht</dt><dd>Oktober 2026</dd>
+          <dt>Länder</dt><dd>37 im App Store, 36 bei Google Play, alle in Europa</dd>
+          <dt>Sprachen</dt><dd>Deutsch und Englisch</dd>
+          <dt>Preis</dt><dd>Gratis; Auszeit Plus 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich)</dd>
+          <dt>Anbieter</dt><dd>nxtChange Consulting FlexCo, Graz</dd>
+        </dl>
+      </div>
+    </div>
+    <h3 class="visually-hidden">Dateien</h3>
+    <div class="files">
+      <div>
+        <h4>App-Icon</h4>
+        <ul>
+            <li><a href="./assets/press/auszeit-icon-1024.png" download>App-Icon</a><small>PNG, 1024 × 1024 px, 660 KB</small></li>
+        </ul>
+      </div>
+      <div>
+        <h4>iPhone, App Store</h4>
+        <ul>
+            <li><a href="./assets/press/de-1-schirm.png" download>1. Instagram? Erst 15 Sekunden.</a><small>PNG, 1320 × 2868 px, 2,4 MB</small></li>
+            <li><a href="./assets/press/de-2-liste.png" download>2. Zu deinen Zeiten. Ganz von selbst.</a><small>PNG, 1320 × 2868 px, 1,8 MB</small></li>
+            <li><a href="./assets/press/de-3-entscheidung.png" download>3. Deine Entscheidung. Jedes Mal.</a><small>PNG, 1320 × 2868 px, 2,4 MB</small></li>
+            <li><a href="./assets/press/de-4-editor.png" download>4. So streng, wie du willst.</a><small>PNG, 1320 × 2868 px, 1,9 MB</small></li>
+            <li><a href="./assets/press/de-5-apps.png" download>5. Nur die Apps, die du wählst.</a><small>PNG, 1320 × 2868 px, 1,8 MB</small></li>
+            <li><a href="./assets/press/de-6-privat.png" download>6. Kein Konto. Keine Daten. Keine Werbung.</a><small>PNG, 1320 × 2868 px, 3,3 MB</small></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Android, Google Play</h4>
+        <ul>
+            <li><a href="./assets/press/de-android-01-schirm.png" download>1. Weniger scrollen. Ohne Verbot.</a><small>PNG, 1080 × 1920 px, 597 KB</small></li>
+            <li><a href="./assets/press/de-android-02-entscheidung.png" download>2. Deine Entscheidung. Jedes Mal.</a><small>PNG, 1080 × 1920 px, 599 KB</small></li>
+            <li><a href="./assets/press/de-android-03-liste.png" download>3. Zu deinen Zeiten. Jeden Tag.</a><small>PNG, 1080 × 1920 px, 729 KB</small></li>
+            <li><a href="./assets/press/de-android-04-editor.png" download>4. So streng, wie du willst.</a><small>PNG, 1080 × 1920 px, 687 KB</small></li>
+            <li><a href="./assets/press/de-android-05-apps.png" download>5. Nur die Apps, die du wählst.</a><small>PNG, 1080 × 1920 px, 694 KB</small></li>
+            <li><a href="./assets/press/de-android-funktionsgrafik-1024x500.png" download>Funktionsgrafik</a><small>PNG, 1024 × 500 px, 272 KB</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="./"><img src="./assets/img/icon-180.png" alt="" width="36" height="36"><span>Auszeit</span></a>
+      <nav class="foot-links" aria-label="Support, Datenschutz">
         <a href="./support/">Support</a>
         <a href="./datenschutz/">Datenschutz</a>
         <a href="./nutzungsbedingungen/">Nutzungsbedingungen</a>
         <a href="https://nxtchange.app/">Alle Apps</a>
-      </div>
-      <address>
-        <strong>Anbieter:</strong> nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz, Österreich<br>
-        FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038 · <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a>
-      </address>
-      <p class="note">Apple, iPhone und App Store sind Marken der Apple Inc.</p>
-    </footer>
+      </nav>
+    </div>
+    <address>
+      <strong>Anbieter:</strong> nxtChange Consulting FlexCo · Neugasse 9/1 · 8045 Graz, Österreich<br>
+      FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038 · <a href="mailto:apps@nxtchange-consulting.com">apps@nxtchange-consulting.com</a>
+    </address>
+    <p class="note">Apple, iPhone und App Store sind Marken der Apple Inc. Google Play und das Google Play-Logo sind Marken von Google LLC.</p>
   </div>
+</footer>
+<script>
+/* Videos erst auf Klick: App-Vorschau (selbst gehostet) und YouTube (youtube-nocookie.com). Sonst kein JavaScript. */
+(function () {
+  var d = document;
+  Array.prototype.forEach.call(d.querySelectorAll("button[data-play]"), function (button) {
+    var video = d.getElementById(button.getAttribute("data-play"));
+    if (!video) return;
+    video.removeAttribute("controls");
+    button.hidden = false;
+    button.addEventListener("click", function () {
+      video.setAttribute("controls", "");
+      button.hidden = true;
+      video.play();
+      video.focus();
+    });
+  });
+  d.addEventListener("click", function (event) {
+    var link = event.target.closest && event.target.closest("a[data-yt]");
+    if (!link) return;
+    event.preventDefault();
+    var frame = d.createElement("iframe");
+    frame.src = "https://www.youtube-nocookie.com/embed/" + link.getAttribute("data-yt") + "?autoplay=1&rel=0";
+    frame.title = link.getAttribute("data-title");
+    frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    frame.allowFullscreen = true;
+    link.parentNode.replaceChild(frame, link);
+    frame.focus();
+  });
+})();
+</script>
 </body>
 </html>

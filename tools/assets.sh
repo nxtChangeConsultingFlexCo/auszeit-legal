@@ -1,0 +1,76 @@
+#!/bin/sh
+# Holt und erzeugt die Bilder, Videos und Pressemappen der Startseite. Aufruf im Repo-Wurzelordner:
+#
+#   sh tools/assets.sh
+#
+# Quellen (außerhalb dieses Repos, nichts davon wird dort geändert):
+#   Store-Bilder iPhone, hell:  ~/Documents/Auszeit App-Store-Bilder 2026-10-20/abend-hell/6.9-Zoll/{de,en}/
+#                               (gebaut mit store/screenshots.swift im App-Repo auszeit)
+#   Store-Video iPhone:         ~/Documents/Auszeit Store-Video 2026-10-20/store-video-{de,en}.mp4
+#   Android-Bilder:             ../auszeit-android/store/upload/{de,en-GB}/
+#   Google-Play-Abzeichen:      play.google.com/intl/{de_de,en_gb}/badges/… (offiziell, unverändert)
+#   YouTube-Standbilder:        i.ytimg.com/vi/<id>/maxresdefault.jpg, sonst hqdefault.jpg
+# Heruntergeladen wird nur, was noch fehlt. Die ZIPs sind deterministisch (feste Zeitstempel, feste Reihenfolge,
+# ohne Zusatzattribute), damit ein erneuter Lauf ohne neue Quellen keine Änderung im Repo erzeugt.
+set -eu
+
+STORE="$HOME/Documents/Auszeit App-Store-Bilder 2026-10-20/abend-hell/6.9-Zoll"
+VIDEO="$HOME/Documents/Auszeit Store-Video 2026-10-20"
+ANDROID="../auszeit-android/store/upload"
+VIDEOS="TQRQjztSKBM JQcw7RqWnOs oJJUE4cR4yY"
+
+mkdir -p assets/img/de assets/img/en assets/img/video assets/press assets/video
+
+# Startseite: die sechs Store-Bilder je Sprache, 1200 px hoch.
+for lang in de en; do
+  rm -f assets/img/$lang/*.png
+  for f in "$STORE/$lang"/*.png; do
+    sips -Z 1200 "$f" --out "assets/img/$lang/$(basename "$f")" >/dev/null
+  done
+done
+
+# Pressebilder in Originalgröße: iPhone (6,9 Zoll), Android (Telefon und Funktionsgrafik).
+rm -f assets/press/de-*.png assets/press/en-*.png
+for lang in de en; do
+  for f in "$STORE/$lang"/*.png; do cp "$f" "assets/press/$lang-$(basename "$f")"; done
+done
+for f in "$ANDROID"/de/0[1-5]-*.png; do cp "$f" "assets/press/de-android-$(basename "$f")"; done
+for f in "$ANDROID"/en-GB/0[1-5]-*.png; do cp "$f" "assets/press/en-android-$(basename "$f")"; done
+cp "$ANDROID/de/funktionsgrafik-1024x500.png" assets/press/de-android-funktionsgrafik-1024x500.png
+cp "$ANDROID/en-GB/feature-graphic-1024x500.png" assets/press/en-android-feature-graphic-1024x500.png
+
+# Google-Play-Abzeichen, einmal geladen.
+[ -s assets/img/google-play-de.png ] || curl -fsS -o assets/img/google-play-de.png \
+  https://play.google.com/intl/de_de/badges/static/images/badges/de_badge_web_generic.png
+[ -s assets/img/google-play-en.png ] || curl -fsS -o assets/img/google-play-en.png \
+  https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png
+
+# Standbilder der YouTube-Videos für die Klick-Fassade, einmal geladen.
+for id in $VIDEOS; do
+  [ -s "assets/img/video/$id.jpg" ] || curl -fsS -o "assets/img/video/$id.jpg" "https://i.ytimg.com/vi/$id/maxresdefault.jpg" \
+    || curl -fsS -o "assets/img/video/$id.jpg" "https://i.ytimg.com/vi/$id/hqdefault.jpg"
+done
+
+# Vorschaubild für Teaser und die App-Vorschau als kleines MP4. Das Video trägt einen Zeitstempel im Container und
+# entsteht deshalb nur, wenn es fehlt (zum Neubauen vorher löschen).
+swift tools/og-bild.swift assets/press/auszeit-icon-1024.png assets/img
+for lang in de en; do
+  [ -s "assets/video/store-video-$lang.mp4" ] || swift tools/video.swift "$VIDEO/store-video-$lang.mp4" "assets/video/store-video-$lang.mp4"
+done
+
+# Pressemappe je Sprache: Icon, sechs iPhone-Bilder, fünf Android-Bilder, Funktionsgrafik.
+pack() { # <sprache> <zip-name ohne .zip>
+  lang=$1; name=$2
+  stage=$(mktemp -d)
+  mkdir -p "$stage/$name/iphone" "$stage/$name/android"
+  cp assets/press/auszeit-icon-1024.png "$stage/$name/"
+  for f in assets/press/$lang-[1-6]-*.png; do cp "$f" "$stage/$name/iphone/${f#assets/press/$lang-}"; done
+  for f in assets/press/$lang-android-*.png; do cp "$f" "$stage/$name/android/${f#assets/press/$lang-android-}"; done
+  find "$stage" -exec env TZ=UTC touch -t 202610200000 {} +
+  rm -f "assets/press/$name.zip"
+  (cd "$stage" && find "$name" -type f ! -name .DS_Store | LC_ALL=C sort | TZ=UTC zip -X -D -q "$OLDPWD/assets/press/$name.zip" -@)
+  rm -rf "$stage"
+  echo "assets/press/$name.zip ($(($(wc -c < "assets/press/$name.zip") / 1024)) KB)"
+}
+pack de auszeit-pressemappe-de
+pack en off-hours-press-kit-en

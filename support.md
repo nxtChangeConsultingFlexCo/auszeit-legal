@@ -1,6 +1,11 @@
 ---
 title: Support
 permalink: /support/
+lang: de
+locale: de_AT
+description: "Support für Auszeit auf iPhone und Android: Kontakt und häufige Fragen zu Bildschirmzeit, Bedienungshilfe und Abo. Support for Off Hours in English below."
+image: /assets/img/og-de.png
+lang_switch: "#support-for-off-hours"
 ---
 
 # Support für Auszeit · Support for Off Hours

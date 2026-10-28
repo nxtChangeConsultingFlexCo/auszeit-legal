@@ -1,6 +1,12 @@
 ---
 title: Terms of Use
 permalink: /terms/
+lang: en
+locale: en_GB
+description: "Terms of use for Off Hours on iPhone and Android: who we are, what the app does and does not promise, Free and Off Hours Plus, license, liability and jurisdiction."
+image: /assets/img/og-en.png
+alternate_de: /nutzungsbedingungen/
+alternate_en: /terms/
 ---
 
 # Terms of Use for Off Hours

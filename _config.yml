@@ -1,5 +1,6 @@
 title: Auszeit
-description: Rechtstexte zur iPhone-App Auszeit
+description: "Auszeit: App-Blocker für iPhone und Android. Support, Datenschutz und Nutzungsbedingungen."
+url: https://auszeit.nxtchange.app
 lang: de
 theme: jekyll-theme-primer
 exclude: [tools, preview, README.md]

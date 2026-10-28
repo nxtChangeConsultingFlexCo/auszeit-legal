@@ -1,11 +1,17 @@
 ---
 title: Datenschutzerklärung
 permalink: /datenschutz/
+lang: de
+locale: de_AT
+description: "Datenschutzerklärung für Auszeit auf iPhone und Android: kein Konto, kein Server, keine Analyse. Was die App speichert, Bildschirmzeit, Bedienungshilfe, Käufe und diese Website."
+image: /assets/img/og-de.png
+alternate_de: /datenschutz/
+alternate_en: /privacy/
 ---
 
 # Datenschutzerklärung für Auszeit
 
-Stand: 13. Oktober 2026
+Stand: 28. Oktober 2026
 
 ## Kurz gesagt
 
@@ -130,6 +136,21 @@ https://docs.github.com/site-policy/privacy-policies/github-general-privacy-stat
 
 Rechtsgrundlage ist unser berechtigtes Interesse, diese Texte abrufbar zu halten (Art. 6 Abs. 1
 lit. f DSGVO).
+
+### Videos
+
+Die App-Vorschau auf der Startseite liegt ebenfalls bei GitHub Pages und lädt erst, wenn du sie
+startest. Dabei ist kein weiterer Dienst beteiligt.
+
+Videos von YouTube zeigen wir zunächst nur als Vorschaubild, das von dieser Website kommt. Erst wenn
+du auf ein solches Video klickst, lädt dein Browser den Player von YouTube, einem Dienst der Google
+Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Dann verarbeitet YouTube Daten wie
+deine IP-Adresse und Angaben zu Browser und Gerät; dabei können Daten auch an Google LLC in den USA
+übermittelt werden. Wir binden YouTube im erweiterten Datenschutzmodus ein (youtube-nocookie.com).
+Für die Verarbeitung durch YouTube gilt Googles Datenschutzerklärung: https://policies.google.com/privacy
+
+Rechtsgrundlage ist deine Einwilligung, die du mit dem Klick auf das Video gibst (Art. 6 Abs. 1
+lit. a DSGVO). Ohne Klick gehen keine Daten an YouTube.
 
 ## Kontakt und deine Rechte
 

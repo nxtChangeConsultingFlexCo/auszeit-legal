@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Von Hand gepflegt: neue Seiten hier eintragen, Gegenstücke in der anderen Sprache als xhtml:link. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://auszeit.nxtchange.app/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/en/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/datenschutz/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/datenschutz/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/privacy/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/datenschutz/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/nutzungsbedingungen/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/nutzungsbedingungen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/nutzungsbedingungen/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/terms/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/nutzungsbedingungen/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/nutzungsbedingungen/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/support/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+</urlset>
