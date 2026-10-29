@@ -66,7 +66,7 @@ done
 # Rechner, bleiben die vorhandenen Dateien.
 if [ -s "$FOTO" ]; then
   swift tools/gruenderfoto.swift "$FOTO" assets/press/karl-maier-1800x1200.jpg assets/img/karl-maier-1200x800.jpg \
-    "$FOTO_NACHWEIS" "Karl Maier, Gründer und Entwickler von Auszeit (Off Hours), Graz"
+    "$FOTO_NACHWEIS" "Karl Maier, MA, Gründer und Entwickler von Auszeit (Off Hours), Graz"
 elif [ ! -s assets/press/karl-maier-1800x1200.jpg ] || [ ! -s assets/img/karl-maier-1200x800.jpg ]; then
   echo "Fehlt: $FOTO (Quelle für das Gründerfoto)" >&2; exit 1
 fi

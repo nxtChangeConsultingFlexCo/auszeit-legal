@@ -99,7 +99,7 @@ func write(_ image: CIImage, to path: String, quality: Double) {
         FileHandle.standardError.write(Data("Konnte \(path) nicht schreiben.\n".utf8)); exit(1)
     }
     let iptc: [CFString: Any] = [kCGImagePropertyIPTCCredit: credit, kCGImagePropertyIPTCCopyrightNotice: credit,
-                                 kCGImagePropertyIPTCObjectName: "Karl Maier", kCGImagePropertyIPTCCaptionAbstract: caption]
+                                 kCGImagePropertyIPTCObjectName: "Karl Maier, MA", kCGImagePropertyIPTCCaptionAbstract: caption]
     let tiff: [CFString: Any] = [kCGImagePropertyTIFFCopyright: credit, kCGImagePropertyTIFFImageDescription: caption]
     let properties: [CFString: Any] = [kCGImageDestinationLossyCompressionQuality: quality,
                                        kCGImagePropertyIPTCDictionary: iptc, kCGImagePropertyTIFFDictionary: tiff]

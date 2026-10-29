@@ -35,6 +35,7 @@ APPLE_PROVIDER = "129507889"
 # Name im Store je Sprache. Ändert sich voraussichtlich mit 1.0.5, dann nur hier.
 STORE_NAME = {"de": "Auszeit: App Blocker & Fokus", "en": "Off Hours: App Blocker & Focus"}
 EMAIL = "apps@nxtchange-consulting.com"
+PRESS_EMAIL = "karl.maier@nxtchange-consulting.com"   # Presse direkt: Redaktionen antworten auf die Pitch-Mails
 # Gründerfoto fürs Pressematerial: Querformat aus dem Porträt, erzeugt tools/gruenderfoto.swift über tools/assets.sh
 # (dort steht derselbe Bildnachweis für die Metadaten der JPEGs). Fotograf nicht dokumentiert, Nachweis bestätigt Karl.
 FOUNDER_PHOTO = {"press": "press/karl-maier-1800x1200.jpg", "web": "img/karl-maier-1200x800.jpg"}
@@ -138,6 +139,7 @@ TEXT = {
         "android_video": "android-de",
         "android_video_caption": "Auszeit auf Android in 30 Sekunden.",
         "yt_note": "Beim Abspielen lädt YouTube",
+        "yt_title_label": "Auf YouTube:",
         "yt_play": "Video auf YouTube abspielen",
         "price_id": "preise",
         "free_h": "Gratis", "free_amount": "0 €",
@@ -189,8 +191,8 @@ TEXT = {
               "Auszeit nutzt die Bedienungshilfe nur, um zu erkennen, welche App gerade vorn ist, und legt dann die "
               "Bedenkzeit darüber. Sie liest keine Bildschirminhalte, sieht nicht, was du tippst, und zeichnet nichts "
               "auf. Bevor die App dich zum Einschalten in die Einstellungen führt, erklärt sie dir das in einem Dialog."],
-             ("access", "Vorführung der Bedienungshilfe, vom Dialog bis zur Bedenkzeit über einer App. Das Video ist "
-                        "auf Englisch, mit Untertiteln.")),
+             ("access", "Vorführung der Bedienungshilfe (englisch, mit Untertiteln): vom Dialog bis zur Bedenkzeit über "
+                        "einer App.")),
             ("Sieht Auszeit, welche Apps ich nutze?",
              ["Nein. Kein Account, kein Server, keine Analyse: Alles bleibt auf deinem Handy. Auf dem iPhone speichert "
               "Auszeit die gewählten Apps nur als verschlüsselte Kennungen von iOS; den Namen einer App bekommt allein "
@@ -215,13 +217,15 @@ TEXT = {
         ],
         "press_id": "presse", "press_h": "Presse",
         "press_intro": "Material für Berichte, ohne Rückfrage verwendbar. Fragen und Testzugänge:",
+        "press_direct": "oder direkt an Karl Maier, MA:",
         "press_short_h": "Kurztext",
         "press_short": "Auszeit ist eine App für iPhone und Android aus Graz, die gewählte Apps zu festen Zeiten anhält "
                        "und eine kurze Bedenkzeit dazwischenschiebt. Nutzer entscheiden danach bewusst: Auszeit nehmen "
                        "oder eine Ausnahme machen. Auf dem iPhone nutzt Auszeit die Bildschirmzeit, auf Android die "
                        "Bedienungshilfe. Die App braucht kein Konto, keinen Server und keine Analyse; alle Daten bleiben "
                        "auf dem Gerät. Auszeit ist gratis mit einer Auszeit für bis zu zwei Apps, Auszeit Plus erweitert "
-                       "den Umfang. Anbieter ist nxtChange Consulting FlexCo.",
+                       "den Umfang. Entwickelt hat sie Karl Maier, MA, als Ein-Personen-Projekt ohne Investoren; Anbieter "
+                       "ist nxtChange Consulting FlexCo.",
         "press_facts_h": "Eckdaten",
         "press_facts": [
             ("Name", f"Auszeit (englisch: Off Hours), im Store „{STORE_NAME['de']}“"),
@@ -230,28 +234,28 @@ TEXT = {
             ("Länder", "37 im App Store, 36 bei Google Play, alle in Europa"),
             ("Sprachen", "Deutsch und Englisch"),
             ("Preis", "Gratis; Auszeit Plus 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich)"),
-            ("Gründer", "Karl Maier, Ein-Personen-Projekt ohne Investoren"),
+            ("Gründer", "Karl Maier, MA, Ein-Personen-Projekt ohne Investoren"),
             ("Anbieter", "nxtChange Consulting FlexCo, Graz"),
         ],
         # Gründergeschichte wie in den Presse-Pitches (Outlook-Entwurf vom 25.10.2026): Ein-Personen-Projekt, persönlicher
         # Anlass, Instagram als Zitat. Nichts erfinden, Wortlaut aus dem Pitch.
-        "founder_id": "gruender", "founder_h": "Gründer", "founder_name": "Karl Maier",
+        "founder_id": "gruender", "founder_h": "Gründer", "founder_name": "Karl Maier, MA",
         "founder_role": "Gründer und Entwickler von Auszeit · nxtChange Consulting FlexCo, Graz",
         "founder_job": "Gründer und Entwickler von Auszeit",
-        "founder_intro": "Karl Maier, Unternehmensberater aus Graz, hat Auszeit Anfang Oktober 2026 für iPhone und Android "
-                         "veröffentlicht: als Ein-Personen-Projekt ohne Investoren, über seine nxtChange Consulting FlexCo. "
-                         "Der Anlass war persönlich.",
-        "founder_quote": "Oft wollte ich nur kurz in Instagram schauen, und dann waren zwei Stunden weg.",
-        "founder_quote_by": "Karl Maier, Gründer von Auszeit",
+        "founder_intro": "Karl Maier, MA, Unternehmensberater und App-Entwickler aus Graz, hat Auszeit Anfang Oktober 2026 "
+                         "für iPhone und Android veröffentlicht: als Ein-Personen-Projekt ohne Investoren, über seine "
+                         "nxtChange Consulting FlexCo. Der Anlass war persönlich.",
+        "founder_quote": "Oft wollte ich nur kurz auf Instagram schauen, und dann waren zwei Stunden weg.",
+        "founder_quote_by": "Karl Maier, MA · Gründer von Auszeit",
         "founder_after": "Auszeit unterbricht diesen Reflex. In einem frei wählbaren Zeitfenster, meist abends, auf Wunsch "
                          "rund um die Uhr, kommt vor ausgewählten Apps zuerst eine kurze Pause mit Countdown. Danach "
                          "entscheidet man bewusst: Auszeit nehmen oder eine Ausnahme machen. Kein Konto, kein Server, kein "
                          "Tracking.",
         "founder_note": "Zitat und Text sind für Berichte frei verwendbar.",
         "q_open": "„", "q_close": "“",
-        "photo_alt": "Karl Maier, Gründer und Entwickler von Auszeit, Porträt im Querformat",
+        "photo_alt": "Karl Maier, MA, Gründer und Entwickler von Auszeit, Porträt im Querformat",
         "photo_credit_label": "Foto", "photo_download": "Foto in Druckgröße laden",
-        "files_founder_h": "Gründerfoto", "files_founder": "Karl Maier, Querformat 3:2",
+        "files_founder_h": "Gründerfoto", "files_founder": "Karl Maier, MA · Querformat 3:2",
         "press_files_h": "Dateien",
         "kit": "auszeit-pressemappe-de", "kit_label": "Pressemappe laden",
         "kit_meta": "ZIP mit allen {n} Dateien, {size}",
@@ -397,13 +401,15 @@ TEXT = {
         ],
         "press_id": "press", "press_h": "Press",
         "press_intro": "Material for coverage, free to use without asking. Questions and review access:",
+        "press_direct": "or directly to Karl Maier, MA:",
         "press_short_h": "Short description",
         "press_short": "Off Hours is an app for iPhone and Android from Graz, Austria, that holds the apps you choose "
                        "during the hours you set and adds a short cooling-off first. Users then decide on purpose: take "
                        "a break or make an exception. On iPhone, Off Hours uses Screen Time; on Android, the "
                        "accessibility service. The app needs no account, no server and no analytics; all data stays on "
                        "the device. Off Hours is free with one schedule for up to two apps; Off Hours Plus extends it. "
-                       "The developer is nxtChange Consulting FlexCo.",
+                       "Karl Maier, MA, built it as a one-person project without investors; the provider is nxtChange "
+                       "Consulting FlexCo.",
         "press_facts_h": "Facts",
         "press_facts": [
             ("Name", f"Off Hours (German: Auszeit), in the stores “{STORE_NAME['en']}”"),
@@ -412,25 +418,25 @@ TEXT = {
             ("Countries", "37 on the App Store, 36 on Google Play, all in Europe"),
             ("Languages", "English and German"),
             ("Price", "Free; Off Hours Plus €9.99 a year or €3.99 a month (Austrian price)"),
-            ("Founder", "Karl Maier, one-person project without investors"),
+            ("Founder", "Karl Maier, MA, one-person project without investors"),
             ("Developer", "nxtChange Consulting FlexCo, Graz, Austria"),
         ],
-        "founder_id": "founder", "founder_h": "Founder", "founder_name": "Karl Maier",
+        "founder_id": "founder", "founder_h": "Founder", "founder_name": "Karl Maier, MA",
         "founder_role": "Founder and developer of Off Hours · nxtChange Consulting FlexCo, Graz, Austria",
         "founder_job": "Founder and developer of Off Hours",
-        "founder_intro": "Karl Maier, a management consultant from Graz, Austria, released Off Hours for iPhone and Android "
-                         "in early October 2026: a one-person project without investors, through his company nxtChange "
-                         "Consulting FlexCo. The reason was personal.",
+        "founder_intro": "Karl Maier, MA, a management consultant and app developer from Graz, Austria, released Off Hours "
+                         "for iPhone and Android in early October 2026: a one-person project without investors, through "
+                         "his company nxtChange Consulting FlexCo. The reason was personal.",
         "founder_quote": "Often I just wanted to take a quick look at Instagram, and then two hours were gone.",
-        "founder_quote_by": "Karl Maier, founder of Off Hours",
+        "founder_quote_by": "Karl Maier, MA · founder of Off Hours",
         "founder_after": "Off Hours interrupts that reflex. During a time window of your choice, usually in the evening, "
                          "around the clock if you like, the apps you pick first show a short pause with a countdown. Then "
                          "you decide on purpose: take a break or make an exception. No account, no server, no tracking.",
         "founder_note": "Quote and text are free to use for coverage. The quote is translated from German.",
         "q_open": "“", "q_close": "”",
-        "photo_alt": "Karl Maier, founder and developer of Off Hours, landscape portrait",
+        "photo_alt": "Karl Maier, MA, founder and developer of Off Hours, landscape portrait",
         "photo_credit_label": "Photo", "photo_download": "Download the print-size photo",
-        "files_founder_h": "Founder photo", "files_founder": "Karl Maier, landscape 3:2",
+        "files_founder_h": "Founder photo", "files_founder": "Karl Maier, MA · landscape 3:2",
         "press_files_h": "Files",
         "kit": "off-hours-press-kit-en", "kit_label": "Download the press kit",
         "kit_meta": "ZIP with all {n} files, {size}",
@@ -587,7 +593,7 @@ def youtube(key: str, t: dict, root: str, caption: str, row: bool = False) -> st
     if row:
         cap = f'<strong>{e(caption)}</strong><span lang="{"de" if "Auszeit" in title else "en"}">{e(title)}</span>'
     elif t["lang"] == "de" and key == "access":
-        cap = f'{e(caption)} <span lang="en">„{e(title)}“</span>'
+        cap = f'{e(caption)} {e(t["yt_title_label"])} <span lang="en">„{e(title)}“</span>.'
     else:
         cap = e(caption)
     return (f'<figure class="film{" film-row" if row else ""}">\n'
@@ -685,7 +691,8 @@ def jsonld(t: dict) -> str:
         "publisher": {"@id": org_id},
     }
     founder = {
-        "@type": "Person", "@id": SITE + "/#karl-maier", "name": "Karl Maier", "jobTitle": t["founder_job"],
+        "@type": "Person", "@id": SITE + "/#karl-maier", "name": "Karl Maier", "honorificSuffix": "MA",
+        "jobTitle": t["founder_job"], "email": PRESS_EMAIL,
         "worksFor": {"@id": org_id}, "sameAs": [LINKEDIN],
         "image": {"@type": "ImageObject", "contentUrl": f"{SITE}/assets/{FOUNDER_PHOTO['press']}",
                   "creditText": PHOTO_CREDIT, "copyrightNotice": PHOTO_CREDIT, "caption": t["photo_alt"]},
@@ -918,7 +925,7 @@ def home_page(t: dict) -> str:
 
   <section class="wrap section press" id="{t['press_id']}">
     <h2>{e(t['press_h'])}</h2>
-    <p class="sub">{e(t['press_intro'])} <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+    <p class="sub">{e(t['press_intro'])} <a href="mailto:{EMAIL}">{EMAIL}</a> {e(t['press_direct'])} <a href="mailto:{PRESS_EMAIL}">{PRESS_EMAIL}</a></p>
     <div class="press-grid" style="margin-top:28px">
       <div>
         <h3>{e(t['press_short_h'])}</h3>
@@ -936,7 +943,7 @@ def home_page(t: dict) -> str:
     <div class="founder" id="{t['founder_id']}">
       <figure class="founder-photo">
         <img src="{img(FOUNDER_PHOTO['web'], root)}" alt="{e(t['photo_alt'])}" width="{photo_w}" height="{photo_h}" loading="lazy" decoding="async">
-        <figcaption>{e(credit)} · <a href="{file(FOUNDER_PHOTO['press'], root)}" download>{e(t['photo_download'])}</a></figcaption>
+        <figcaption>{e(t['founder_name'])} · {e(credit)} · <a href="{file(FOUNDER_PHOTO['press'], root)}" download>{e(t['photo_download'])}</a></figcaption>
       </figure>
       <div class="founder-text">
         <p class="label">{e(t['founder_h'])}</p>
