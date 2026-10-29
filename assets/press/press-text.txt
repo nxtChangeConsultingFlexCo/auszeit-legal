@@ -1,0 +1,75 @@
+Off Hours: App Blocker & Focus · Press text
+As of 29 October 2026 · https://auszeit.nxtchange.app/en/#press
+
+
+SHORT DESCRIPTION
+
+Off Hours is an app for iPhone and Android from Graz, Austria, that holds the apps you
+choose during the hours you set and adds a short cooling-off first. Users then decide on
+purpose: take a break or make an exception. On iPhone, Off Hours uses Screen Time; on
+Android, the accessibility service. The app needs no account, no server and no analytics;
+all data stays on the device. Off Hours is free with one schedule for up to two apps; Off
+Hours Plus extends it. Karl Maier, MA, built it as a one-person project without investors;
+the provider is nxtChange Consulting FlexCo.
+
+
+FOUNDER
+
+Karl Maier, MA, Founder and developer of Off Hours · nxtChange Consulting FlexCo, Graz, Austria
+
+Karl Maier, MA, a management consultant and app developer from Graz, Austria, released Off
+Hours for iPhone and Android in early October 2026: a one-person project without investors,
+through his company nxtChange Consulting FlexCo. The reason was personal.
+
+“Often I just wanted to take a quick look at Instagram, and then two hours were gone.”
+Karl Maier, MA · founder of Off Hours
+
+Off Hours interrupts that reflex. During a time window of your choice, usually in the
+evening, around the clock if you like, the apps you pick first show a short pause with a
+countdown. Then you decide on purpose: take a break or make an exception. No account, no
+server, no tracking.
+
+Quote and text are free to use for coverage. The quote is translated from German.
+
+
+FACTS
+
+Name: Off Hours (German: Auszeit), in the stores “Off Hours: App Blocker & Focus”
+Platforms: iPhone (iOS 17 or later) and Android (8.0 or later)
+Released: October 2026
+Countries: 37 on the App Store, 36 on Google Play, all in Europe
+Languages: English and German
+Price: Free; Off Hours Plus €9.99 a year or €3.99 a month (Austrian price)
+Founder: Karl Maier, MA, one-person project without investors
+Developer: nxtChange Consulting FlexCo, Graz, Austria
+
+
+CONTACT
+
+Material for coverage, free to use without asking. Questions and review access:
+apps@nxtchange-consulting.com or directly to Karl Maier, MA:
+karl.maier@nxtchange-consulting.com
+Website: https://auszeit.nxtchange.app/en/
+App Store: https://apps.apple.com/gb/app/id6817406940
+Google Play: https://play.google.com/store/apps/details?id=at.nxtchange.auszeit
+
+
+FILES IN THIS PRESS KIT
+
+auszeit-icon-1024.png · App icon · 1024 × 1024 px
+karl-maier-1800x1200.jpg · Karl Maier, MA · landscape 3:2 · 1800 × 1200 px · Photo: nxtChange Consulting FlexCo
+iphone/1-shield.png · 1. Instagram? First 15 seconds. · 1320 × 2868 px
+iphone/2-list.png · 2. On your schedule. Automatically. · 1320 × 2868 px
+iphone/3-decision.png · 3. Your decision. Every time. · 1320 × 2868 px
+iphone/4-editor.png · 4. As strict as you like. · 1320 × 2868 px
+iphone/5-apps.png · 5. Only the apps you choose. · 1320 × 2868 px
+iphone/6-private.png · 6. No account. No data. No ads. · 1320 × 2868 px
+android/01-shield.png · 1. Scroll less. No ban. · 1080 × 1920 px
+android/02-decision.png · 2. Your decision. Every time. · 1080 × 1920 px
+android/03-list.png · 3. On your schedule. Every day. · 1080 × 1920 px
+android/04-editor.png · 4. As strict as you like. · 1080 × 1920 px
+android/05-apps.png · 5. Only the apps you choose. · 1080 × 1920 px
+android/feature-graphic-1024x500.png · Feature graphic · 1024 × 500 px
+
+All files may be used for coverage of Off Hours without asking; please include the photo
+credit with the photo.

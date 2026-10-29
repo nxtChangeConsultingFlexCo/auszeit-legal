@@ -1,5 +1,5 @@
 #!/bin/sh
-# Holt und erzeugt die Bilder, Videos und Pressemappen der Startseite. Aufruf im Repo-Wurzelordner:
+# Holt und erzeugt die Bilder und Videos der Startseite (die Pressemappen packt tools/build_site.py). Aufruf im Repo-Wurzelordner:
 #
 #   sh tools/assets.sh
 #
@@ -71,19 +71,5 @@ elif [ ! -s assets/press/karl-maier-1800x1200.jpg ] || [ ! -s assets/img/karl-ma
   echo "Fehlt: $FOTO (Quelle für das Gründerfoto)" >&2; exit 1
 fi
 
-# Pressemappe je Sprache: Icon, Gründerfoto, sechs iPhone-Bilder, fünf Android-Bilder, Funktionsgrafik.
-pack() { # <sprache> <zip-name ohne .zip>
-  lang=$1; name=$2
-  stage=$(mktemp -d)
-  mkdir -p "$stage/$name/iphone" "$stage/$name/android"
-  cp assets/press/auszeit-icon-1024.png assets/press/karl-maier-1800x1200.jpg "$stage/$name/"
-  for f in assets/press/$lang-[1-6]-*.png; do cp "$f" "$stage/$name/iphone/${f#assets/press/$lang-}"; done
-  for f in assets/press/$lang-android-*.png; do cp "$f" "$stage/$name/android/${f#assets/press/$lang-android-}"; done
-  find "$stage" -exec env TZ=UTC touch -t 202610200000 {} +
-  rm -f "assets/press/$name.zip"
-  (cd "$stage" && find "$name" -type f ! -name .DS_Store | LC_ALL=C sort | TZ=UTC zip -X -D -q "$OLDPWD/assets/press/$name.zip" -@)
-  rm -rf "$stage"
-  echo "assets/press/$name.zip ($(($(wc -c < "assets/press/$name.zip") / 1024)) KB)"
-}
-pack de auszeit-pressemappe-de
-pack en off-hours-press-kit-en
+# Die Pressemappen (ZIP mit Icon, Gründerfoto, Pressetext und Bildern) packt tools/build_site.py, weil der Pressetext aus
+# denselben Texten entsteht wie die Seite.

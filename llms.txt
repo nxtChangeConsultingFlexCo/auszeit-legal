@@ -14,7 +14,7 @@
 ## Deutsch
 
 - [Startseite](https://auszeit.nxtchange.app/): So funktioniert es auf iPhone und Android, Preise, häufige Fragen
-- [Presse](https://auszeit.nxtchange.app/#presse): Kurztext, Eckdaten, Gründergeschichte mit Zitat, Gründerfoto mit Bildnachweis, Bilder und Pressemappe
+- [Presse](https://auszeit.nxtchange.app/#presse): Kurztext, Eckdaten, Gründergeschichte mit Zitat, Gründerfoto mit Bildnachweis, Bilder, Pressetext (TXT) und Pressemappe
 - [Support](https://auszeit.nxtchange.app/support/): Kontakt und häufige Fragen
 - [Datenschutz](https://auszeit.nxtchange.app/datenschutz/): Datenschutzerklärung
 - [Nutzungsbedingungen](https://auszeit.nxtchange.app/nutzungsbedingungen/)
@@ -23,7 +23,7 @@
 ## English
 
 - [Home](https://auszeit.nxtchange.app/en/): how it works on iPhone and Android, pricing, FAQ
-- [Press](https://auszeit.nxtchange.app/en/#press): short description, facts, founder story with quote, founder photo with credit, images and press kit
+- [Press](https://auszeit.nxtchange.app/en/#press): short description, facts, founder story with quote, founder photo with credit, images, press text (TXT) and press kit
 - [Support](https://auszeit.nxtchange.app/support/#support-for-off-hours): contact and frequently asked questions
 - [Privacy Policy](https://auszeit.nxtchange.app/privacy/)
 - [Terms of Use](https://auszeit.nxtchange.app/terms/)

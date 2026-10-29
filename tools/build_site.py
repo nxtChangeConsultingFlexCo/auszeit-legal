@@ -5,8 +5,10 @@ Aufruf im Repo-Wurzelordner:   python3 -I tools/build_site.py .
 Vorschau, Bilder und CSS eingebettet, Videos und Downloads aus dem Repo (landet in preview/, nicht committen):
                                python3 -I tools/build_site.py . --inline
 
-Schreibt index.html, en/index.html und 404.html. Gestaltung: assets/css/site.css (von Hand gepflegt, gilt auch für die
-Rechtstexte über _layouts/default.html). Bilder, Videos und Pressemappen erzeugt tools/assets.sh (dazu
+Schreibt index.html, en/index.html und 404.html, dazu je Sprache den Pressetext (assets/press/pressetext.txt,
+press-text.txt) und die Pressemappe als ZIP (deterministisch: feste Zeitstempel, feste Reihenfolge), weil der Pressetext
+aus denselben Texten entsteht wie die Seite. Gestaltung: assets/css/site.css (von Hand gepflegt, gilt auch für die
+Rechtstexte über _layouts/default.html). Bilder und Videos erzeugt tools/assets.sh (dazu
 tools/og-bild.swift für das Teaserbild, tools/video.swift für die App-Vorschau und tools/gruenderfoto.swift für das
 Gründerfoto im Querformat). robots.txt, sitemap.xml und llms.txt
 im Wurzelordner sind von Hand gepflegt; neue Seiten dort nachtragen.
@@ -22,6 +24,8 @@ import json
 import pathlib
 import struct
 import sys
+import textwrap
+import zipfile
 
 ROOT = pathlib.Path(sys.argv[1]).resolve()
 INLINE = "--inline" in sys.argv
@@ -259,7 +263,13 @@ TEXT = {
         "press_files_h": "Dateien",
         "kit": "auszeit-pressemappe-de", "kit_label": "Pressemappe laden",
         "kit_meta": "ZIP mit allen {n} Dateien, {size}",
-        "files_icon_h": "App-Icon", "files_icon": "App-Icon",
+        # Pressetext in der Pressemappe: Kurztext, Gründer, Eckdaten, Kontakt, Dateiliste; aus denselben Texten wie die Seite.
+        "press_text_file": "pressetext.txt", "press_text_h": "Pressetext", "press_text_date": "Stand 29. Oktober 2026",
+        "press_contact_h": "Kontakt", "press_web": "Website", "press_text_files_h": "Dateien in dieser Pressemappe",
+        "press_text_use": "Alle Dateien dürfen für Berichte über Auszeit ohne Rückfrage verwendet werden; beim Foto bitte "
+                          "den Bildnachweis nennen.",
+        "files_icon_h": "Icon und Pressetext", "files_icon": "App-Icon",
+        "files_text": "Pressetext: Kurztext, Gründer, Eckdaten, Kontakt",
         "files_ios_h": "iPhone, App Store", "files_android_h": "Android, Google Play",
         "footer_links": [("support/", "Support"), ("datenschutz/", "Datenschutz"),
                          ("nutzungsbedingungen/", "Nutzungsbedingungen"), ("impressum/", "Impressum"),
@@ -440,7 +450,12 @@ TEXT = {
         "press_files_h": "Files",
         "kit": "off-hours-press-kit-en", "kit_label": "Download the press kit",
         "kit_meta": "ZIP with all {n} files, {size}",
-        "files_icon_h": "App icon", "files_icon": "App icon",
+        "press_text_file": "press-text.txt", "press_text_h": "Press text", "press_text_date": "As of 29 October 2026",
+        "press_contact_h": "Contact", "press_web": "Website", "press_text_files_h": "Files in this press kit",
+        "press_text_use": "All files may be used for coverage of Off Hours without asking; please include the photo "
+                          "credit with the photo.",
+        "files_icon_h": "Icon and press text", "files_icon": "App icon",
+        "files_text": "Press text: short description, founder, facts, contact",
         "files_ios_h": "iPhone, App Store", "files_android_h": "Android, Google Play",
         "footer_links": [("support/#support-for-off-hours", "Support"), ("privacy/", "Privacy Policy"),
                          ("terms/", "Terms of Use"), ("imprint/", "Legal Notice"),
@@ -543,6 +558,63 @@ def css(root: str) -> str:
         return f"<style>\n{text}</style>"
     version = hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
     return f'<link rel="stylesheet" href="{root}assets/css/site.css?v={version}">'
+
+
+# --------------------------------------------------------------------------------------------------------- Pressemappe
+
+def press_text(t: dict) -> str:
+    """Pressetext als UTF-8-Textdatei: Kurztext, Gründer mit Zitat, Eckdaten, Kontakt, Dateiliste."""
+    lang = t["lang"]
+    wrap = lambda text: textwrap.fill(text, 92, break_on_hyphens=False)   # E-Mail-Adressen nicht am Bindestrich trennen
+    lines = [f"{STORE_NAME[lang]} · {t['press_text_h']}", f"{t['press_text_date']} · {SITE}{t['path']}#{t['press_id']}"]
+
+    def head(h: str):
+        lines.extend(["", "", h.upper(), ""])
+
+    head(t["press_short_h"]); lines.append(wrap(t["press_short"]))
+    head(t["founder_h"])
+    lines += [f"{t['founder_name']}, {t['founder_role']}", "", wrap(t["founder_intro"]), "",
+              wrap(f"{t['q_open']}{t['founder_quote']}{t['q_close']}"), t["founder_quote_by"], "",
+              wrap(t["founder_after"]), "", wrap(t["founder_note"])]
+    head(t["press_facts_h"]); lines += [f"{k}: {v}" for k, v in t["press_facts"]]
+    head(t["press_contact_h"])
+    lines += [wrap(f"{t['press_intro']} {EMAIL} {t['press_direct']} {PRESS_EMAIL}"),
+              f"{t['press_web']}: {SITE}{t['path']}",
+              f"App Store: https://apps.apple.com/{t['apple_country']}/app/id{APP_ID}",
+              f"Google Play: https://play.google.com/store/apps/details?id={PLAY_ID}"]
+    head(t["press_text_files_h"])
+
+    def size(rel: str) -> str:
+        w, h = image_size(need(rel))
+        return f"{w} × {h} px"
+
+    lines += [f"auszeit-icon-1024.png · {t['files_icon']} · {size('press/auszeit-icon-1024.png')}",
+              f"{FOUNDER_PHOTO['press'].split('/')[-1]} · {t['files_founder']} · {size(FOUNDER_PHOTO['press'])} · "
+              f"{t['photo_credit_label']}: {PHOTO_CREDIT}"]
+    lines += [f"iphone/{f} · {i}. {' '.join(ls)} · {size(f'press/{lang}-{f}')}" for i, (f, _, ls, _) in enumerate(SLIDES[lang], 1)]
+    lines += [f"android/{f} · {(f'{i}. ' if i <= 5 else '')}{label} · {size(f'press/{lang}-android-{f}')}"
+              for i, (f, label) in enumerate(ANDROID[lang], 1)]
+    lines += ["", wrap(t["press_text_use"])]
+    return "\n".join(lines) + "\n"
+
+
+def pack_kit(t: dict, text: str) -> tuple:
+    """Pressemappe als ZIP unter assets/press: Icon, Gründerfoto, Pressetext, iPhone- und Android-Bilder. Deterministisch
+    (feste Zeitstempel, sortierte Einträge), damit ein erneuter Lauf ohne neue Quellen keine Änderung im Repo erzeugt."""
+    lang, name = t["lang"], t["kit"]
+    entries = [("auszeit-icon-1024.png", need("press/auszeit-icon-1024.png").read_bytes()),
+               (FOUNDER_PHOTO["press"].split("/")[-1], need(FOUNDER_PHOTO["press"]).read_bytes()),
+               (t["press_text_file"], text.encode("utf-8"))]
+    entries += [(f"iphone/{f}", need(f"press/{lang}-{f}").read_bytes()) for f, *_ in SLIDES[lang]]
+    entries += [(f"android/{f}", need(f"press/{lang}-android-{f}").read_bytes()) for f, _ in ANDROID[lang]]
+    path = ROOT / "assets" / "press" / f"{name}.zip"
+    with zipfile.ZipFile(path, "w") as zf:
+        for rel, data in sorted(entries):
+            info = zipfile.ZipInfo(f"{name}/{rel}", date_time=(2026, 10, 20, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            zf.writestr(info, data)
+    return path, len(entries)
 
 
 # ------------------------------------------------------------------------------------------------------------- Bausteine
@@ -793,9 +865,12 @@ def home_page(t: dict) -> str:
 
     def entry(rel: str, label: str, extra: str = "") -> str:
         path = need(rel)
-        w, h = image_size(path)
-        kind = "JPEG" if path.suffix == ".jpg" else "PNG"
-        meta_text = f"{kind}, {w} × {h} px, {size_label(path.stat().st_size, t)}" + (f", {extra}" if extra else "")
+        if path.suffix == ".txt":
+            meta_text = f"TXT, {size_label(path.stat().st_size, t)}"
+        else:
+            w, h = image_size(path)
+            kind = "JPEG" if path.suffix == ".jpg" else "PNG"
+            meta_text = f"{kind}, {w} × {h} px, {size_label(path.stat().st_size, t)}" + (f", {extra}" if extra else "")
         return f'            <li><a href="{file(rel, root)}" download>{e(label)}</a><small>{e(meta_text)}</small></li>'
 
     ios_files = "\n".join(entry(f"press/{lang}-{f}", f"{i}. {' '.join(lines)}")
@@ -804,8 +879,10 @@ def home_page(t: dict) -> str:
                               for i, (f, label) in enumerate(ANDROID[lang], 1))
     photo_w, photo_h = image_size(need(FOUNDER_PHOTO["web"]))
     credit = f"{t['photo_credit_label']}: {PHOTO_CREDIT}"
-    kit_path = need(f"press/{t['kit']}.zip")
-    kit_meta = t["kit_meta"].format(n=2 + len(slides) + len(ANDROID[lang]), size=size_label(kit_path.stat().st_size, t))
+    text = press_text(t)
+    (ROOT / "assets" / "press" / t["press_text_file"]).write_text(text, encoding="utf-8")
+    kit_path, kit_count = pack_kit(t, text)
+    kit_meta = t["kit_meta"].format(n=kit_count, size=size_label(kit_path.stat().st_size, t))
     video_rel = f"video/store-video-{lang}.mp4"
 
     nav_other = (t["other_href"], t["other_lang"], t["other_label"])
@@ -964,6 +1041,7 @@ def home_page(t: dict) -> str:
         <h4>{e(t['files_icon_h'])}</h4>
         <ul>
 {entry("press/auszeit-icon-1024.png", t['files_icon'])}
+{entry(f"press/{t['press_text_file']}", t['files_text'])}
         </ul>
       </div>
       <div>
