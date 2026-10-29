@@ -8,22 +8,25 @@
 - Preis / Price: gratis mit einer Auszeit für bis zu zwei Apps; Auszeit Plus 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich) / free with one schedule for up to two apps; Off Hours Plus €9.99 a year or €3.99 a month (Austrian price)
 - Verfügbar / Available: 37 Länder im App Store, 36 bei Google Play, alle in Europa; Deutsch und Englisch
 - Anbieter / Developer: nxtChange Consulting FlexCo, Neugasse 9/1, 8045 Graz, Österreich; apps@nxtchange-consulting.com
+- Gründer und Entwickler / Founder and developer: Karl Maier, Graz; Ein-Personen-Projekt ohne Investoren / one-person project without investors
 
 ## Deutsch
 
 - [Startseite](https://auszeit.nxtchange.app/): So funktioniert es auf iPhone und Android, Preise, häufige Fragen
-- [Presse](https://auszeit.nxtchange.app/#presse): Kurztext, Eckdaten, Bilder und Pressemappe
+- [Presse](https://auszeit.nxtchange.app/#presse): Kurztext, Eckdaten, Gründergeschichte mit Zitat, Gründerfoto mit Bildnachweis, Bilder und Pressemappe
 - [Support](https://auszeit.nxtchange.app/support/): Kontakt und häufige Fragen
 - [Datenschutz](https://auszeit.nxtchange.app/datenschutz/): Datenschutzerklärung
 - [Nutzungsbedingungen](https://auszeit.nxtchange.app/nutzungsbedingungen/)
+- [Impressum](https://auszeit.nxtchange.app/impressum/): Anbieterangaben nach § 5 ECG und § 25 Mediengesetz
 
 ## English
 
 - [Home](https://auszeit.nxtchange.app/en/): how it works on iPhone and Android, pricing, FAQ
-- [Press](https://auszeit.nxtchange.app/en/#press): short description, facts, images and press kit
+- [Press](https://auszeit.nxtchange.app/en/#press): short description, facts, founder story with quote, founder photo with credit, images and press kit
 - [Support](https://auszeit.nxtchange.app/support/#support-for-off-hours): contact and frequently asked questions
 - [Privacy Policy](https://auszeit.nxtchange.app/privacy/)
 - [Terms of Use](https://auszeit.nxtchange.app/terms/)
+- [Legal Notice](https://auszeit.nxtchange.app/imprint/): provider details under Austrian law
 
 ## Stores
 

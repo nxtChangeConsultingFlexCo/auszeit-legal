@@ -3,14 +3,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://auszeit.nxtchange.app/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/"/>
   </url>
   <url>
     <loc>https://auszeit.nxtchange.app/en/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/"/>
@@ -46,5 +46,19 @@
   <url>
     <loc>https://auszeit.nxtchange.app/support/</loc>
     <lastmod>2026-10-28</lastmod>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/impressum/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/impressum/"/>
+  </url>
+  <url>
+    <loc>https://auszeit.nxtchange.app/imprint/</loc>
+    <lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://auszeit.nxtchange.app/impressum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://auszeit.nxtchange.app/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://auszeit.nxtchange.app/impressum/"/>
   </url>
 </urlset>

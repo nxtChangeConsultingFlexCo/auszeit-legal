@@ -7,7 +7,8 @@ Vorschau, Bilder und CSS eingebettet, Videos und Downloads aus dem Repo (landet 
 
 Schreibt index.html, en/index.html und 404.html. Gestaltung: assets/css/site.css (von Hand gepflegt, gilt auch für die
 Rechtstexte über _layouts/default.html). Bilder, Videos und Pressemappen erzeugt tools/assets.sh (dazu
-tools/og-bild.swift für das Teaserbild und tools/video.swift für die App-Vorschau). robots.txt, sitemap.xml und llms.txt
+tools/og-bild.swift für das Teaserbild, tools/video.swift für die App-Vorschau und tools/gruenderfoto.swift für das
+Gründerfoto im Querformat). robots.txt, sitemap.xml und llms.txt
 im Wurzelordner sind von Hand gepflegt; neue Seiten dort nachtragen.
 
 Texte folgen den Store-Texten, nichts erfinden: store/appstore-de.md und appstore-en.md im App-Repo auszeit (iPhone),
@@ -34,6 +35,11 @@ APPLE_PROVIDER = "129507889"
 # Name im Store je Sprache. Ändert sich voraussichtlich mit 1.0.5, dann nur hier.
 STORE_NAME = {"de": "Auszeit: App Blocker & Fokus", "en": "Off Hours: App Blocker & Focus"}
 EMAIL = "apps@nxtchange-consulting.com"
+# Gründerfoto fürs Pressematerial: Querformat aus dem Porträt, erzeugt tools/gruenderfoto.swift über tools/assets.sh
+# (dort steht derselbe Bildnachweis für die Metadaten der JPEGs). Fotograf nicht dokumentiert, Nachweis bestätigt Karl.
+FOUNDER_PHOTO = {"press": "press/karl-maier-1800x1200.jpg", "web": "img/karl-maier-1200x800.jpg"}
+PHOTO_CREDIT = "nxtChange Consulting FlexCo"
+LINKEDIN = "https://www.linkedin.com/in/karl-maier/"
 PLAY_URL = (f"https://play.google.com/store/apps/details?id={PLAY_ID}"
             "&referrer=utm_source%3Dauszeit.nxtchange.app%26utm_medium%3Dwebsite%26utm_campaign%3Dbadge")
 # Videos vom Kanal „nxtChange Apps“, nicht gelistet, Einbettung erlaubt. Standbilder lokal unter assets/img/video.
@@ -224,15 +230,36 @@ TEXT = {
             ("Länder", "37 im App Store, 36 bei Google Play, alle in Europa"),
             ("Sprachen", "Deutsch und Englisch"),
             ("Preis", "Gratis; Auszeit Plus 9,99 € im Jahr oder 3,99 € im Monat (Preis in Österreich)"),
+            ("Gründer", "Karl Maier, Ein-Personen-Projekt ohne Investoren"),
             ("Anbieter", "nxtChange Consulting FlexCo, Graz"),
         ],
+        # Gründergeschichte wie in den Presse-Pitches (Outlook-Entwurf vom 25.10.2026): Ein-Personen-Projekt, persönlicher
+        # Anlass, Instagram als Zitat. Nichts erfinden, Wortlaut aus dem Pitch.
+        "founder_id": "gruender", "founder_h": "Gründer", "founder_name": "Karl Maier",
+        "founder_role": "Gründer und Entwickler von Auszeit · nxtChange Consulting FlexCo, Graz",
+        "founder_job": "Gründer und Entwickler von Auszeit",
+        "founder_intro": "Karl Maier, Unternehmensberater aus Graz, hat Auszeit Anfang Oktober 2026 für iPhone und Android "
+                         "veröffentlicht: als Ein-Personen-Projekt ohne Investoren, über seine nxtChange Consulting FlexCo. "
+                         "Der Anlass war persönlich.",
+        "founder_quote": "Oft wollte ich nur kurz in Instagram schauen, und dann waren zwei Stunden weg.",
+        "founder_quote_by": "Karl Maier, Gründer von Auszeit",
+        "founder_after": "Auszeit unterbricht diesen Reflex. In einem frei wählbaren Zeitfenster, meist abends, auf Wunsch "
+                         "rund um die Uhr, kommt vor ausgewählten Apps zuerst eine kurze Pause mit Countdown. Danach "
+                         "entscheidet man bewusst: Auszeit nehmen oder eine Ausnahme machen. Kein Konto, kein Server, kein "
+                         "Tracking.",
+        "founder_note": "Zitat und Text sind für Berichte frei verwendbar.",
+        "q_open": "„", "q_close": "“",
+        "photo_alt": "Karl Maier, Gründer und Entwickler von Auszeit, Porträt im Querformat",
+        "photo_credit_label": "Foto", "photo_download": "Foto in Druckgröße laden",
+        "files_founder_h": "Gründerfoto", "files_founder": "Karl Maier, Querformat 3:2",
         "press_files_h": "Dateien",
         "kit": "auszeit-pressemappe-de", "kit_label": "Pressemappe laden",
         "kit_meta": "ZIP mit allen {n} Dateien, {size}",
         "files_icon_h": "App-Icon", "files_icon": "App-Icon",
         "files_ios_h": "iPhone, App Store", "files_android_h": "Android, Google Play",
         "footer_links": [("support/", "Support"), ("datenschutz/", "Datenschutz"),
-                         ("nutzungsbedingungen/", "Nutzungsbedingungen"), ("https://nxtchange.app/", "Alle Apps")],
+                         ("nutzungsbedingungen/", "Nutzungsbedingungen"), ("impressum/", "Impressum"),
+                         ("https://nxtchange.app/", "Alle Apps")],
         "provider_h": "Anbieter", "country": "Österreich",
         "register": "FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038",
         "footnotes": ["Apple, iPhone und App Store sind Marken der Apple Inc.",
@@ -385,15 +412,33 @@ TEXT = {
             ("Countries", "37 on the App Store, 36 on Google Play, all in Europe"),
             ("Languages", "English and German"),
             ("Price", "Free; Off Hours Plus €9.99 a year or €3.99 a month (Austrian price)"),
+            ("Founder", "Karl Maier, one-person project without investors"),
             ("Developer", "nxtChange Consulting FlexCo, Graz, Austria"),
         ],
+        "founder_id": "founder", "founder_h": "Founder", "founder_name": "Karl Maier",
+        "founder_role": "Founder and developer of Off Hours · nxtChange Consulting FlexCo, Graz, Austria",
+        "founder_job": "Founder and developer of Off Hours",
+        "founder_intro": "Karl Maier, a management consultant from Graz, Austria, released Off Hours for iPhone and Android "
+                         "in early October 2026: a one-person project without investors, through his company nxtChange "
+                         "Consulting FlexCo. The reason was personal.",
+        "founder_quote": "Often I just wanted to take a quick look at Instagram, and then two hours were gone.",
+        "founder_quote_by": "Karl Maier, founder of Off Hours",
+        "founder_after": "Off Hours interrupts that reflex. During a time window of your choice, usually in the evening, "
+                         "around the clock if you like, the apps you pick first show a short pause with a countdown. Then "
+                         "you decide on purpose: take a break or make an exception. No account, no server, no tracking.",
+        "founder_note": "Quote and text are free to use for coverage. The quote is translated from German.",
+        "q_open": "“", "q_close": "”",
+        "photo_alt": "Karl Maier, founder and developer of Off Hours, landscape portrait",
+        "photo_credit_label": "Photo", "photo_download": "Download the print-size photo",
+        "files_founder_h": "Founder photo", "files_founder": "Karl Maier, landscape 3:2",
         "press_files_h": "Files",
         "kit": "off-hours-press-kit-en", "kit_label": "Download the press kit",
         "kit_meta": "ZIP with all {n} files, {size}",
         "files_icon_h": "App icon", "files_icon": "App icon",
         "files_ios_h": "iPhone, App Store", "files_android_h": "Android, Google Play",
         "footer_links": [("support/#support-for-off-hours", "Support"), ("privacy/", "Privacy Policy"),
-                         ("terms/", "Terms of Use"), ("https://nxtchange.app/", "All apps")],
+                         ("terms/", "Terms of Use"), ("imprint/", "Legal Notice"),
+                         ("https://nxtchange.app/", "All apps")],
         "provider_h": "Provider", "country": "Austria",
         "register": "FN 648962g, Landesgericht für ZRS Graz · UID ATU81922038",
         "footnotes": ["Apple, iPhone and App Store are trademarks of Apple Inc.",
@@ -440,6 +485,10 @@ def jpeg_size(path: pathlib.Path) -> tuple:
             return w, h
         i += 2 + struct.unpack(">H", data[i + 2:i + 4])[0]
     raise SystemExit(f"{path}: Größe nicht gefunden")
+
+
+def image_size(path: pathlib.Path) -> tuple:
+    return jpeg_size(path) if path.suffix == ".jpg" else png_size(path)
 
 
 def need(rel: str) -> pathlib.Path:
@@ -635,9 +684,15 @@ def jsonld(t: dict) -> str:
         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
         "publisher": {"@id": org_id},
     }
+    founder = {
+        "@type": "Person", "@id": SITE + "/#karl-maier", "name": "Karl Maier", "jobTitle": t["founder_job"],
+        "worksFor": {"@id": org_id}, "sameAs": [LINKEDIN],
+        "image": {"@type": "ImageObject", "contentUrl": f"{SITE}/assets/{FOUNDER_PHOTO['press']}",
+                  "creditText": PHOTO_CREDIT, "copyrightNotice": PHOTO_CREDIT, "caption": t["photo_alt"]},
+    }
     graph = [
         {"@type": "Organization", "@id": org_id, "name": "nxtChange Consulting FlexCo", "url": "https://nxtchange.app/",
-         "email": EMAIL, "vatID": "ATU81922038",
+         "email": EMAIL, "vatID": "ATU81922038", "founder": founder,
          "address": {"@type": "PostalAddress", "streetAddress": "Neugasse 9/1", "postalCode": "8045",
                      "addressLocality": "Graz", "addressCountry": "AT"}},
         {"@type": "MobileApplication", "@id": home + "#app-ios", "name": STORE_NAME[lang],
@@ -729,18 +784,21 @@ def home_page(t: dict) -> str:
 
     facts = "\n".join(f"          <dt>{e(k)}</dt><dd>{e(v)}</dd>" for k, v in t["press_facts"])
 
-    def entry(rel: str, label: str) -> str:
+    def entry(rel: str, label: str, extra: str = "") -> str:
         path = need(rel)
-        w, h = png_size(path)
-        meta_text = f"PNG, {w} × {h} px, {size_label(path.stat().st_size, t)}"
+        w, h = image_size(path)
+        kind = "JPEG" if path.suffix == ".jpg" else "PNG"
+        meta_text = f"{kind}, {w} × {h} px, {size_label(path.stat().st_size, t)}" + (f", {extra}" if extra else "")
         return f'            <li><a href="{file(rel, root)}" download>{e(label)}</a><small>{e(meta_text)}</small></li>'
 
     ios_files = "\n".join(entry(f"press/{lang}-{f}", f"{i}. {' '.join(lines)}")
                           for i, (f, _, lines, _) in enumerate(slides, 1))
     android_files = "\n".join(entry(f"press/{lang}-android-{f}", (f"{i}. {label}" if i <= 5 else label))
                               for i, (f, label) in enumerate(ANDROID[lang], 1))
+    photo_w, photo_h = image_size(need(FOUNDER_PHOTO["web"]))
+    credit = f"{t['photo_credit_label']}: {PHOTO_CREDIT}"
     kit_path = need(f"press/{t['kit']}.zip")
-    kit_meta = t["kit_meta"].format(n=1 + len(slides) + len(ANDROID[lang]), size=size_label(kit_path.stat().st_size, t))
+    kit_meta = t["kit_meta"].format(n=2 + len(slides) + len(ANDROID[lang]), size=size_label(kit_path.stat().st_size, t))
     video_rel = f"video/store-video-{lang}.mp4"
 
     nav_other = (t["other_href"], t["other_lang"], t["other_label"])
@@ -875,6 +933,24 @@ def home_page(t: dict) -> str:
         </dl>
       </div>
     </div>
+    <div class="founder" id="{t['founder_id']}">
+      <figure class="founder-photo">
+        <img src="{img(FOUNDER_PHOTO['web'], root)}" alt="{e(t['photo_alt'])}" width="{photo_w}" height="{photo_h}" loading="lazy" decoding="async">
+        <figcaption>{e(credit)} · <a href="{file(FOUNDER_PHOTO['press'], root)}" download>{e(t['photo_download'])}</a></figcaption>
+      </figure>
+      <div class="founder-text">
+        <p class="label">{e(t['founder_h'])}</p>
+        <h3>{e(t['founder_name'])}</h3>
+        <p class="req">{e(t['founder_role'])}</p>
+        <p>{e(t['founder_intro'])}</p>
+        <blockquote>
+          <p>{e(t['q_open'])}{e(t['founder_quote'])}{e(t['q_close'])}</p>
+          <footer>{e(t['founder_quote_by'])}</footer>
+        </blockquote>
+        <p>{e(t['founder_after'])}</p>
+        <p class="fine">{e(t['founder_note'])}</p>
+      </div>
+    </div>
     <h3 class="visually-hidden">{e(t['press_files_h'])}</h3>
     <div class="files">
       <div>
@@ -893,6 +969,12 @@ def home_page(t: dict) -> str:
         <h4>{e(t['files_android_h'])}</h4>
         <ul>
 {android_files}
+        </ul>
+      </div>
+      <div>
+        <h4>{e(t['files_founder_h'])}</h4>
+        <ul>
+{entry(FOUNDER_PHOTO['press'], t['files_founder'], credit)}
         </ul>
       </div>
     </div>

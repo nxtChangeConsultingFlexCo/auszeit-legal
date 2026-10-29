@@ -10,6 +10,7 @@
 #   Android-Bilder:             ../auszeit-android/store/upload/{de,en-GB}/
 #   Google-Play-Abzeichen:      play.google.com/intl/{de_de,en_gb}/badges/… (offiziell, unverändert)
 #   YouTube-Standbilder:        i.ytimg.com/vi/<id>/maxresdefault.jpg, sonst hqdefault.jpg
+#   Gründerfoto (Porträt):      ../mappe-antrag-anhaenge/2-quellen/fotos/Foto_Karl_Maier.jpg (quadratisch, 1200 px)
 # Heruntergeladen wird nur, was noch fehlt. Die ZIPs sind deterministisch (feste Zeitstempel, feste Reihenfolge,
 # ohne Zusatzattribute), damit ein erneuter Lauf ohne neue Quellen keine Änderung im Repo erzeugt.
 set -eu
@@ -18,6 +19,9 @@ STORE="$HOME/Documents/Auszeit App-Store-Bilder 2026-10-20/abend-hell/6.9-Zoll"
 VIDEO="$HOME/Documents/Auszeit Store-Video 2026-10-20"
 ANDROID="../auszeit-android/store/upload"
 VIDEOS="TQRQjztSKBM JQcw7RqWnOs oJJUE4cR4yY"
+FOTO="../mappe-antrag-anhaenge/2-quellen/fotos/Foto_Karl_Maier.jpg"
+# Bildnachweis wie PHOTO_CREDIT in tools/build_site.py; landet in den Metadaten der JPEGs.
+FOTO_NACHWEIS="nxtChange Consulting FlexCo"
 
 mkdir -p assets/img/de assets/img/en assets/img/video assets/press assets/video
 
@@ -58,12 +62,21 @@ for lang in de en; do
   [ -s "assets/video/store-video-$lang.mp4" ] || swift tools/video.swift "$VIDEO/store-video-$lang.mp4" "assets/video/store-video-$lang.mp4"
 done
 
-# Pressemappe je Sprache: Icon, sechs iPhone-Bilder, fünf Android-Bilder, Funktionsgrafik.
+# Gründerfoto im Querformat (3:2) für Presse und Website, aus dem quadratischen Porträt. Fehlt die Quelle auf diesem
+# Rechner, bleiben die vorhandenen Dateien.
+if [ -s "$FOTO" ]; then
+  swift tools/gruenderfoto.swift "$FOTO" assets/press/karl-maier-1800x1200.jpg assets/img/karl-maier-1200x800.jpg \
+    "$FOTO_NACHWEIS" "Karl Maier, Gründer und Entwickler von Auszeit (Off Hours), Graz"
+elif [ ! -s assets/press/karl-maier-1800x1200.jpg ] || [ ! -s assets/img/karl-maier-1200x800.jpg ]; then
+  echo "Fehlt: $FOTO (Quelle für das Gründerfoto)" >&2; exit 1
+fi
+
+# Pressemappe je Sprache: Icon, Gründerfoto, sechs iPhone-Bilder, fünf Android-Bilder, Funktionsgrafik.
 pack() { # <sprache> <zip-name ohne .zip>
   lang=$1; name=$2
   stage=$(mktemp -d)
   mkdir -p "$stage/$name/iphone" "$stage/$name/android"
-  cp assets/press/auszeit-icon-1024.png "$stage/$name/"
+  cp assets/press/auszeit-icon-1024.png assets/press/karl-maier-1800x1200.jpg "$stage/$name/"
   for f in assets/press/$lang-[1-6]-*.png; do cp "$f" "$stage/$name/iphone/${f#assets/press/$lang-}"; done
   for f in assets/press/$lang-android-*.png; do cp "$f" "$stage/$name/android/${f#assets/press/$lang-android-}"; done
   find "$stage" -exec env TZ=UTC touch -t 202610200000 {} +
