@@ -93,19 +93,20 @@ TEXT = {
         "lang": "de", "locale": "de_AT", "other_locale": "en_GB", "path": "/", "root": "./",
         "other_href": "en/", "other_lang": "en", "other_label": "English",
         "name": "Auszeit",
-        "title": f"{STORE_NAME['de']} · für iPhone und Android",
-        "meta_desc": "Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. "
-                     "Für iPhone und Android, ohne Konto, ohne Daten. App aus Graz.",
+        "title": f"{STORE_NAME['de']} · digitale Auszeit für iPhone und Android",
+        "meta_desc": "Auszeit macht den Feierabend zur digitalen Auszeit: Gewählte Apps halten zu festen Zeiten an, eine "
+                     "kurze Bedenkzeit lässt dich bewusst entscheiden. Für iPhone und Android, ohne Konto. App aus Graz.",
         "og_alt": "Auszeit, App-Blocker für iPhone und Android: Abends das Handy weglegen, ohne Kampf mit der Willenskraft.",
         "skip": "Zum Inhalt",
         "nav_label": "Hauptnavigation",
         "nav": [("#so-funktioniert-es", "So funktioniert es", True), ("#preise", "Preise", True),
                 ("#fragen", "Fragen", True), ("#presse", "Presse", False), ("support/", "Support", False)],
-        "kicker": "App-Blocker für iPhone und Android",
-        "claim": ["Abends das Handy weglegen,", "ohne Kampf mit der Willenskraft."],
+        "kicker": "Digitale Auszeit für iPhone und Android",
+        "claim": ["Auszeit: Abends das Handy weglegen,", "ohne Kampf mit der Willenskraft."],
         "lead": "Auszeit hält die Apps, die dich abends festhalten, zu festen Zeiten an. Öffnest du eine davon, zeigt dein "
                 "Handy zuerst eine kurze Bedenkzeit. Danach entscheidest du bewusst: Auszeit nehmen oder eine Ausnahme "
-                "machen. Kein Verbot, keine Tricks, nur ein Moment zum Nachdenken.",
+                "machen. Kein Verbot, keine Tricks, nur ein Moment zum Nachdenken. So wird aus dem Feierabend eine digitale "
+                "Auszeit, die du selbst steuerst.",
         "apple_country": "de",
         "badge_apple": "badge-de.svg", "badge_apple_alt": "Laden im App Store",
         "badge_play": "google-play-de.png", "badge_play_alt": "Jetzt bei Google Play",
@@ -117,9 +118,9 @@ TEXT = {
         "video_fallback": "Dein Browser spielt das Video hier nicht ab:",
         "video_download": "Video laden (MP4)",
         "gallery_label": "Bilder aus dem App Store",
-        "glance": "Auf einen Blick",
+        "glance": "Auszeit auf einen Blick",
         "how_id": "so-funktioniert-es",
-        "how_intro": "So funktioniert es: Auf dem iPhone nutzt Auszeit die Bildschirmzeit von iOS. Auf Android nutzt "
+        "how_intro": "So funktioniert die Auszeit-App: Auf dem iPhone nutzt Auszeit die Bildschirmzeit von iOS. Auf Android nutzt "
                      "Auszeit die Bedienungshilfe, die du einmal einschaltest. Ab dann greift die Bedenkzeit pünktlich, "
                      "auch wenn Auszeit geschlossen ist.",
         "ios_h": "iPhone", "ios_req": "iOS 17 oder neuer · nutzt die Bildschirmzeit",
@@ -176,13 +177,32 @@ TEXT = {
              "und zeichnet nichts auf. Auszeit sieht nicht, wie lange du Apps nutzt."),
         ],
         "privacy_more": ("datenschutz/", "Alles Weitere in der Datenschutzerklärung"),
-        "faq_id": "fragen", "faq_h": "Häufige Fragen",
+        "faq_id": "fragen", "faq_h": "Häufige Fragen zu Auszeit",
         "faq": [
             ("Ist Auszeit dasselbe wie die „Auszeit“ in Apples Bildschirmzeit?",
              ["Nein. Die Auszeit in Apples Bildschirmzeit sperrt Apps zu festen Zeiten. Die App Auszeit nutzt die "
               "Bildschirmzeit als Grundlage und setzt eine Bedenkzeit mit Entscheidung davor, statt eines Verbots: "
               "Auszeit nehmen oder eine Ausnahme machen. Auszeit ist eine eigene App von nxtChange Consulting FlexCo, "
               "nicht von Apple."], None),
+            ("Was ist eine digitale Auszeit, und wie hilft mir die App Auszeit dabei?",
+             ["Eine digitale Auszeit ist eine feste Zeit, in der du bestimmte Apps bewusst nicht nutzt, zum Beispiel am "
+              "Abend. Die App Auszeit hält die Apps, die du wählst, zu den Zeiten an, die du festlegst, und zeigt vor "
+              "dem Öffnen eine kurze Bedenkzeit. Danach entscheidest du: Auszeit nehmen oder eine Ausnahme machen."],
+             None),
+            ("Wie komme ich abends zum Feierabend vom Handy?",
+             ["Lege ein Zeitfenster fest, zum Beispiel 21:00 bis 07:00, und wähle die Apps, die dich am Abend "
+              "festhalten. Ab dann zeigt dein Handy vor diesen Apps zuerst die Bedenkzeit. Auszeit ist ein "
+              "Hilfsmittel, kein Verbot: Du kannst jederzeit eine Ausnahme machen oder die Auszeit ausschalten."],
+             None),
+            ("Hilft Auszeit gegen ständige Erreichbarkeit?",
+             ["Auszeit pausiert Apps, die du auswählst, zu festen Zeiten, zum Beispiel Mail- oder Messenger-Apps. So "
+              "legst du selbst fest, wann du nicht erreichbar sein willst. Was Auszeit nicht tut: Webseiten pausieren "
+              "oder entscheiden, ob Mitteilungen einer pausierten App erscheinen; das entscheidet das System. "
+              "[[KARL BESTÄTIGEN: Beispiel Mail/Messenger und Aussage zur Erreichbarkeit so in Ordnung?]]"], None),
+            ("Heißt Auszeit auch „Off Hours“?",
+             ["Ja. Off Hours ist der englische Name derselben App: im Store „Auszeit: App Blocker & Fokus“ auf "
+              "Deutsch und „Off Hours: App Blocker & Focus“ auf Englisch. Die App gibt es auf Deutsch und Englisch."],
+             None),
             ("Funktioniert Auszeit nur abends?",
              ["Nein. Du legst das Zeitfenster selbst fest, zum Beispiel 21:00 bis 07:00, an den Tagen, die du willst: "
               "abends, in der Arbeit oder ganztags. Gratis gilt eine Auszeit; mit Auszeit Plus kommen weitere dazu, "
@@ -285,20 +305,22 @@ TEXT = {
         "lang": "en", "locale": "en_GB", "other_locale": "de_AT", "path": "/en/", "root": "../",
         "other_href": "../", "other_lang": "de", "other_label": "Deutsch",
         "name": "Off Hours",
-        "title": f"{STORE_NAME['en']} · for iPhone and Android",
-        "meta_desc": "Off Hours holds the apps you choose during the hours you set and adds a short cooling-off first. "
-                     "For iPhone and Android, no account, no data. An app from Graz, Austria.",
+        "title": f"{STORE_NAME['en']} · digital break for iPhone and Android",
+        "meta_desc": "Off Hours (German: Auszeit) turns your evening into a digital break: the apps you choose pause during "
+                     "the hours you set, and a short cooling-off lets you decide. For iPhone and Android, no account. "
+                     "An app from Graz, Austria.",
         "og_alt": "Off Hours, app blocker for iPhone and Android: Put the phone down in the evening, without a fight "
                   "with your willpower.",
         "skip": "Skip to content",
         "nav_label": "Main navigation",
         "nav": [("#how-it-works", "How it works", True), ("#pricing", "Pricing", True), ("#faq", "FAQ", True),
                 ("#press", "Press", False), ("support/#support-for-off-hours", "Support", False)],
-        "kicker": "App blocker for iPhone and Android",
-        "claim": ["Put the phone down in the evening,", "without a fight with your willpower."],
+        "kicker": "Digital break for iPhone and Android",
+        "claim": ["Off Hours: Put the phone down in the evening,", "without a fight with your willpower."],
         "lead": "Off Hours holds the apps that keep you up at night during the hours you set. When you open one of them, "
                 "your phone first shows a short cooling-off. Then you decide on purpose: take a break, or make an "
-                "exception. No ban, no tricks, just a moment to think.",
+                "exception. No ban, no tricks, just a moment to think. That turns the end of your working day into a "
+                "digital break you control yourself.",
         "apple_country": "gb",
         "badge_apple": "badge-en.svg", "badge_apple_alt": "Download on the App Store",
         "badge_play": "google-play-en.png", "badge_play_alt": "Get it on Google Play",
@@ -310,9 +332,9 @@ TEXT = {
         "video_fallback": "Your browser cannot play the video here:",
         "video_download": "Download the video (MP4)",
         "gallery_label": "Images from the App Store",
-        "glance": "At a glance",
+        "glance": "Off Hours at a glance",
         "how_id": "how-it-works",
-        "how_intro": "How it works: on iPhone, Off Hours uses Screen Time in iOS. On Android, Off Hours uses the "
+        "how_intro": "How the Off Hours app works: on iPhone, Off Hours uses Screen Time in iOS. On Android, Off Hours uses the "
                      "accessibility service, which you turn on once. From then on the cooling-off starts on time, even "
                      "when Off Hours is closed.",
         "ios_h": "iPhone", "ios_req": "iOS 17 or later · uses Screen Time",
@@ -369,12 +391,29 @@ TEXT = {
              "records nothing. Off Hours does not see how long you use apps."),
         ],
         "privacy_more": ("privacy/", "Everything else is in the privacy policy"),
-        "faq_id": "faq", "faq_h": "Frequently asked questions",
+        "faq_id": "faq", "faq_h": "Frequently asked questions about Off Hours",
         "faq": [
             ("Is Off Hours the same as Downtime in Apple's Screen Time?",
              ["No. Apple's Downtime blocks apps during set hours. Off Hours builds on Screen Time and puts a cooling-off "
               "with a decision in front of the app instead of a ban: take a break, or make an exception. Off Hours is a "
               "separate app by nxtChange Consulting FlexCo, not by Apple."], None),
+            ("What is a digital break, and how does the Off Hours app help?",
+             ["A digital break is a set time in which you deliberately stay away from certain apps, for example in the "
+              "evening. Off Hours pauses the apps you choose during the hours you set and shows a short cooling-off "
+              "before they open. Then you decide: take a break, or make an exception."], None),
+            ("How do I switch off from my phone after work?",
+             ["Set a time window, for example 21:00 to 07:00, and pick the apps that keep you hooked in the evening. "
+              "From then on your phone shows the cooling-off first when you open them. Off Hours is an aid, not a ban: "
+              "you can make an exception or switch the schedule off at any time."], None),
+            ("Does Off Hours help with always being reachable?",
+             ["Off Hours pauses the apps you select at set times, for example email or messenger apps, so you decide "
+              "when you do not want to be reachable. What it does not do: pause websites, or decide whether "
+              "notifications from a paused app appear; that is up to the system. "
+              "[[KARL BESTÄTIGEN: email/messenger example and the statement on reachability OK?]]"], None),
+            ("Is Off Hours called “Auszeit” too?",
+             ["Yes. Auszeit is the German name of the same app: “Auszeit: App Blocker & Fokus” in the German store "
+              "and “Off Hours: App Blocker & Focus” in the English one. The app is available in English and German."],
+             None),
             ("Does Off Hours only work in the evening?",
              ["No. You set the time window yourself, for example 21:00 to 07:00, on the days you choose: evenings, work "
               "hours or all day. The free tier has one schedule; Off Hours Plus adds more, for example for weekends."],
