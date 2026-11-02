@@ -31,6 +31,11 @@ for lang in de en; do
   for f in "$STORE/$lang"/*.png; do
     sips -Z 1200 "$f" --out "assets/img/$lang/$(basename "$f")" >/dev/null
   done
+  # WebP-Fassungen für Hero-Poster und Galerie (LCP): wesentlich kleiner als PNG. Braucht cwebp oder ImageMagick.
+  for f in assets/img/$lang/*.png; do
+    if command -v cwebp >/dev/null 2>&1; then cwebp -q 82 -m 6 -quiet "$f" -o "${f%.png}.webp"
+    else convert "$f" -quality 82 -define webp:method=6 "${f%.png}.webp"; fi
+  done
 done
 
 # Pressebilder in Originalgröße: iPhone (6,9 Zoll), Android (Telefon und Funktionsgrafik).

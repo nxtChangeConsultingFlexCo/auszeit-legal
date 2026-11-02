@@ -529,7 +529,7 @@ def img(rel: str, root: str) -> str:
     """Bild unter assets/, bei --inline als data:-URI."""
     path = need(rel)
     if INLINE:
-        mime = {".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg"}[path.suffix]
+        mime = {".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp", ".jpg": "image/jpeg"}[path.suffix]
         return f"data:{mime};base64,{base64.b64encode(path.read_bytes()).decode('ascii')}"
     return f"{root}assets/{rel}"
 
@@ -837,9 +837,11 @@ def home_page(t: dict) -> str:
     for f, label, lines, sub in slides:
         w, h = png_size(need(f"img/{lang}/{f}"))
         alt = f"{label}: {' '.join(lines)} {sub}"
-        gallery.append(f'        <li><img src="{img(f"img/{lang}/{f}", root)}" alt="{e(alt)}" width="{w}" height="{h}" '
+        gallery.append(f'        <li><img src="{img(f"img/{lang}/{f[:-4]}.webp", root)}" alt="{e(alt)}" width="{w}" height="{h}" '
                        f'loading="lazy" decoding="async"></li>')
     pw, ph = png_size(need(f"img/{lang}/{slides[0][0]}"))
+    if not INLINE:  # Hero-Poster (LCP-Kandidat) früh und mit hoher Priorität laden
+        meta += f'\n  <link rel="preload" as="image" type="image/webp" href="{img(f"img/{lang}/{slides[0][0][:-4]}.webp", root)}" fetchpriority="high">'
 
     tiles = "\n".join(
         f'      <article class="tile">\n        <p class="label">{e(slides[i][1])}</p>\n'
@@ -905,7 +907,7 @@ def home_page(t: dict) -> str:
     </div>
     <figure class="hero-video">
       <div class="screen">
-        <video id="vorschau" controls preload="none" playsinline poster="{img(f'img/{lang}/{slides[0][0]}', root)}" width="{pw}" height="{ph}" aria-label="{e(t['video_label'])}">
+        <video id="vorschau" controls preload="none" playsinline poster="{img(f'img/{lang}/{slides[0][0][:-4]}.webp', root)}" width="{pw}" height="{ph}" aria-label="{e(t['video_label'])}">
           <source src="{file(video_rel, root)}" type="video/mp4">
           <p>{e(t['video_fallback'])} <a href="{file(video_rel, root)}">{e(t['video_download'])}</a></p>
         </video>
