@@ -220,6 +220,8 @@ TEXT = {
               "und bei Google Play, auf Deutsch und Englisch."], None),
         ],
         "press_id": "presse", "press_h": "Presse",
+        "coverage_h": "Presse über Auszeit",
+        "coverage": [("Trending Topics, 4.11.2026: ", "Auszeit: Grazer Indie-Entwickler bremst Instagram mit 15 Sekunden Bedenkzeit", "https://www.trendingtopics.eu/auszeit-app-karl-maier-graz/", "")],
         "press_intro": "Material für Berichte, ohne Rückfrage verwendbar. Fragen und Testzugänge:",
         "press_direct": "oder direkt an Karl Maier, MA:",
         "press_short_h": "Kurztext",
@@ -410,6 +412,8 @@ TEXT = {
               "on the App Store and Google Play, in English and German."], None),
         ],
         "press_id": "press", "press_h": "Press",
+        "coverage_h": "Press about Off Hours",
+        "coverage": [("Trending Topics (German), 4 Nov 2026: ", "Auszeit: Grazer Indie-Entwickler bremst Instagram mit 15 Sekunden Bedenkzeit", "https://www.trendingtopics.eu/auszeit-app-karl-maier-graz/", "de")],
         "press_intro": "Material for coverage, free to use without asking. Questions and review access:",
         "press_direct": "or directly to Karl Maier, MA:",
         "press_short_h": "Short description",
@@ -873,6 +877,9 @@ def home_page(t: dict) -> str:
             meta_text = f"{kind}, {w} × {h} px, {size_label(path.stat().st_size, t)}" + (f", {extra}" if extra else "")
         return f'            <li><a href="{file(rel, root)}" download>{e(label)}</a><small>{e(meta_text)}</small></li>'
 
+    coverage_items = "\n".join(
+        f'        <li>{e(src)}<a href="{e(url)}" target="_blank" rel="noopener"{f" hreflang={chr(34)}{hl}{chr(34)}" if hl else ""}>{e(title)}</a></li>'
+        for src, title, url, hl in t["coverage"])
     ios_files = "\n".join(entry(f"press/{lang}-{f}", f"{i}. {' '.join(lines)}")
                           for i, (f, _, lines, _) in enumerate(slides, 1))
     android_files = "\n".join(entry(f"press/{lang}-android-{f}", (f"{i}. {label}" if i <= 5 else label))
@@ -1034,6 +1041,12 @@ def home_page(t: dict) -> str:
         <p>{e(t['founder_after'])}</p>
         <p class="fine">{e(t['founder_note'])}</p>
       </div>
+    </div>
+    <div class="coverage">
+      <h3>{e(t['coverage_h'])}</h3>
+      <ul>
+{coverage_items}
+      </ul>
     </div>
     <h3 class="visually-hidden">{e(t['press_files_h'])}</h3>
     <div class="files">
