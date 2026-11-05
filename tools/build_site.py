@@ -93,17 +93,22 @@ TEXT = {
         "lang": "de", "locale": "de_AT", "other_locale": "en_GB", "path": "/", "root": "./",
         "other_href": "en/", "other_lang": "en", "other_label": "English",
         "name": "Auszeit",
-        "title": f"{STORE_NAME['de']} · für iPhone und Android",
-        "meta_desc": "Auszeit hält gewählte Apps zu festen Zeiten an und schiebt eine kurze Bedenkzeit dazwischen. "
-                     "Für iPhone und Android, ohne Konto, ohne Daten. App aus Graz.",
+        # AUS-40 (SEO): Title/Meta/H1 laut Briefing (5.11.2026); Title 53, Meta 123 Zeichen.
+        "title": "Auszeit – App Blocker für iPhone & Android ohne Konto",
+        "meta_desc": "Auszeit legt vor ablenkende Apps eine kurze Pause. Zeitfenster wählen, Apps auswählen – "
+                     "ohne Konto, Daten bleiben am Gerät.",
+        "guides_h": "Mehr zu Auszeit (App Blocker)",
+        "guides": [("ohne-konto/", "App Blocker ohne Konto: Daten bleiben auf dem Gerät"),
+                   ("ratgeber/apps-zu-bestimmten-zeiten-sperren/", "Apps zu bestimmten Zeiten sperren auf dem iPhone"),
+                   ("ratgeber/abends-weniger-handy/", "Abends weniger am Handy: Tipps")],
         "og_alt": "Auszeit, App-Blocker für iPhone und Android: Abends das Handy weglegen, ohne Kampf mit der Willenskraft.",
         "skip": "Zum Inhalt",
         "nav_label": "Hauptnavigation",
         "nav": [("#so-funktioniert-es", "So funktioniert es", True), ("#preise", "Preise", True),
                 ("#fragen", "Fragen", True), ("#presse", "Presse", False), ("support/", "Support", False)],
         "kicker": "App-Blocker für iPhone und Android",
-        "claim": ["Abends das Handy weglegen,", "ohne Kampf mit der Willenskraft."],
-        "lead": "Auszeit hält die Apps, die dich abends festhalten, zu festen Zeiten an. Öffnest du eine davon, zeigt dein "
+        "claim": ["Auszeit: kurze Pause", "vor ablenkenden Apps"],
+        "lead": "Abends das Handy weglegen, ohne Kampf mit der Willenskraft. Auszeit hält die Apps, die dich abends festhalten, zu festen Zeiten an. Öffnest du eine davon, zeigt dein "
                 "Handy zuerst eine kurze Bedenkzeit. Danach entscheidest du bewusst: Auszeit nehmen oder eine Ausnahme "
                 "machen. Kein Verbot, keine Tricks, nur ein Moment zum Nachdenken.",
         "apple_country": "de",
@@ -808,6 +813,18 @@ def head(t: dict, root: str, title: str, desc: str, extra: str) -> str:
   {css(root)}"""
 
 
+def guides_html(t: dict, root: str) -> str:
+    """Interne Links zu den Ratgeberseiten (nur Deutsch, AUS-40)."""
+    if "guides" not in t:
+        return ""
+    items = "\n".join(f'        <li><a href="{e(page_link(h, root))}">{e(txt)}</a></li>' for h, txt in t["guides"])
+    return f'''
+    <h3 style="margin-top:32px">{e(t["guides_h"])}</h3>
+    <ul class="guides">
+{items}
+    </ul>'''
+
+
 def home_page(t: dict) -> str:
     lang, root = t["lang"], t["root"]
     url = SITE + t["path"]
@@ -997,7 +1014,7 @@ def home_page(t: dict) -> str:
     <h2>{e(t['faq_h'])}</h2>
     <div class="faq">
 {chr(10).join(faq)}
-    </div>
+    </div>{guides_html(t, root)}
   </section>
 
   <section class="wrap section press" id="{t['press_id']}">

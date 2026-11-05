@@ -14,6 +14,9 @@
 ## Deutsch
 
 - [Startseite](https://auszeit.nxtchange.app/): So funktioniert es auf iPhone und Android, Preise, häufige Fragen
+- [App Blocker ohne Konto](https://auszeit.nxtchange.app/ohne-konto/): Daten bleiben auf dem Gerät
+- [Apps zu bestimmten Zeiten sperren](https://auszeit.nxtchange.app/ratgeber/apps-zu-bestimmten-zeiten-sperren/): iPhone, Bildschirmzeit und Auszeit (App Blocker)
+- [Abends weniger am Handy](https://auszeit.nxtchange.app/ratgeber/abends-weniger-handy/): Tipps zum Reduzieren der Handyzeit
 - [Presse](https://auszeit.nxtchange.app/#presse): Kurztext, Eckdaten, Gründergeschichte mit Zitat, Gründerfoto mit Bildnachweis, Bilder, Pressetext (TXT) und Pressemappe
 - [Support](https://auszeit.nxtchange.app/support/): Kontakt und häufige Fragen
 - [Datenschutz](https://auszeit.nxtchange.app/datenschutz/): Datenschutzerklärung
